@@ -1,0 +1,532 @@
+@import "colors";
+
+#aboutWrap {
+  #scrollUpButton {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: $navyFade;
+    cursor: pointer;
+    z-index: 1000;
+    user-select: none;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+
+    .fa {
+      color: #fff;
+      font-size: 25px;
+    }
+
+    &:hover {
+      background-color: $navy;
+    }
+
+    &.hidden {
+      transform: translateX(200px);
+    }
+  }
+
+  #mtdSphereVideoContainer {
+    // display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-left: calc(calc(-100vw + 100%)/2);
+    width: 100vw;
+    height: 100vh;
+    margin-top: -151px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    background-color: $gray;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    #mtdSphereVideo {
+      position: absolute;
+      z-index: -10;
+      // left: -500px;
+      min-height: 100vh;
+      min-width: 100vw;
+
+    }
+  }
+
+  h1 {
+    margin: 0 0 10px 0;
+  }
+
+  .chevron {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    transition: opacity 0.2s ease;
+
+    .fa {
+      color: rgba(255, 255, 255, 1);
+      font-size: 90px;
+      position: relative;
+      top: -10px;
+      opacity: 0;
+
+      -webkit-animation: fade_move_down 2s ease-in-out 1s infinite;
+      animation: fade_move_down 2s ease-in-out 1s infinite;
+
+      /*animated scroll arrow animation*/
+      @-webkit-keyframes fade_move_down {
+        0%   { top: -20px; opacity: 0; }
+        50%  { opacity: 1;  }
+        100% { top: 40px; opacity: 0; }
+      }
+      @keyframes fade_move_down {
+        0%   { top: -20px; opacity: 0; }
+        50%  { opacity: 1;  }
+        100% { top: 40px; opacity: 0; }
+      }
+    }
+
+    &.after {
+      opacity: 0;
+    }
+  }
+
+  #MTDandMTinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      color: $orange;
+
+      &:hover {
+        color: $orangeHover;
+      }
+    }
+
+    #MTDinfo {
+      transition: all 0.3s ease;
+
+      &.before {
+        opacity: 0;
+      }
+
+    }
+
+    #MTinfo {
+      align-self: flex-end;
+      transition: all 0.3s ease;
+
+      &.before {
+        opacity: 0;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60%;
+      padding: 15px;
+
+      @media screen and (max-width: $bigPhone) {
+        width: 100%;
+
+        h1 {
+          font-size: 20pt;
+        }
+
+        p {
+          font-size: 11pt;
+        }
+
+        .ingress {
+          font-size: 14pt;
+        }
+      }
+    }
+
+    .image {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+
+      img {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      @media screen and (max-width: $bigPhone) {
+        display: none;
+      }
+    }
+
+    .aboutinfo {
+      background: $navy;
+      background: radial-gradient(circle, $navy 0%, $navy 80%, $navyFade 100%);
+      width: 80%;
+      display: flex;
+      flex-flow: row wrap;
+      margin: 200px 0 0 0;
+      color: #fff;
+      padding: 35px;
+      border-radius: 3px;
+
+      @media screen and (max-width: $ipad) {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+  }
+
+  .deadspace {
+    height: 100px;
+
+    &:last-child {
+      height: 100vh;
+    }
+  }
+
+  #FAIRinfo {
+    #imageCarousel {
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 60px;
+      z-index: -10;
+    }
+
+    //info boxes
+    #reception {
+      transition: all 0.3s ease;
+
+      &.before {
+        opacity: 0;
+      }
+    }
+
+    #lounge {
+      margin-left: 55%;
+      transition: all 0.3s ease;
+
+      &.before {
+        opacity: 0;
+      }
+
+      @media screen and (max-width: $ipad) {
+        margin-left: 40%;
+
+        @media screen and (max-width: $bigPhone) {
+          margin-left: 20%;
+        }
+      }
+    }
+
+    #competitions {
+      transition: all 0.3s ease;
+
+      &.before {
+        opacity: 0;
+      }
+    }
+
+    .sideBySide {
+      width: 45%;
+      background: $navy;
+      background: radial-gradient(circle, $navy 0%, $navy 80%, $navyFade 100%);
+      border-radius: 3px;
+      padding: 35px;
+
+      @media screen and (max-width: $ipad) {
+        width: 60%;
+
+        @media screen and (max-width: $bigPhone) {
+          width: 80%;
+          padding: 25px;
+        }
+      }
+    }
+
+    #infoBeam {
+      display: flex;
+      width: 100vw;
+      margin-left: calc( calc(100% - 100vw) /2);
+      // flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background: $gray;
+      background: radial-gradient(circle, $gray 0%, $gray 80%, $grayFade 100%);
+      border-radius: 5px;
+      transition: all 0.3s ease;
+
+      .aloneContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+        padding: 100px 0 100px 0;
+
+        .fa {
+          color: #fff;
+          font-size: 150px;
+          margin-bottom: 20px;
+        }
+      }
+
+      &.before {
+        opacity: 0;
+      }
+
+      @media screen and (max-width: $bigPhone) {
+        flex-direction: column;
+
+        .aloneContent {
+          width: 90%;
+
+          &:first-of-type {
+            padding-bottom: 0;
+          }
+
+          &:last-of-type {
+            padding-top: 70px;
+          }
+        }
+      }
+    }
+
+    .FAIRcontent:not(.beam) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      .fa {
+        font-size: 120px;
+        align-self: center;
+        color: $turq;
+        padding: 10px;
+
+        @media screen and (max-width: $bigPhone) {
+          font-size: 100px;
+          padding: 5px;
+        }
+      }
+    }
+
+    .FAIRcontent {
+      h1 {
+        font-size: 45px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 20px;
+        color: #fff;
+        line-height: 25px;
+
+        a {
+          color: $orange;
+
+          &:hover {
+            color: $orangeHover;
+          }
+        }
+      }
+    }
+
+    #previousYears {
+      #lecturerTitleBig {
+        color: #fff;
+        font-size: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        transition: all 0.3s ease;
+        width: 100vw;
+        margin-left: calc(calc(-100vw + 100%)/2);
+        padding: 90px 0 90px 0;
+        background: $gray;
+
+        @media screen and (max-width: $bigPhone) {
+          font-size: 25px;
+          padding: 45px 0 45px 0;
+        }
+      }
+
+      #lecturerTitleSmall {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 60px;
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        width: 100vw;
+        margin-left: calc(calc(-100vw + 100%)/2);
+        background: $gray;
+        background: radial-gradient(circle, $gray 0%, $gray 80%, $grayFade 100%);
+        padding: 5px 0 5px 0;
+
+        &.before {
+          display: none;
+        }
+
+        &.after {
+          animation: lecturerTitle 0.3s;
+          -webkit-animation: lecturerTitle 0.3s;
+
+          @keyframes lecturerTitle {
+            0% {opacity: 0; transform: translateY(-50px);}
+            100% {opacity: 1; transform: translateY(0);}
+          }
+          @-webkit-keyframes lecturerTitle {
+            0% {opacity: 0; transform: translateY(-50px);}
+            100% {opacity: 1; transform: translateY(0);}
+          }
+        }
+
+        @media screen and (max-width: $bigPhone) {
+          font-size: 25px;
+        }
+      }
+
+      .lecturer {
+        width: 100%;
+        transition: all 0.3s ease;
+
+        &.before {
+          opacity: 0;
+        }
+
+        &.after {
+          opacity: 1;
+        }
+
+        .lecturerImage {
+          position: -webkit-sticky; /* Safari */
+          position: sticky;
+          top: 60px;
+          z-index: -10;
+          height: calc(100vh - 60px);
+          z-index: -10;
+          width: 100vw;
+          margin-left: calc(calc(-100vw + 100%)/2);
+          min-height: 100%;
+          overflow: hidden;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          h2 {
+            color: #fff;
+            position: absolute;
+            right: 100px;
+            bottom: 30px;
+          }
+        }
+
+        .lecturerInfo {
+          border-radius: 3px;
+          background: $gray;
+          width: 50%;
+          padding: 60px;
+          z-index: -10;
+          color: #fff;
+          transition: all 0.3s ease;
+
+          p {
+            font-size: 13pt;
+            line-height: 25px;
+          }
+
+          h1 {
+            font-size: 25pt;
+            letter-spacing: 2px;
+          }
+
+          a {
+            color: $orange;
+            line-height: 25px;
+
+            &:hover {
+              color: $orangeHover;
+            }
+          }
+
+          &.left {
+            margin-left: 0;
+          }
+
+          &.right {
+            margin-left: 50%;
+
+            @media screen and (max-width: $ipad) {
+              margin-left: 40%;
+
+              @media screen and (max-width: $bigPhone) {
+                margin-left: 30%;
+              }
+            }
+          }
+
+          @media screen and (max-width: $ipad) {
+            width: 60%;
+
+            @media screen and (max-width: $bigPhone) {
+              width: 70%;
+              padding: 20px;
+            }
+          }
+        }
+
+        @media screen and (max-width: $ipad) {
+          #lecturer_1 .lecturerImage {
+            background-position: center;
+          }
+          #lecturer_2 .lecturerImage {
+              background-position: -200px center;
+          }
+          #lecturer_3 .lecturerImage {
+              background-position: -500px center;
+
+              @media screen and (max-width: $bigPhone) {
+                background-position: -600px center;
+              }
+          }
+          #lecturer_4 .lecturerImage {
+              background-position: -450px center;
+          }
+        }
+      }
+
+      #videoWrap {
+        z-index: -10;
+        width: 100vw;
+        margin-left: calc(calc(-100vw + 100%)/2);
+        background: #fff;
+
+        #videoContainer {
+          width: 100%;
+          max-width: 1200px;
+          margin: auto;
+          padding: 50px 0 50px 0;
+        }
+      }
+    }
+  }
+}

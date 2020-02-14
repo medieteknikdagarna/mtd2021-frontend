@@ -1,0 +1,41 @@
+/* IMPORT till fil där de behövs
+@import 'colors'; */
+
+$background: #fff;
+$bannerBackground: rgba(245,245,245,1);
+$bannerBackgroundFade: rgba(255,255,255,0.95);
+$borderColor: rgba(59,72,79,0.5);
+$borderColorFade: rgba(59,72,79,0.2);
+$borderColorSolid: rgba(59,72,79,1);
+$border: 1px solid $borderColor;
+$boxShadow: 0px 1px 1px rgba(59,72,79,0.3);
+
+$linkLight: rgba(109, 203, 255, 1);
+$linkLightHover: rgba(93, 173, 225, 1);
+$link: rgba(16, 110, 162, 1);
+$linkHover: rgba(0, 80, 132, 1);
+
+$orange: rgba(236, 102, 17, 1);
+$orangeFade: rgba(236, 102, 17, 0.6);
+$orangeLFade: rgba(236, 102, 17, 0.3);
+$orangeHover: rgba(174, 81, 21, 1);
+$orangeHoverFade: rgba(164, 71, 11, 0.3);
+
+$grayLighter: rgba(79, 92, 100, 1);
+$gray: rgba(59, 72, 80, 1);
+$grayLessFade: rgba(59, 72, 80, 0.8);
+$grayFade: rgba(59, 72, 80, 0.6);
+$grayFaderer: rgba(59, 72, 80, 0.2);
+
+$turq: rgba(0, 129, 130, 1);
+$turqFade: rgba(0, 129, 130, 0.6);
+
+$navy: rgba(19, 41, 61, 1);
+$navyFade: rgba(19, 41, 61, 0.6);
+$navyFaderer: rgba(19, 41, 61, 0.5);
+$navyFaderest: rgba(19, 41, 61, 0.15);
+$navyFaderestest: rgba(19, 41, 61, 0.05);
+
+$ipad: 834px;
+$bigPhone: 420px;
+$smallPhone: 350px;

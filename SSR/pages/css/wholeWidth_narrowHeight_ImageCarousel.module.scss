@@ -1,0 +1,31 @@
+.bannerImg {
+  width: 100vw;
+  display: flex;
+  margin: 90px 0 90px calc(calc(-100vw + 100%)/2);
+}
+
+.imageContainer {
+  width: 100%;
+  height: calc(100vh - 60px);
+  flex-shrink: 0;
+  transition: width 0.7s ease;
+}
+
+.image {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imageShown {
+  width: 100%;
+}
+.imageHidden {
+  width: 0%;
+}
+
+.toLeft {
+  transition: transform 1s ease;
+  transform: translateX(-100%);
+}

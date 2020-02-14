@@ -1,0 +1,14 @@
+{
+  "sv": {
+    "errorInfo1": "Sidan hittades inte",
+    "errorInfo2": " hittades inte",
+    "msg": "Sidan du letar efter kan inte hittas eller så inträffade något annat fel. Navigera dig rätt med hjälp av menyn längst upp på sidan."
+  },
+
+  "en": {
+    "error": "Page not found",
+    "errorInfo1": "Page not found",
+    "errorInfo2": " was not found",
+    "msg": "The page you are looking for doesn't exist or another error occured. Navigate some place else using the menu on the top of the page."
+  }
+}

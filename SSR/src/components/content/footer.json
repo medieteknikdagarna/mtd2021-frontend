@@ -1,0 +1,19 @@
+{
+  "sv": {
+    "about": "Om",
+    "contact": "Kontakt",
+    "openSource": "Detta är ett projekt med öppen källkod.",
+    "privacyPol": "Läs mer om vår integritetspolicy",
+    "changeLang": "Change language",
+    "login": "Logga in"
+  },
+
+  "en": {
+    "about": "About",
+    "contact": "Contact",
+    "openSource": "This is an open source project.",
+    "privacyPol": "Read about our privacy policy",
+    "changeLang": "Byt språk",
+    "login": "Log in"
+  }
+}

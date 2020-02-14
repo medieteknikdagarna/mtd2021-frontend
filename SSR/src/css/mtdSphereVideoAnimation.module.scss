@@ -1,0 +1,63 @@
+@import "colors";
+
+#loading {
+  width:100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100px;
+  height: 140px;
+  background-image: url("../bilder/white.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: loadingAnim;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  @keyframes loadingAnim {
+      0%   {opacity: 0.1;}
+      50% {opacity: 1;}
+      100% {opacity: 0.1;}
+  }
+}
+
+#mtdSphereVideo {
+  margin-left: calc(calc(-100vw + 100%)/2);
+  margin-top: -151px;
+  height: 100vh;
+  width: 100vw;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.frameContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.frame {
+  background: $grayLessFade;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.before {
+  opacity: 0;
+}

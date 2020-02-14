@@ -1,0 +1,71 @@
+{
+  "sv": {
+    "home": {
+      "title": "Hem"
+      },
+    "about": {
+      "title": "Om"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "dropdown": [
+        {"title": "Kontakta oss", "url": "contact/"},
+        {"title": "Gruppen", "url": "contact/group/"},
+        {"title": "Press och media", "url": "contact/press/"}
+      ]
+    },
+    "companies": {
+      "title": "Företag"
+    },
+    "studentexpo": {
+      "title": "Studentexpo"
+    },
+    "previous": {
+      "title": "Tidigare år"
+    },
+    "lectures": {
+      "title": "Föreläsningar & schema"
+    },
+    "pictures": {
+      "title": "Bilder"
+    },
+    "error": {
+      "title": "404 - Sidan hittades inte"
+    }
+  },
+
+  "en": {
+    "home": {
+      "title": "Home"
+    },
+    "about": {
+      "title": "About"
+    },
+    "contact": {
+      "title": "Contact",
+      "dropdown": [
+        {"title": "Contact us", "url": "contact/"},
+        {"title": "The group", "url": "contact/group/"},
+        {"title": "Press and media", "url": "contact/press/"}
+      ]
+    },
+    "companies": {
+      "title": "Companies"
+    },
+    "studentexpo": {
+      "title": "Student Expo"
+    },
+    "previous": {
+      "title": "Previous years"
+    },
+    "lectures": {
+      "title": "Lectures & schedule"
+    },
+    "pictures": {
+      "title": "Pictures"
+    },
+    "error": {
+      "title": "404 - Page not found"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "colors";
+
+#privacyPolicyContainer {
+  padding: 10px;
+  width: 65%;
+
+  .indrag {
+    // margin-left: 3px;
+  }
+
+  h1 {
+    margin-bottom: 7px;
+  }
+
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+
+  p {
+    &.ingress {
+      p {
+      	font-weight: 600;
+      }
+    }
+  }
+
+  a {
+    color: $orange;
+
+    &:hover {
+      color: $orangeHover;
+    }
+  }
+
+  .linkByItsOwn {
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+  b {
+    font-weight: 800;
+  }
+
+  @media screen and (max-width: $bigPhone) {
+    width: 100%;
+  }
+}

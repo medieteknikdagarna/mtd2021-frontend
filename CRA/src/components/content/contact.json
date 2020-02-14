@@ -1,0 +1,178 @@
+{
+  "logoWebURL": "MTD_logotyp_webb.zip",
+  "logoPrintURL": "MTD_logotyp_tryck.zip",
+
+  "sv": {
+    "0": {
+      "title": "Kontakta oss",
+      "info": "",
+      "questions": [
+        {
+          "title": "Generella frågor",
+          "body1": "Vid generella frågor, om vad som helst, kontakta ",
+          "body2": " på:",
+          "pos": "manager"
+        },
+        {
+          "title": "Företagskontakt",
+          "body1": "Vill du snacka om samarbeten mellan MTD och ditt företag? Vill ditt företag sponsra MTD? Kontakta ",
+          "body2": " på:",
+          "pos": "business"
+        },
+        {
+          "title": "Webb",
+          "body1": "Har du frågor över innehållet på sidan? Hittat något som ser knasigt ut? Kontakta ",
+          "body2": " på:",
+          "pos": "web"
+        },
+        {
+          "title": "Mässinformation",
+          "body1": "Har du någon fråga kring mässan? Kontakta ",
+          "body2": " på:",
+          "pos": "fair"
+        }
+      ],
+      "linkToGroup": {
+        "title": "Gruppen",
+        "body": "För mer information om gruppen som anordnar MTD, klicka här."
+      },
+      "linkToPress": {
+        "title": "Press och media",
+        "body": "Representerar du press eller övrig media och är lite nyfiken på MTD? Klicka här."
+      },
+      "addresses": {
+        "title": "Fysiska adresser",
+        "showInMaps": "Visa i Google Maps",
+        "metaScroll": "Använd ctrl + rulla för att zooma kartan",
+        "metaMove": "Använd två fingrar för att flytta kartan",
+        "visiting": {
+          "title": "Besöksadress",
+          "info": "Platsen där det händer!",
+          "line1": "Täppan, Campus Norrköping",
+          "line2": "Bredgatan 34",
+          "line3": "602 21, Norrköping"
+        },
+        "post": {
+          "title": "Postadress",
+          "line1": "Medieteknikdagarna, MT-sektionen",
+          "line2": "Kårhuset Trappan",
+          "line3": "Universitetet",
+          "line4": "602 21, Norrköping",
+          "line5": "Sweden"
+        },
+        "delivery": {
+          "title": "Leveransadress",
+          "info": "Kontakta oss innan ni skickar något, så ser vi till att det hamnar rätt.",
+          "line1": "Medieteknikdagarna Gods, MT-sektionen",
+          "line2_1": "Att: ",
+          "line2_2": " telefonnr: ",
+          "line3": "Sandgatan 31",
+          "line4": "602 21, Norrköping",
+          "line5": "Sweden"
+        }
+      }
+    },
+    "1": {
+      "title": "Gruppen",
+      "info": "Dagen arrangeras av tretton ideellt arbetande studenter på Medieteknikprogrammet som ligger bakom hela evenemanget. Hör gärna av dig till oss, vi gillar att snacka!"
+    },
+    "2": {
+      "title": "Press och media",
+      "info": "Representerar du press eller övrig media och är lite nyfiken på MTD? Här hittar du en kort sammanfattning om vad Mediekteknikdagarna är.",
+      "pressinfo": {
+        "title": "Pressinformation",
+        "body": "Medietekniksektionen har sedan 2001 arrangerat Medieteknikdagarna – MTD. MTD har under ett decennium utvecklats från en dag i en föreläsningssal till en mässa med föreläsningar och bankettsittning.\n\nGruppen som anordnar MTD består av tretton engagerade medieteknikstudenter från varierande årskurser. Under drygt ett halvår hålls möten och MTD (med mässa, föreläsare, bankett) växer fram. Under själva mässdagen är 40-50 studenter engagerade som värdar av olika slag.\n\nMTD erbjuder studenter en möjlighet att knyta kontakter med företag, ställa frågor om karriärval och ordna examensarbeten eller praktikplatser. För utställarna är det en chans att marknadsföra sig själva mot potentiella framtida medarbetare.\n\nFöreläsningarna som hålls av exjobbare och gästföreläsare är tänkta att vara inspirerande och ge lite extra energi till de duktigt hårt studerande medieteknikstudenterna.",
+        "contact": "Presskontakt"
+      },
+      "logoWebTitle": "Logotyp för webb",
+      "logoPrintTitle": "Logotyp för tryck"
+    }
+  },
+
+  "en": {
+    "0": {
+      "title": "Contact us",
+      "info": "",
+      "questions": [
+        {
+          "title": "General inquiries",
+          "body1": "For general inquiries, contact ",
+          "body2": " at:",
+          "pos": "manager"
+        },
+        {
+          "title": "Business contact",
+          "body1": "Do you want to talk about collaborating with MTD? Do you want your company to be one of our partners? Contact ",
+          "body2": " at:",
+          "pos": "business"
+        },
+        {
+          "title": "Web",
+          "body1": "Do you have any questions about the content of this page? Have you found something that looks a bit weird? Contact ",
+          "body2": " at:",
+          "pos": "web"
+        },
+        {
+          "title": "Fair information",
+          "body1": "Do you have any questions about the fair? Contact ",
+          "body2": " at:",
+          "pos": "fair"
+        }
+      ],
+      "linkToGroup": {
+        "title": "The group",
+        "body": "For more information about the group that organize MTD, click here."
+      },
+      "linkToPress": {
+        "title": "Press and media",
+        "body": "Are you representing press or other media, and want to know more about MTD? Click here."
+      },
+      "addresses": {
+        "title": "Physical addresses",
+        "showInMaps": "Show in Google Maps",
+        "metaScroll": "Use ctrl + scroll to zoom the map",
+        "metaMove": "Use two fingers to move the map",
+        "visiting": {
+          "title": "Visiting address",
+          "info": "This is where MTD will be held!",
+          "line1": "Täppan, Campus Norrköping",
+          "line2": "Bredgatan 34",
+          "line3": "602 21, Norrköping"
+        },
+        "post": {
+          "title": "Mail address",
+          "line1": "Medieteknikdagarna, MT-sektionen",
+          "line2": "Kårhuset Trappan",
+          "line3": "Universitetet",
+          "line4": "602 21, Norrköping",
+          "line5": "Sweden"
+        },
+        "delivery": {
+          "title": "Goods",
+          "info": "Before sending goods to the fair, please contact us and we'll make sure that it ends up where it should.",
+          "line1": "Medieteknikdagarna Gods, MT-sektionen",
+          "line2_1": "Att: ",
+          "line2_2": " telefonnr: ",
+          "line3": "Sandgatan 31",
+          "line4": "602 21, Norrköping",
+          "line5": "Sweden"
+        }
+      }
+    },
+    "1": {
+      "title": "The group",
+      "info": "The day is arranged by thirteen media technology students working as volunteers. We'd love to talk to you, so give us a call or send us an email!"
+    },
+    "2": {
+      "title": "Press and media",
+      "info": "Are you representing press or other media, and want to know more about MTD? This is where you will find a short summary about the Media Technology Days.",
+      "pressinfo": {
+        "title": "Press information",
+        "body": "The Media Technology programme at Linköpings University in Norrköping, Sweden has since 2001 organized the Media Technology Days – MTD. During one day, a series of lectures will be given in parallel to a work fair. MTD has, in the span of a decade, evolved from a day in a lecture room to becoming a venue where students meet with world leading entrepreneurs and researchers as well as established and upcoming companies, to inspire and be inspired by what’s in store for the future of media technology.\nThe group of thirteen who organize MTD are all passionate Media Technology students ranging from first-year students to near-graduates. Close to six months are spent together, having weekly meetings, doing the hard work needed to pull it all off, and watching the MTD grow into what it is. During the event forty to fifty students are active in making things work as smoothly as possible.\nIt is a fantastic opportunity for students to be able to network with future employers, ask questions regarding career choice, find internships, and the ability to be inspired by things maybe previously unknown. For companies and organizations who come to meet our students it is an equally great opportunity to meet, and possibly shape, future employees, colleagues and friends.\nThe lectures are held by graduated students and guest lecturers from all disciplines of media technology and continue, year after year, to inspire hard working students not to give up when their studies may seem a little too tough.\nWe welcome everybody (yes, our doors are open to everybody!) to partake in the greatest media technology event in Sweden!",
+        "contact": "Press contact"
+      },
+      "logoWebTitle": "Logotype for web",
+      "logoPrintTitle": "Logotype for print"
+    }
+  }
+}

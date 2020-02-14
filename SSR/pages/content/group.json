@@ -1,0 +1,132 @@
+{
+  "manager": {
+    "pic": "http://cdn.vlq.se/20-Philip.jpeg",
+    "name": "Philip Ngo",
+    "pos": {
+      "en": "Project manager",
+      "sv": "Projektledare"
+    },
+    "email": "philip.ngo@medieteknikdagarna.se",
+    "tel": "+46 725 799 874"
+  },
+  "economy": {
+    "pic": "http://cdn.vlq.se/20-Iris.jpeg",
+    "name": "Iris Kotsinas",
+    "pos": {
+      "en": "Economy manager",
+      "sv": "Kassör"
+    },
+    "email": "iris.kotsinas@medieteknikdagarna.se",
+    "tel": "+46 735 108 508"
+  },
+  "business": {
+    "pic": "http://cdn.vlq.se/20-Emma.jpeg",
+    "name": "Emma Segolsson",
+    "pos": {
+      "en": "Business contact",
+      "sv": "Företagskontakt"
+    },
+    "email": "emma.segolsson@medieteknikdagarna.se",
+    "tel": "+46 703 540 555"
+  },
+  "fair": {
+    "pic": "http://cdn.vlq.se/20-Simon.jpeg",
+    "name": "Simon Brefält",
+    "pos": {
+      "en": "Fair manager",
+      "sv": "Mässansvarig"
+    },
+    "email": "simon.brefalt@medieteknikdagarna.se",
+    "tel": "+46 723 510 683"
+  },
+  "assistant": {
+    "pic": "http://cdn.vlq.se/20-August.jpeg",
+    "name": "August Kroon",
+    "pos": {
+      "en": "Project assistant",
+      "sv": "Projektassistent"
+    },
+    "email": "august.kroon@medieteknikdagarna.se",
+    "tel": "+46 738 200 077"
+  },
+  "lecture": {
+    "pic": "http://cdn.vlq.se/20-Marcus.jpeg",
+    "name": "Marcus Gladh",
+    "pos": {
+      "en": "Lecture coordinator",
+      "sv": "Föreläsningsansvarig"
+    },
+    "email": "marcus.gladh@medieteknikdagarna.se",
+    "tel": "+46 704 216 246"
+  },
+  "banquet": {
+    "pic": "http://cdn.vlq.se/20-Ebba.jpeg",
+    "name": "Ebba Nilsson",
+    "pos": {
+      "en": "Banquet manager",
+      "sv": "Bankettansvarig"
+    },
+    "email": "ebba.nilsson@medieteknikdagarna.se",
+    "tel": "+46 707 739 902"
+  },
+  "tech": {
+    "pic": "http://cdn.vlq.se/20-Max.jpeg",
+    "name": "Max Skanvik",
+    "pos": {
+      "en": "Technical coordinator",
+      "sv": "Teknikansvarig"
+    },
+    "email": "max.skanvik@medieteknikdagarna.se",
+    "tel": "+46 703 101 620"
+  },
+  "pr": {
+    "pic": "http://cdn.vlq.se/20-William.jpeg",
+    "name": "William Uddmyr",
+    "pos": {
+      "en": "PR manager",
+      "sv": "PR-ansvarig"
+    },
+    "email": "william.uddmyr@medieteknikdagarna.se",
+    "tel": "+46 760 165 455"
+  },
+  "coordinator": {
+    "pic": "http://cdn.vlq.se/20-Isak.jpeg",
+    "name": "Isak Engström",
+    "pos": {
+      "en": "Coordinator",
+      "sv": "Koordinator"
+    },
+    "email": "isak.engström@medieteknikdagarna.se",
+    "tel": "+46 761 358 900"
+  },
+  "web": {
+    "pic": "http://cdn.vlq.se/20-Victor.jpeg",
+    "name": "Victor Lindquist",
+    "pos": {
+      "en": "Web manager",
+      "sv": "Webbansvarig"
+    },
+    "email": "victor.lindquist@medieteknikdagarna.se",
+    "tel": "+46 707 755 138"
+  },
+  "print": {
+    "pic": "http://cdn.vlq.se/20-Henrik.jpeg",
+    "name": "Henrik Rosander",
+    "pos": {
+      "en": "Print manager",
+      "sv": "Tryckansvarig"
+    },
+    "email": "henrik.rosander@medieteknikdagarna.se",
+    "tel": "+46 760 637 811"
+  },
+  "app": {
+    "pic": "http://cdn.vlq.se/20-Thomas.jpeg",
+    "name": "Thomas Indrias",
+    "pos": {
+      "en": "App manager",
+      "sv": "Appansvarig"
+    },
+    "email": "thomas.indrias@medieteknikdagarna.se",
+    "tel": "+46 739 882 609"
+  }
+}
