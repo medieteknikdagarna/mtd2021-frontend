@@ -94,7 +94,7 @@ class Footer extends Component {
 								{general[this.state.lang].shortInfo}
 							</li>
 							<li>
-								<a href="https://github.com/medieteknik" target="_blank" rel="noopener noreferrer">
+								<a href="https://github.com/medieteknikdagarna/mtd2020-frontend" target="_blank" rel="noopener noreferrer">
 									{content[this.state.lang].openSource}
 								</a>
 							</li>

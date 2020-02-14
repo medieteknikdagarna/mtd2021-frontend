@@ -1,0 +1,40 @@
+@import 'colors.scss';
+
+#studentExpoContainer {
+  #studentExpoInfo {
+    padding: 15px;
+    width: 75%;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: $bigPhone) {
+      width: 100%;
+    }
+  }
+
+  #studentExpoForm {
+    width: 100%;
+    border: none;
+    height: 1950px;
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: 625px) {
+      height: 2050px;
+      
+      @media screen and (max-width: 502px) {
+        height: 2160px;
+
+        @media screen and (max-width: 414px) {
+          height: 2230px;
+
+          @media screen and (max-width: 382px) {
+            height: 2280px;
+
+            @media screen and (max-width: 360px) {
+              height: 2450px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

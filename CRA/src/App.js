@@ -150,10 +150,14 @@ class Static extends Component {
 	async checkOldURL() {
 		const nav = window.location.href.split("/");
 		if(nav[3] === "sv" || nav[3] === "en") {
-			await cookies.set('lang', nav[3], { path: '/' });
-			await this.setState({
-				lang: cookies.get('lang')
-			});
+			try {
+				await cookies.set('lang', nav[3], { path: '/' });
+				await this.setState({ lang: cookies.get('lang') });
+			}
+			catch(e) {
+				this.setState({ lang: "sv" });
+				console.log(e, "Consider allowing cookies");
+			}
 
 			switch (nav[4]) {
 				case undefined:

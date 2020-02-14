@@ -66,7 +66,7 @@ class Companies extends Component {
 
 			this.setState({ modalBackgroundStyle });
 
-			disableBodyScroll(document.getElementById("companyContainer"), { reserveScrollBarGap: true });
+			disableBodyScroll(document.getElementById("companyModalWrap"), { reserveScrollBarGap: true });
 
 			if(window.getSelection) {
 			  if(window.getSelection().empty) {  // Chrome
@@ -93,7 +93,7 @@ class Companies extends Component {
 
 			this.setState({ modalBackgroundStyle });
 
-			enableBodyScroll(document.getElementById("companyContainer"));
+			enableBodyScroll(document.getElementById("companyModalWrap"));
 
 			this.props.history.push('/companies/');
 		}
@@ -422,6 +422,7 @@ class Company extends Component {
 				this.setState({ logo });
 			}
 			this.setState({ companyInfo: this.props.companyInfo });
+			document.getElementById("companyModalWrap").scrollTo(0, 0);
 		}
 	}
 
@@ -437,23 +438,42 @@ class Company extends Component {
 	}
 
 	render() {
-
 		if(this.state.companyInfo) {
+			let offers = content[this.state.lang].company.offersFormat.map((item, index) => {
+				if(this.state.companyInfo.offers[item]) {
+					return (
+						<div className="offer" key={index}>{content[this.state.lang].company.offersText[item]}</div>
+					);
+				}
+				else {
+					return null;
+				}
+			});
+
 	    return (
 				<div id="companyContainer">
-					<div id="companyModalNameAndLogo">
-						<h1 id="companyModalName">{this.state.companyInfo.name}</h1>
-						<div id="verticalLine"/>
-						<img id="companyModalLogo" src={this.state.logo} alt="Company logo"/>
+					<div id="companyModalName">
+						<h1>{this.state.companyInfo.name}</h1>
 					</div>
-					<p id="companyModalDesc">
-						{this.state.companyInfo.description[this.state.lang]}
-						<br/>
-						<br/>
+					<div id="companyModalWrap">
+						<h2>{content[this.state.lang].company.infoTitle}</h2>
+						<div id="companyModalDescAndLogo">
+							<p id="companyModalDesc">
+								{this.state.companyInfo.description[this.state.lang]}
+							</p>
+							<img id="companyModalLogo" src={this.state.logo} alt="Company logo"/>
+						</div>
+						<h2>{content[this.state.lang].company.offerTitle}</h2>
+						<div id="companyModalOffers">
+							{offers}
+						</div>
 						<a href={this.state.companyInfo.outURL} target="_blank" rel="noopener noreferrer">{this.state.companyInfo.outURL}</a>
-					</p>
+					</div>
 				</div>
 			);
+		}
+		else {
+			return <div></div>;
 		}
 	}
 }

@@ -231,7 +231,7 @@ class About extends Component {
 	}
 
 	async componentDidMount() {
-		// await window.scrollTo(0, 0);
+		await window.scrollTo(0, 0);
 		window.addEventListener("scroll", this.handleScroll);
 		window.addEventListener("resize", this.handleResize);
 
@@ -244,8 +244,6 @@ class About extends Component {
 		}
 
 		this.determineNav();
-
-		// setTimeout(function(){ window.scrollBy(0, 1); }, 10);
   }
 
 	async componentWillUnmount() {

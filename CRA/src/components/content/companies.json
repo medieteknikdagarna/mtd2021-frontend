@@ -6,7 +6,25 @@
     "bronzeTitle": "Bronspartner",
     "regularTitle": "Mässföretag",
     "startupTitle": "Startups",
-    "press": "Tryck för att läsa mer"
+    "press": "Tryck för att läsa mer",
+    "company": {
+      "infoTitle": "Företagsinformation",
+      "offerTitle": "Erbjuder",
+      "offersFormat": [
+        "exjobb",
+        "praktik",
+        "trainee",
+        "sommarjobb",
+        "anstallning"
+      ],
+      "offersText": {
+        "exjobb": "Exjobb",
+        "praktik": "Praktik",
+        "trainee": "Trainee",
+        "sommarjobb": "Sommarjobb",
+        "anstallning": "Anställning"
+      }
+    }
   },
 
   "en": {
@@ -16,6 +34,24 @@
     "bronzeTitle": "Bronze Partners",
     "regularTitle": "Fair Companies",
     "startupTitle": "Startups",
-    "press": "Click to read more"
+    "press": "Click to read more",
+    "company": {
+      "infoTitle": "Company information",
+      "offerTitle": "Offers",
+      "offersFormat": [
+        "exjobb",
+        "praktik",
+        "trainee",
+        "sommarjobb",
+        "anstallning"
+      ],
+      "offersText": {
+        "exjobb": "Thesis",
+        "praktik": "Internship",
+        "trainee": "Trainee",
+        "sommarjobb": "Summer internship",
+        "anstallning": "Employment"
+      }
+    }
   }
 }

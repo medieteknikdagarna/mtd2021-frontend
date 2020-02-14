@@ -127,7 +127,7 @@ class Home extends Component {
 	}
 
 	async componentDidMount() {
-		// await window.scrollTo(0, 0);
+		await window.scrollTo(0, 0);
 		window.addEventListener("scroll", this.handleScroll);
   }
 

@@ -415,7 +415,7 @@
       z-index: 6000;
       transition: all 0.2s ease;
 			background-color: $navy;
-			overflow: hidden;
+			overflow-y: auto;
 
 			&.show {
 				width: 100vw;
@@ -471,13 +471,21 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        width: 100%;
+        margin-top: 50px;
+        flex-wrap: wrap;
 
         //flag
+      #flag {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
         img {
           cursor: pointer;
-          height: 16px;
+          height: 50px;
           width: auto;
-          margin-right: 10px;
           transition: all 0.2s ease;
           border-radius: 4px;
 
@@ -486,20 +494,14 @@
             -webkit-filter: brightness(75%);
           }
         }
-
-        .line {
-          height: 50%;
-          width: 2px;
-          border-left: 2px solid $orangeFade;
-          margin: 0 15px 0 15px;
-        }
+      }
 
         a {
-					display: inline-block;
+					display: block;
 
           .fa {
             margin: 0 7px 0 7px;
-            font-size: 1.1em;
+            font-size: 3em;
             color: $orange;
             transition: color 0.2s ease;
           }

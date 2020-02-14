@@ -51,12 +51,12 @@ class Header extends Component {
 
 	showHamburger() {
 		this.setState({ popOutNavClass: "show" });
-		disableBodyScroll(undefined, { reserveScrollBarGap: true });
+		disableBodyScroll(document.getElementById("navPopOut"), { reserveScrollBarGap: true });
 	}
 
 	hideHamburger() {
 		this.setState({ popOutNavClass: "" });
-		enableBodyScroll();
+		enableBodyScroll(document.getElementById("navPopOut"));
 	}
 
 	handleResize() {
@@ -378,9 +378,9 @@ class Header extends Component {
 
 						</nav>
 						<div id="sharebar">
-							<img onClick={this.props.toggleLanguage} id="flag" src={this.state.flag} alt="flag"></img>
-
-							<div className="line"/>
+							<div id="flag">
+								<img onClick={this.props.toggleLanguage} src={this.state.flag} alt="flag"></img>
+							</div>
 
 							<a href="https://facebook.com/medieteknikdagarna" target="_blank" rel="noopener noreferrer">
 								<FontAwesomeIcon icon={['fab', 'facebook-square']} className="fa"/>
