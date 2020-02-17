@@ -143,12 +143,12 @@ class Static extends Component {
 		this.acceptPolicy = this.acceptPolicy.bind(this);
 		this.toggleLanguage = this.toggleLanguage.bind(this);
 		this.updateNav = this.updateNav.bind(this);
+		this.setTitle = this.setTitle.bind(this);
 
 		this.loadFonts();
 	}
 
-	async checkOldURL() {
-		const nav = window.location.href.split("/");
+	async checkOldURL(nav) {
 		if(nav[3] === "sv" || nav[3] === "en") {
 			try {
 				await cookies.set('lang', nav[3], { path: '/' });
@@ -265,12 +265,24 @@ class Static extends Component {
 	async updateNav(nav) {
 		if(!this.state.loading) {
 			this.setState({ nav });
-			this.checkOldURL();
+			this.checkOldURL(nav);			
 		}
+	}
+
+	setTitle(nav) {
+		try {
+			const navText = general[this.state.lang].url[nav[3]] ? general[this.state.lang].url[nav[3]] + " - " : "";
+
+			document.title = navText + general[this.state.lang].name + " "
+			+ general.year + " - " + general[this.state.lang].date + ", "
+			+ general.city;
+		}
+		catch(e) {}
 	}
 
 	async componentDidMount() {
 		await this.update();
+		this.setTitle(window.location.href.split("/"));
 
 		if(cookies.get('cookie_accept') === undefined) {
 			cookies.set('cookie_accept', false, { path: '/' });
@@ -293,10 +305,13 @@ class Static extends Component {
 
 	componentDidUpdate(prevProps) {
 		if(!this.state.loading) {
+			const nav = window.location.href.split("/");
+
 			if(prevProps !== this.props) {
-				const nav = window.location.href.split("/");
 				this.updateNav(nav);
 			}
+
+			this.setTitle(nav);
 		}
 	}
 

@@ -16,7 +16,13 @@
       "url": "about/privacy-policy",
       "text": "Läs mer om hur vi använder cookies."
     },
-    "acceptPolicyButton": "Jag accepterar cookies"
+    "acceptPolicyButton": "Jag accepterar cookies",
+    "url": {
+      "about": "Om",
+      "contact": "Kontakt",
+      "companies": "Besökande företag",
+      "studentexpo": "Studentexpo"
+    }
   },
   "en": {
     "name": "Media Technology Days",
@@ -29,6 +35,12 @@
       "url": "about/privacy-policy",
       "text": "Find out more how we use cookies."
     },
-    "acceptPolicyButton": "I accept cookies"
+    "acceptPolicyButton": "I accept cookies",
+    "url": {
+      "about": "About",
+      "contact": "Contact",
+      "companies": "Visiting companies",
+      "studentexpo": "Student Expo"
+    }
   }
 }

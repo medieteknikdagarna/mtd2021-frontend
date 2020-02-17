@@ -158,12 +158,12 @@ class Header extends Component {
 	}
 
 	setTitle() {
-		try {
-			document.title = `${content[this.state.lang][this.props.navSelect].title} - ${general[this.state.lang].name} ${general.year}`;
-		}
-		catch(e) {
-			document.title = `${general[this.state.lang].name} ${general.year} - ${general[this.state.lang].date}, ${general.city}`;
-		}
+		// try {
+		// 	document.title = `${content[this.state.lang][this.props.navSelect].title} - ${general[this.state.lang].name} ${general.year}`;
+		// }
+		// catch(e) {
+		// 	document.title = `${general[this.state.lang].name} ${general.year} - ${general[this.state.lang].date}, ${general.city}`;
+		// }
 	}
 
 	navUpdate(oldNav = "") {
