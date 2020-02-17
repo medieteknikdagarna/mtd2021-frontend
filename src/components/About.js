@@ -29,7 +29,7 @@ import lecturePic3 from '../bilder/lecturers/3.jpg';
 import lecturePic4 from '../bilder/lecturers/4.jpg';
 
 import mtdSphereVideoAnimation from '../bilder/mtdSphereVideo/intro_snabbt_motionblur.mp4';
-import mtdSphereVideoAnimation_still from '../bilder/mtdSphereVideo/MTDSphereVideo_still.png';
+import mtdSphereVideoAnimation_still from '../bilder/mtdSphereVideo/MTDSphereVideo_still.jpg';
 
 const fairpics = [fairpic1, fairpic2, fairpic3, fairpic4, fairpic5, fairpic6];
 
