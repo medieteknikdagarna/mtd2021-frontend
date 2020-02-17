@@ -57,7 +57,7 @@ class Contact extends Component {
 			default:
 				error = true;
 				this.props.history.push('/error');
-				break;
+				return;
 		}
 
 		if(!error) {
@@ -333,9 +333,13 @@ class GroupContent extends Component {
 
 	async componentDidMount() {
 		await window.scrollTo(0, 0);
-		const width = document.querySelector(".imageContainer").style.width;
-		await this.setState({ imageHeight: width });
-		this.props.determineNav();
+
+		try {
+			const width = document.querySelector(".imageContainer").style.width;
+			await this.setState({ imageHeight: width });
+			this.props.determineNav();
+		}
+		catch(e) {}
 	}
 
 	render() {

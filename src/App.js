@@ -399,9 +399,9 @@ class Error404 extends Component {
 	}
 
 	componentDidMount() {
-		if(window.location.href.split('/')[3] !== "error") {
-			this.props.history.push('/error');
-		}
+		// if(window.location.href.split('/')[3] !== "error") {
+		// 	this.props.history.push('/error');
+		// }
 	}
 
 	componentDidUpdate(prevProps) {
@@ -412,9 +412,9 @@ class Error404 extends Component {
 
 	render() {
 		let errmsg = <h2>{error[this.state.lang].errorInfo1}</h2>;
-		if(this.state.url.split('/')[3] !== "error") {
-			errmsg = <h2> <input type="text" name="url" value={this.state.url} readOnly size={this.state.url.length-5} onClick={(e) => {e.currentTarget.setSelectionRange(0, e.currentTarget.value.length);}}/> {error[this.state.lang].errorInfo2}</h2>;
-		}
+		// if(this.state.url.split('/')[3] !== "error") {
+		// 	errmsg = <h2> <input type="text" name="url" value={this.state.url} readOnly size={this.state.url.length-5} onClick={(e) => {e.currentTarget.setSelectionRange(0, e.currentTarget.value.length);}}/> {error[this.state.lang].errorInfo2}</h2>;
+		// }
 
     return (
 			<div id="error">
