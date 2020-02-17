@@ -1,0 +1,255 @@
+{
+  "gold": [
+    {
+      "name": "Cygni",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_cygni.png",
+      "offer": ["Anställning"],
+      "website": "https://saab.com/",
+      "info": "Cygni grundades med visionen att skapa \"den bästa arbetsplatsen för en skicklig och ambitiös systemutvecklare\". Vi har vunnit titeln Sveriges Bästa Arbetsplats 6 år i rad och dessutom vunnit titeln Europas Bästa Arbetsplats 5 gånger i Great Place To Works världsledande medarbetarundersökning som genomförs i över 50 länder: ett fint kvitto på våra ambitioner. \n\nVi söker varje år ambitiösa nyutexade till vårt talangprogram. Talangerna får en personlig mentor, gå en rad skräddarsydda utbildningar, jobba i riktiga kundprojekt, ta relevanta certifieringar och snabbt bygga upp sin kompetens som professionella systemutvecklare. Det bästa sättet att kickstarta karriären är att gå Cygnis talangprogram!"
+    },
+    {
+      "name": "Saab",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_saab.png",
+      "offer": ["Exjobb", "Trainee", "Sommarjobb", "Anställning"],
+      "website": "https://saab.com/",
+      "info": "Saab AB är ett svenskt företag med huvudkontor i Stockholm med huvudsaklig inriktning mot högteknologi inom försvarsindustri, civil säkerhet samt luftfart. Företaget fokuserar på tre strategiska områden: försvars- och säkerhetslösningar, system och produkter samt aeronautik. Medverkar på MTD gör avdelningen som jobbar med flygsimulatorer."
+    },
+    {
+      "name": "Etteplan",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_etteplan.png",
+      "offer": ["Exjobb", "Anställning"],
+      "website": "https://www.etteplan.com/sv",
+      "info": "Vi är övertygade om att det krävs ett öppet sinne för att lösa de stora utmaningar som världen står inför. Med dina idéer kan vi utvecklas, förstå och skapa fler innovationer. Vi älskar teknik och människor, gör du också det? Då skulle du förmodligen gilla att arbeta som teknikkonsult.\n\nMed djupgående erfarenheter från flera branscher tillämpar vi vår kunskap inom tre områden: Engineering, Software och Inbyggda system samt Teknisk Dokumentation. Resultatet av Etteplans innovativa ingenjörskunnande syns i många av marknadens ledande industrilösningar och konsumentprodukter.\n\nHär finns många möjligheter för alla som brinner för att lära sig nytt och trivs med att utvecklas med kollegor. Nyfiken på att bli en i vårt team? Ta tillfället, kom och bekanta dig med oss och se om Etteplan är rätt för dig och din framtid!"
+    },
+    {
+      "name": "Gaia",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_gaia.png",
+      "offer": ["Exjobb", "Sommarjobb", "Anställning"],
+      "website": "https://gaia.se/",
+      "info": "Vi är experter inom IoT, modern systemutveckling, Business Intelligence och Machine Learning med Microsofts molnteknologi. Data och teknik är hörnstenarna i våra lösningar men alltid med användarupplevelsen i fokus. Från behovsanalys till lösningsdesign, från agil utveckling till kvalitetssäkring. Med andra ord, vi är involverade i att skapa värde i hela processen av digital transformation."
+    }
+  ],
+  "silver": [
+    {
+      "name": "SICK IVP",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_sick.png",
+      "offer": ["Exjobb", "Sommarjobb", "Anställning"],
+      "website": "https://www.sick.com/se/sv/",
+      "info": "SICK är en världsledande leverantör av sensorer och sensorlösningar för industriella tillämpningar. SICK-koncernen har ca 10 000 anställda runt om i världen och huvudkontoret ligger i Waldkirch, Tyskland. SICK i Linköping är kompetenscenter för Machine Vision. Teknikområdet består av 3D-avbildning och mjukvara för bildanalys och visualisering. SICK i Linköping sysselsätter ca 100 personer och finns i Science Park Mjärdevi."
+    },
+    {
+      "name": "Axis Communications",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_axiscommunications.png",
+      "offer": ["Exjobb", "Sommarjobb", "Anställning"],
+      "website": "https://www.axis.com/sv-se",
+      "info": "Adding new dimensions\n\nWe enable a smarter and safer world by creating network solutions to improve security and to find new ways of doing business.\n\nThe world is changing fast, and we make sure we stay ahead of those changes. We operate in the IT and security industries and have extended into the audio, voice over IP and building automation markets."
+    },
+    {
+      "name": "Lifesum",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_lifesum.png",
+      "offer": ["Anställning"],
+      "website": "https://lifesum.com/sv/",
+      "info": "Lifesum is a Stockholm-based digital health startup with a mission to help create a world full of healthy, happy people. Our approach to health is personalized and we hope to be the daily companion you need along the way. We rely on technology, data and behavioral science to provide you with the best possible experience in your journey toward health. \n\nAs a company, we are very proud of how far we’ve come, and how hard we are working to reach our own exciting goals for the future. While standing steadily on the foundation we’ve built over the years, our passion and devotion for what we are creating and building takes us forward every single day. \n\nDo you want to join us on our mission to help people live healthier and happier lives?"
+    },
+    {
+      "name": "Sveriges Radio",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_sverigesradio.png",
+      "offer": ["Exjobb", "Praktik", "Anställning"],
+      "website": "https://sverigesradio.se/",
+      "info": "\nAtt jobba på Sveriges Radio innebär att du kommer få vara med och driva utvecklingen av Sveriges Radios teknik som gör att vi kan fortsätta ligga i framkant och göra radio i världsklass. Vi säkerställer alla sändningar för våra lyssnare och mitt i händelsernas centrum blir du en viktig del av ett företag som värnar om demokrati, det fria ordet och alla människors lika värde. \nPå vår teknikenhet implementerar vi IT-lösningar som är både unika och världsledande och inom vissa områden är det vi som driver marknadens utveckling. För att kunna ta fram ny teknik i ett samhälle där allt går snabbare och snabbare måste vi vara föregångare i det nya, modiga utmanare i det oprövade och kritiska granskare av det självklara. \n"
+    }
+  ],
+  "brons": [
+    {
+      "name": "Sectra",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_sectra.png",
+      "offer": ["Exjobb", "Sommarjobb", "Anställning"],
+      "website": "https://sectra.com/",
+      "info": "Our customers operate in some of society’s most c+ritical functions. Our job is to help them become more efficient, and to give them the tools to make peoples’ lives healthier, safer and more secure. Driven by knowledge and passion, our vision is to contribute to a healthier and safer society. Sectra develops and sells cutting-edge solutions in the expanding niche segments of medical IT and secure communications. The Sectra Group has over 700 employees worldwide, and customers in over 60 countries.\n\nAt Sectra, we work with products that are beneficial for life and society. Do you want to join us and help make a difference?"
+    },
+    {
+      "name": "Digitalcap",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_digitalcap.png",
+      "offer": ["Sommarjobb", "Anställning"],
+      "website": "https://digitalcap.se/",
+      "info": "Sveriges yngsta och hungrigaste konsultföretag inom mjukvaruutveckling. \n"
+    },
+    {
+      "name": "Consid",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_consid.png",
+      "offer": ["Exjobb", "Anställning"],
+      "website": "https://consid.se/",
+      "info": "Vi är ett av Sveriges snabbast växande IT- och managementbolag med 1000 anställda fördelade på 19 kontor runtom i Sverige. Vi ser till att våra kunder blir bäst i världen på det de gör genom att ta vara på den digitala världens möjligheter."
+    },
+    {
+      "name": "VISIARC",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_visiarc.png",
+      "offer": ["Exjobb"],
+      "website": "https://visiarc.com/",
+      "info": "VISIARC är Sveriges första appstudio som designar och utvecklar kvalitetsappar. Vi är nu en erfaren design- och utvecklingsbyrå som erbjuder agil full-stack-utveckling av appar, webbappar och spel med tillhörande infrastruktur, även integrationer. Vi är passionerade och drivna innovatörer som kombinerar egen teknikutveckling av ramverk, verktyg och plattformar med innovativa konsultprojekt."
+    }
+  ],
+  "other": [
+    {
+      "name": "Ericsson",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_ericsson.png",
+      "offer": ["Exjobb", "Sommarjobb", "Anställning"],
+      "website": "https://ericsson.com/",
+      "info": "Ericsson empowers an intelligent, sustainable and connected world and we do it by relentlessly innovating technology that are easy to use, scale and adapt. \nThe core of Ericsson is our networks where we  connect you, via your device, to all that the world has to offer – calling home, listening to music or sharing the latest cat meme. With 5G we lay the foundation for the future – enabling smart manufacturing, self-driving cars, large scale IoT and more. \nCome by us at MTD and let us show you who we are. \nBecoming a part of us means we’ll give you access to hundreds of career opportunities in locations all over the world with the support to really find ‘your great’ and the ability to rediscover it, again and again.\nAre you in?"
+    },
+    {
+      "name": "Sveriges Ingenjörer",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_sverigesingenjorer.png",
+      "offer": ["Exjobb", "Praktik", "Trainee", "Sommarjobb", "Anställning"],
+      "website": "https://www.sverigesingenjorer.se/",
+      "info": "Vi är Sveriges största fackförbund och intresseorganisation för alla ingenjörer och teknologer. Vi hjälper dig att landa ditt drömjobb med hjälp av våra förmåner som CV-granskning, LinkedIn-granskning, intervjuträning m.m. Ett studentmedlemskap hos oss kostar 15kr/mån. Välkommen att börja ditt liv som ingenjör med oss!"
+    },
+    {
+      "name": "Significant Bit",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_sigbit.png",
+      "offer": ["Exjobb", "Praktik", "Sommarjobb", "Anställning"],
+      "website": "https://www.significantbit.se/",
+      "info": "Vi är en digital produktionsstudio i Norrköping som bygger det mesta som involverar teknik. Vi skapar produkter, upplevelser och värde till företag genom koncept, design och utveckling. That's it, mer eller mindre.\n"
+    },
+    {
+      "name": "Sogeti Sverige",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_sogeti.png",
+      "offer": ["Exjobb", "Anställning"],
+      "website": "https://www.sogeti.se/",
+      "info": "Sogeti levererar högkvalitativa IT-konsulttjänster på den lokala marknaden. I vår heltäckande tjänsteportfölj ryms IT-styrningstjänster, IT-specialisttjänster, utvecklings-, integrations- och migreringsprojekt, testning, systemförvaltning samt Rightshore-tjänster. Sogeti har cirka 23 000 medarbetare i 15 länder. Av dessa arbetar 1 150 konsulter vid företagets 21 svenska kontor."
+    },
+    {
+      "name": "Xamera",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_xamera.png",
+      "offer": ["Anställning"],
+      "website": "https://xamera.se/",
+      "info": "Xamera jobbar med att hjälpa unga ingenjörer inom IT och teknik att hitta rätt jobb efter examen. \n"
+    },
+    {
+      "name": "Cruitive",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_cruitive.png",
+      "offer": ["Exjobb"],
+      "website": "https://www.cruitive.com/",
+      "info": "Forna MTare som skapar ett smart rekryteringsverktyg, kom till oss för exjobb och blomjord."
+    },
+    {
+      "name": "Cybercom Group",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_cybercom.png",
+      "offer": ["Exjobb", "Sommarjobb", "Anställning"],
+      "website": "https://www.cybercom.com/sv/",
+      "info": "At Cybercom we are Makers of Tomorrow. By learning through experience, we know what really matters, and we apply our skills and creative use of technology to every client and situation in order to create truly unique solutions for the future. Our areas of expertise lie within Agile Teams, Digitalization, IoT, Cloud and Secure - Where do YOU find yourself in the future? "
+    },
+    {
+      "name": "MindRoad",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_mindroad.png",
+      "offer": ["Exjobb", "Anställning"],
+      "website": "https://www.mindroad.se/sv-SE",
+      "info": "MindRoad är ett företag som satsar på spetskompetens. Vi sätter en ära i att ha de mest kompetenta, engagerade och affärsmässiga medarbetarna. Hos oss är kunden, de anställda, kompetens, trivsel, tillväxt och strukturkapital ledorden."
+    },
+    {
+      "name": "IST Group",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_ist.png",
+      "offer": ["Exjobb", "Praktik", "Trainee", "Anställning"],
+      "website": "https://www.ist.com/sv",
+      "info": "IST is the leading Nordic supplier of support systems and resources for schools (educational institutions and organizations). For over 30 years, we have played a leading role in building the schools of tomorrow and a future where everyone has an opportunity to learn more. With modern and smart solutions and services within administration, learning and scheduling, we make the workday simpler and more efficient for all who work in and with schools, including pupils and teachers."
+    },
+    {
+      "name": "Academic Work Sweden",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_aws.png",
+      "offer": ["Trainee", "Sommarjobb", "Anställning"],
+      "website": "https://www.academicwork.se/",
+      "info": "Academic Work är Home of the Young Professionals. Vi arbetar med personaluthyrning och rekrytering av akademiker i början av sina karriärer. Det är vår nisch, vårt expertområde och en målgrupp vi tror på. Nyfiken på vad vi har för tjänster ute just nu? Kom förbi Academic Works monter så hjälper vi dig hitta din väg!"
+    },
+    {
+      "name": "Qlik",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_qlik.png",
+      "offer": ["Exjobb", "Sommarjobb", "Anställning"],
+      "website": "https://www.qlik.com/sv-se",
+      "info": "Qlik helps enterprises around the world move faster, work smarter, and lead the way forward with an end-to-end solution for getting value out of data. Our platform is the only one on the market that allows for open-ended, curiosity-driven exploration, giving everyone – at any skill level – the ability to make real discoveries that lead to real outcomes and transformative changes. We are a values-driven organization, operating over 100 countries with 45,000 customers around the world."
+    },
+    {
+      "name": "East Game Sweden",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_egs.png",
+      "offer": ["Praktik"],
+      "website": "http://eastswedengame.se/",
+      "info": "East Sweden Game är ett community och arbetsplats för alla som utvecklar dataspel. Vi erbjuder rådgivning, nätverk och världens bästa arbetsplats - gratis för studenter!"
+    },
+    {
+      "name": "AmberWing",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_amberwing.png",
+      "offer": ["Exjobb", "Praktik", "Trainee", "Anställning"],
+      "website": "https://amberwing.se/",
+      "info": "AmberWing är ett spelföretag som fokuserar på att skapa en franchise där story ligger till grund till spel. Teknisk innovation kombineras med kreativ frihet för att dels bygga företaget och dels medarbetarnas egna skills. AmberWing tror på att frihet under eget ansvar i längden leder till ökad kompetens, lojalitet, och resultat men framför allt livsglädje!"
+    },
+    {
+      "name": "InGenious",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_ingenious.png",
+      "offer": ["Exjobb", "Praktik", "Trainee", "Sommarjobb", "Anställning"],
+      "website": "https://www.in-gen.se/",
+      "info": "#799G52 är en tvärdisciplinär projektkurs på LiU där studenterna arbetar fram nya innovativa koncept, lösningar och idéer. Utmaningarna kommer direkt från det regionala näringslivet och skall ha en tydlig koppling till något av de globala målen i Agenda 2030."
+    },
+    {
+      "name": "Edvira",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_edvira.png",
+      "offer": ["Exjobb", "Anställning"],
+      "website": "https://edvira.com/",
+      "info": "Edvira jobbar forskningsbaserat med fokus på att göra tech-branchen mer inkluderande. I form av informationsvisualiseringar, propaganda och events. Kom förbi vår monter för att få reda på hur du kan bidra till en mer inkluderande bransch."
+    },
+    {
+      "name": "Embark Studios",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_embarkstudios.png",
+      "offer": ["Exjobb", "Praktik", "Trainee", "Anställning"],
+      "website": "https://www.embark-studios.com/",
+      "info": "\nWe empower everyone to create games\n\nTo realize this dream of ours, we explore and apply the latest technology, and we reimagine what games can become and how they should be built. All of us at Embark take part in shaping our culture. We succeed together, we fail together, and we learn together. If you’re passionate about games and our mission, bring your expertise, your enthusiasm, your crazy ideas, and let’s change the games industry forever. At Embark we offer a journey into the unknown, to build creative, surprising and beautiful experiences together."
+    },
+    {
+      "name": "FindOut Technologies",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_findouttechnologies.png",
+      "offer": ["Exjobb", "Sommarjobb", "Anställning"],
+      "website": "https://www.find-out.se/",
+      "info": "På FindOut får du utvecklas genom våra egna visualiseringsprodukter och \nhos våra kunder som teknikkonsult. Det kan innebära allt från \nfullstackutveckling till hårdvarunära programmering. Allt för att hjälpa\n våra kunder att bli bättre och effektivare. Vi kan erbjuda en tillvaro \nmed mycket driv, engagerade medarbetare som vill hjälpas åt att utveckla\n och utvecklas, där du har möjlighet att påverka din egen roll och \nbidrag. Ett intressant och hållbart arbetsliv är viktigt för oss!\n\nVi söker främst ingenjörer som är nyfikna, har ett grymt driv och älskar\n programmering.  De personliga egenskaperna är det som i slutändan avgör\n om du är en FindOut:are!"
+    },
+    {
+      "name": "We Know IT",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_weknowit.png",
+      "offer": ["Sommarjobb", "Anställning"],
+      "website": "https://weknowit.se/",
+      "info": "We Know IT är ett studentdrivet IT-konsultbolag med verksamhet i \nStockholm, Göteborg, Malmö/Lund och Linköping/Norrköping. Vi erbjuder \ntjänster inom app-, system- och webbutveckling samt bemanning. Vi \nanställer bara studenter och har många spännande partnerföretag med \nvilka vi har event och internutbildningar. Läs mer om oss på \nwww.weknowit.se"
+    },
+    {
+      "name": "Dimfrost Studio",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_dimfroststudio.png",
+      "offer": ["Exjobb", "Praktik", "Trainee", "Sommarjobb", "Anställning"],
+      "website": "https://dimfroststudio.com/",
+      "info": "Dimfrost, ett dotterbolag till Zordix (publ), är en Norrköpingsbaserad spelutvecklare med inriktningen story-drivna äventyrs- och strategispel.  2019 tilldelades Dimfrost Epic Games utvecklingsstöd, Epic MegaGrants för deras arbete med det egenutvecklade varumärket; Bramble. "
+    },
+    {
+      "name": "Polismyndigheten",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_polismyndigheten.png",
+      "offer": ["Exjobb", "Trainee", "Sommarjobb", "Anställning"],
+      "website": "https://polisen.se/",
+      "info": "Polismyndigheten består av sju polisregioner, fem gemensamma avdelningar, NOA, NFC och särskilda utredningar. Inom regionen så finns IT-relaterade jobb framförallt på NFC samt på polisens IT-avdelning."
+    },
+    {
+      "name": "Voysys",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_voysys.png",
+      "offer": ["Exjobb"],
+      "website": "https://www.voysys.se/",
+      "info": "Can Teleoperation outperform human presence?\n\nWe believe so, and that's our mission!\n\nThe Voysys in-house developed 3D render engine is optimized for ultra \nlow latency. Using our embedded streamer, low end-to-end latency may \nalso be accomplished over WIFI, 4G or 5G networks. \n\nThe render engine also allows for rendering of high-resolution gigantic \nscreens including cylindrical and spherical domes. Thanks to our \nflexible 3D editor, Voysys customers can create flexible screen layouts \noptimized for fleet monitoring and/or teleoperation. The operator can \nquickly switch between several screen presets in order to use the best \none for the current situation."
+    },
+    {
+      "name": "Bontouch",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_bontouch.png",
+      "offer": ["Exjobb", "Anställning"],
+      "website": "https://www.bontouch.com/",
+      "info": "Bontouch is an award-winning product innovation agency. We have all \nskills required for modern digital product development, including \nstrategy, design, development and maintenance.\n\nWe specialize in analog-to-digital experiences, using digital \ntechnologies to reduce friction in the real world. Built as a product \nstartup, we offer a unique long-term engagement model to our brand \npartners and become their software startup as-a-service.\n\nBy adding software as a “layer” on top of physical goods and services, \nwe help our clients to transform their customer experience, to \nsignificantly increase their rate of innovation, and to create \nsustainable differentiation in completely new areas. Ever since our \nstart in 2008, we have been fortunate enough to join up with amazing \nbrands such as Post-it®, Swedish Railways (SJ), PostNord and Swish."
+    },
+    {
+      "name": "Unitalent",
+      "logo": "http://thomasindrias.github.io/mtd/assets/logos/logo_unitalent.png",
+      "offer": ["Sommarjobb", "Anställning"],
+      "website": "https://unitalent.se/",
+      "info": "Unitalent erbjuder studenter vid Linköpings universitet kvalitativa, spännande och lärorika konsultuppdrag under studietiden. Konsultuppdragen ger dig som student möjligheten att skaffa värdefulla erfarenheter och kontakter i näringslivet samtidigt som du får chansen att utveckla din kompetens. Vi söker drivna och ambitiösa studenter som vill ta ett första kliv ut i arbetslivet."
+    }
+  ]
+}

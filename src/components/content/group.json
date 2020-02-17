@@ -1,6 +1,6 @@
 {
   "manager": {
-    "pic": "http://cdn.vlq.se/20-Philip.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Philip.png",
     "name": "Philip Ngo",
     "pos": {
       "en": "Project manager",
@@ -10,7 +10,7 @@
     "tel": "+46 725 799 874"
   },
   "economy": {
-    "pic": "http://cdn.vlq.se/20-Iris.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Iris.png",
     "name": "Iris Kotsinas",
     "pos": {
       "en": "Economy manager",
@@ -20,7 +20,7 @@
     "tel": "+46 735 108 508"
   },
   "business": {
-    "pic": "http://cdn.vlq.se/20-Emma.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Emma.png",
     "name": "Emma Segolsson",
     "pos": {
       "en": "Business contact",
@@ -30,7 +30,7 @@
     "tel": "+46 703 540 555"
   },
   "fair": {
-    "pic": "http://cdn.vlq.se/20-Simon.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Simon.png",
     "name": "Simon Brefält",
     "pos": {
       "en": "Fair manager",
@@ -40,7 +40,7 @@
     "tel": "+46 723 510 683"
   },
   "assistant": {
-    "pic": "http://cdn.vlq.se/20-August.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Agge.png",
     "name": "August Kroon",
     "pos": {
       "en": "Project assistant",
@@ -50,7 +50,7 @@
     "tel": "+46 738 200 077"
   },
   "lecture": {
-    "pic": "http://cdn.vlq.se/20-Marcus.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Marcus.png",
     "name": "Marcus Gladh",
     "pos": {
       "en": "Lecture coordinator",
@@ -60,7 +60,7 @@
     "tel": "+46 704 216 246"
   },
   "banquet": {
-    "pic": "http://cdn.vlq.se/20-Ebba.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Ebba.png",
     "name": "Ebba Nilsson",
     "pos": {
       "en": "Banquet manager",
@@ -70,7 +70,7 @@
     "tel": "+46 707 739 902"
   },
   "tech": {
-    "pic": "http://cdn.vlq.se/20-Max.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Max.png",
     "name": "Max Skanvik",
     "pos": {
       "en": "Technical coordinator",
@@ -80,7 +80,7 @@
     "tel": "+46 703 101 620"
   },
   "pr": {
-    "pic": "http://cdn.vlq.se/20-William.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-William.png",
     "name": "William Uddmyr",
     "pos": {
       "en": "PR manager",
@@ -90,7 +90,7 @@
     "tel": "+46 760 165 455"
   },
   "coordinator": {
-    "pic": "http://cdn.vlq.se/20-Isak.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Isak.png",
     "name": "Isak Engström",
     "pos": {
       "en": "Coordinator",
@@ -100,7 +100,7 @@
     "tel": "+46 761 358 900"
   },
   "web": {
-    "pic": "http://cdn.vlq.se/20-Victor.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Victor.png",
     "name": "Victor Lindquist",
     "pos": {
       "en": "Web manager",
@@ -110,7 +110,7 @@
     "tel": "+46 707 755 138"
   },
   "print": {
-    "pic": "http://cdn.vlq.se/20-Henrik.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Henrik.png",
     "name": "Henrik Rosander",
     "pos": {
       "en": "Print manager",
@@ -120,7 +120,7 @@
     "tel": "+46 760 637 811"
   },
   "app": {
-    "pic": "http://cdn.vlq.se/20-Thomas.jpeg",
+    "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content/master/images/group/20-Thomas.png",
     "name": "Thomas Indrias",
     "pos": {
       "en": "App manager",

@@ -14,20 +14,20 @@
   #studentExpoForm {
     width: 100%;
     border: none;
-    height: 1950px;
+    height: 2000px;
     transition: all 0.3s ease;
 
     @media screen and (max-width: 625px) {
-      height: 2050px;
+      height: 2100px;
       
       @media screen and (max-width: 502px) {
-        height: 2160px;
+        height: 2200px;
 
         @media screen and (max-width: 414px) {
-          height: 2230px;
+          height: 2270px;
 
           @media screen and (max-width: 382px) {
-            height: 2280px;
+            height: 2300px;
 
             @media screen and (max-width: 360px) {
               height: 2450px;

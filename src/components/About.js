@@ -43,7 +43,6 @@ class About extends Component {
 			lang: props.lang,
 			MTinfoSHOWN: false,
 			width: null,
-			mtdSphereVideoLeft: null,
 			scrollUpButtonStyle: { display: "none" },
 			scrollInterval: null,
 			nav: 0
@@ -104,12 +103,7 @@ class About extends Component {
 	}
 
 	handleResize(e = null) {
-		if(isBrowser) {
-			const mtdSphereVideoWidth = document.getElementById("mtdSphereVideo").scrollWidth;
-			const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
-			this.setState({ mtdSphereVideoLeft: {left: (viewportWidth - mtdSphereVideoWidth)/2} });
-		}
+		return;
 	}
 
 	isAtTopOfElement(element) {
@@ -269,7 +263,7 @@ class About extends Component {
 		let video = null;
 		if(isBrowser) {
       video = (
-				<video autoPlay muted preload="auto" playsInline id="mtdSphereVideo" style={this.state.mtdSphereVideoLeft}>
+				<video autoPlay muted preload="auto" playsInline id="mtdSphereVideo">
 					<source src={mtdSphereVideoAnimation} type="video/mp4"/>
 				</video>
 			);

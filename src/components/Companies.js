@@ -225,8 +225,8 @@ class Companies extends Component {
 					<div key={index} className="companyWrap">
 						<Link to={settings.url + "companies/" + item.inURL} id={item.name.split(' ').join('-').toLowerCase()} className="company">
 							<img src={image} alt={alt}/>
-							<h3>{item.name}</h3>
-							<p className="readMore">{content[this.state.lang].press}</p>
+							<h3 lang="de">{item.name}</h3>
+							<p lang="de" className="readMore">{content[this.state.lang].press}</p>
 						</Link>
 					</div>
 				);
@@ -256,8 +256,8 @@ class Companies extends Component {
 					<div key={index} className="companyWrap">
 						<Link to={settings.url + "companies/" + item.inURL} id={item.name.split(' ').join('-').toLowerCase()} className="company">
 							<img src={image} alt={alt}/>
-							<h3>{item.name}</h3>
-							<p className="readMore">{content[this.state.lang].press}</p>
+							<h3 lang="de">{item.name}</h3>
+							<p lang="de" className="readMore">{content[this.state.lang].press}</p>
 						</Link>
 					</div>
 				);
@@ -287,8 +287,8 @@ class Companies extends Component {
 					<div key={index} className="companyWrap">
 						<Link to={settings.url + "companies/" + item.inURL} id={item.name.split(' ').join('-').toLowerCase()} className="company">
 							<img src={image} alt={alt}/>
-							<h3>{item.name}</h3>
-							<p className="readMore">{content[this.state.lang].press}</p>
+							<h3 lang="de">{item.name}</h3>
+							<p lang="de" className="readMore">{content[this.state.lang].press}</p>
 						</Link>
 					</div>
 				);
@@ -318,8 +318,8 @@ class Companies extends Component {
 					<div key={index} className="companyWrap">
 						<Link to={settings.url + "companies/" + item.inURL} id={item.name.split(' ').join('-').toLowerCase()} className="company">
 							<img src={image} alt={alt}/>
-							<h3>{item.name}</h3>
-							<p className="readMore">{content[this.state.lang].press}</p>
+							<h3 lang="de">{item.name}</h3>
+							<p lang="de" className="readMore">{content[this.state.lang].press}</p>
 						</Link>
 					</div>
 				);
@@ -349,7 +349,7 @@ class Companies extends Component {
 					<div key={index} className="companyWrap">
 						<Link to={settings.url + "companies/" + item.inURL} id={item.name.split(' ').join('-').toLowerCase()} className="company">
 							<img src={image} alt={alt}/>
-							<h3>{item.name}</h3>
+							<h3 lang="de">{item.name}</h3>
 							<p className="readMore">{content[this.state.lang].press}</p>
 						</Link>
 					</div>

@@ -1,0 +1,94 @@
+{
+  "events": [
+    {
+      "title": "Pre-MTD: Lyckohjulet - lunchföreläsning med Cygni",
+      "host": "Tommy Wassgren",
+      "time": "12.15-13.00",
+      "start": "2020-02-21T11:15:00+0000",
+      "end": "2020-02-21T12:00:00+0000",
+      "place": "K4",
+      "image": "https://cygni.se/content/images/2019/10/tobe-on-stage.jpg"
+    },
+    {
+      "title": "Pre-MTD: Lunchföreläsning med Spotify",
+      "host": "Spotify",
+      "time": "12.15-13.00",
+      "start": "2020-02-24T11:15:00+0000",
+      "end": "2020-02-24T12:00:00+0000",
+      "place": "K4",
+      "image": "https://www.scdn.co/i/_global/open-graph-default.png"
+    },
+    {
+      "title": "Pre-MTD: Workshop med Spotify",
+      "host": "Spotify",
+      "time": "17.15-19.00",
+      "start": "2020-02-24T16:15:00+0000",
+      "end": "2020-02-24T18:00:00+0000",
+      "place": "Färgeriet",
+      "image": "https://smp.vgc.no/v2/images/429bb6da-dfe1-4b89-a187-c735bfc46a2d?fit=crop&h=1068&w=1900&s=043a6c45b14e3e35f661d3e623991772d141f9be"
+    },
+    {
+      "title": "Pre–MTD: Flyga Gripen i VR - lunchföreläsning med SAAB",
+      "host": "Stefan Furenbäck",
+      "time": "12.15-13.00",
+      "start": "2020-02-26T11:15:00+0000",
+      "end": "2020-02-26T12:00:00+0000",
+      "place": "K4",
+      "image": "https://saab.com/globalassets/scaled/720x431x80/gripen-com-the-fighter-gripen-e/gripen-e_oar_2340.jpg"
+    },
+    {
+      "title": "Pre-MTD: Pub!",
+      "host": "MTD",
+      "time": "19.00-21.00",
+      "start": "2020-02-27T18:00:00+0000",
+      "end": "2020-02-27T20:00:00+0000",
+      "place": "Vattentornet",
+      "image": "https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/14711524_1150412625006349_218523826989745252_o.png?_nc_cat=106&_nc_ohc=syQTcfqfyJoAX94EJpn&_nc_ht=scontent-arn2-1.xx&oh=c63ebc874aefcee035a9d8f371966958&oe=5EC4AC51"
+    },
+    {
+      "title": "Pre-MTD: Värd-kickoff med Gaia!",
+      "host": "Gaia",
+      "time": "17.30-21.00",
+      "start": "2020-03-03T16:30:00+0000",
+      "end": "2020-03-03T20:00:00+0000",
+      "place": "Gaias kontor, Kungsgatan 56",
+      "image": "https://gfmgaiase.blob.core.windows.net/media/2019/05/header-2019-3-blue.jpg"
+    },
+    {
+      "title": "Mässan Öppnar!",
+      "host": "MTD",
+      "time": "09.00-16.00",
+      "start": "2020-03-05T08:00:00+0000",
+      "end": "2020-03-05T08:15:00+0000",
+      "place": "Trappan",
+      "image": "https://lh3.googleusercontent.com/IDvO5OJL9b1382CMP-kjXUFInQDRcBH30PpViJEPCNaos-Cj8UOvyPwKeONmPNkOmik4cqcr6FcMSfAWttvnlHJ9q3-7NbN24etwzghfwtGsbokOc2t8-TWLUlAu68xBhDJShmp4586z6L50izizBq9si_n-RnBnnzBjOFnu_i0Z6HAvq3rNN00E4nDwlxHIxiTkcZ5BDgXVUnLIua9dToYMAfoS6nR9gpgc1R3vAY9F3ubwt5h_pctTI_jBlmyOmXkV1D7JhxSkcdtzmVp-wyIDX8P3oTuhn6lYhinPvg5yH-q2f3HNuK-swnDi9IqiyA-V4JzQUNGE-U0GPwIk2_8P2pGDBBj94lvHp3UNerWmYiC1AHKYUILTmoMysNSlaw2_H6DCqBsWtkSWOxxiaAs0G58xo72hKnAPyrAHyOaWcYbkR7ztr9Pb5t6LbXWprD_e78Yfx_vtlVNa2TkF7Opdbrj_RM42yGrSZixpKRnXPh8cHqVqzW9PzeH_u2ZPQixPW8bg68ZQrI-yfnwSBQexUz9tXHrQ94Gmj7EbXGXsAwSQbyShgiyTR12mSakcH4nzfoXTRhxkIJHXItxOhgTG8jvgCV5y68DlqmKm-Sod-Z_uuJDL_dBqHUnamzP0e_nGuAlnp4UmfimyPuL6Ul_BOE_h6ZpLYslJghWKttpVMNjKGBNqAmZovQEQC40=w2880-h1652-ft"
+    },
+    {
+      "title": "Föreläsning med Important Looking Pirates!",
+      "host": "Important Looking Pirates",
+      "time": "09.15-10.00",
+      "start": "2020-03-05T08:15:00+0000",
+      "end": "2020-03-05T09:00:00+0000",
+      "place": "TP1",
+      "image": "http://ilpvfx.com/img/c7f0eb60b8f5353d/eye.png"
+    },
+    {
+      "title": "Föreläsning med OpenSpace!",
+      "host": "-",
+      "time": "13.15-14.00",
+      "start": "2020-03-05T12:15:00+0000",
+      "end": "2020-03-05T13:00:00+0000",
+      "place": "TP1",
+      "image": "https://lh3.googleusercontent.com/IDvO5OJL9b1382CMP-kjXUFInQDRcBH30PpViJEPCNaos-Cj8UOvyPwKeONmPNkOmik4cqcr6FcMSfAWttvnlHJ9q3-7NbN24etwzghfwtGsbokOc2t8-TWLUlAu68xBhDJShmp4586z6L50izizBq9si_n-RnBnnzBjOFnu_i0Z6HAvq3rNN00E4nDwlxHIxiTkcZ5BDgXVUnLIua9dToYMAfoS6nR9gpgc1R3vAY9F3ubwt5h_pctTI_jBlmyOmXkV1D7JhxSkcdtzmVp-wyIDX8P3oTuhn6lYhinPvg5yH-q2f3HNuK-swnDi9IqiyA-V4JzQUNGE-U0GPwIk2_8P2pGDBBj94lvHp3UNerWmYiC1AHKYUILTmoMysNSlaw2_H6DCqBsWtkSWOxxiaAs0G58xo72hKnAPyrAHyOaWcYbkR7ztr9Pb5t6LbXWprD_e78Yfx_vtlVNa2TkF7Opdbrj_RM42yGrSZixpKRnXPh8cHqVqzW9PzeH_u2ZPQixPW8bg68ZQrI-yfnwSBQexUz9tXHrQ94Gmj7EbXGXsAwSQbyShgiyTR12mSakcH4nzfoXTRhxkIJHXItxOhgTG8jvgCV5y68DlqmKm-Sod-Z_uuJDL_dBqHUnamzP0e_nGuAlnp4UmfimyPuL6Ul_BOE_h6ZpLYslJghWKttpVMNjKGBNqAmZovQEQC40=w2880-h1652-ft"
+    },
+    {
+      "title": "MTD Banketten!!",
+      "host": "MTD",
+      "time": "19.00-01.00",
+      "start": "2020-03-05T18:00:00+0000",
+      "end": "2020-03-06T00:00:00+0000",
+      "place": "Louis De Geer konsert & kongress",
+      "image": "https://lh3.googleusercontent.com/PumA1bQVKmxFQg54HBQ2qtlA62Xv5Dy8Vjtus04qL8PQDVzV-q04gp3WzgOTpnctouP4G0jAUW7FsLv8nOwLaMBC1s9VD_RledOWDO1pMA8Dy54NyqPjiEieDiYafUviiTDEmeS179pkNyFhrdG73UZ1X2-1AwBDaW4kuKq59Tj3AX4hGR1RWf-LRfQ7BoIZpgEQ_Ueh3F5VbOHYosTnEAlvnQ7ZopWILnLsfJqlTnr7b3jGF4cxtth2XKSUmXUqcVN7GIl3vB__20sU9jIu3uBMmR_P8rWP3A_Qqwg1pMCvgCmVq6d-o6QySzGYSt5afoQzllvcN9Dy0d9hs3BbbV3kkQ5tCRfgQ2Tc3zgdsrf5pV8F1X2CEQWomm6ML5uVXQCVMbQOoH5swJmiGUPa50ql4tfZfRRRkXH7xwjUbCKWLjduQzG2cAureB9aqH_pC7zOdWU3PpfDeD_1oa5VYtObDANtoiuMDf_kQEV0JLKP3xkTaYueGNPn0otRgLWxYv_SF8_uVXKEUaRZt2dhZT1Bb4IjSGBkY9-KdM8_Jokq_TZeb6E-X1XaUbbMv7EQf891rf_01XJIrT_J3eUpFjMpyNmb203TtTwkrq25Jj_AP0QheFhoZcROq1oB0AVyifaBIZegFtAS_MnpCoAt-FtQNrQaX-R9qS8QFAhjfnrE2uygc1_NIm0RMnhw-To=w2880-h1652-ft"
+    }
+  ]
+}

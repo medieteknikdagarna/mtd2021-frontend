@@ -34,8 +34,8 @@
 
   #mtdSphereVideoContainer {
     // display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    // flex-flow: row nowrap;
+    // justify-content: center;
     margin-left: calc(calc(-100vw + 100%)/2);
     width: 100vw;
     height: 100vh;
@@ -53,10 +53,17 @@
     #mtdSphereVideo {
       position: absolute;
       z-index: -10;
-      // left: -500px;
-      min-height: 100vh;
-      min-width: 100vw;
+      left: 48%;
+      top: 50%;
+      transform: translate(-48%, -50%);
+      display: block;
 
+      @media screen and (max-aspect-ratio: 1920/1080) {
+        height: 100%;
+      }
+      @media screen and (min-aspect-ratio: 1920/1080) {
+        width: 100%;
+      }
     }
   }
 
@@ -495,21 +502,17 @@
         }
 
         @media screen and (max-width: $ipad) {
-          #lecturer_1 .lecturerImage {
-            background-position: center;
-          }
+          // #lecturer_1 .lecturerImage {
+          //   background-position: center;
+          // }
           #lecturer_2 .lecturerImage {
-              background-position: -200px center;
+            background-position: 0 center;
           }
-          #lecturer_3 .lecturerImage {
-              background-position: -500px center;
-
-              @media screen and (max-width: $bigPhone) {
-                background-position: -600px center;
-              }
-          }
+          // #lecturer_3 .lecturerImage {
+          //   // background-position: -30px center;
+          // }
           #lecturer_4 .lecturerImage {
-              background-position: -450px center;
+            background-position: center center;
           }
         }
       }
