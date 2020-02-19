@@ -14,6 +14,7 @@
     "bowser": "^2.0.0-beta.3",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
+    "express-static-gzip": "^2.0.6",
     "flatted": "^2.0.1",
     "handlebars": "^4.5.3",
     "iframe-resizer-react": "^1.0.1",
@@ -62,7 +63,6 @@
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "express-static-gzip": "^2.0.6"
+    "babel-register": "^6.26.0"
   }
 }
