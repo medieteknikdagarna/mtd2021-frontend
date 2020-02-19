@@ -74,47 +74,36 @@ class Home extends Component {
 			beamerAnimation_move: 100,
 			beamerAnimation_opacity: 1,
 			beamerAnimation_info_move: 0,
-			generalInfo_move: 0,
-			generalInfo_move_background: 100,
 		};
 
 		this.handleScroll = this.handleScroll.bind(this);
 	}
 
 	handleScroll(e = null) {
-		const scrollValue = window.scrollY;
+		// const scrollValue = window.scrollY;
 		let beamerSharebar = document.getElementById("beamerSharebar");
 		let homeChevron_down = document.getElementById("homeChevron_down");
-		let welcomeTextTitle = document.getElementById("welcomeTextTitle");
 
-		if(scrollValue < 1300) {
-			let beamerAnimation_move = this.state.beamerAnimation_move;
-			let beamerAnimation_opacity = this.state.beamerAnimation_opacity;
-			let beamerAnimation_info_move = this.state.beamerAnimation_info_move;
-			let generalInfo_move = this.state.generalInfo_move;
-			let generalInfo_move_background = this.state.generalInfo_move_background;
+		// if(scrollValue < 1300) {
+		// 	let beamerAnimation_move = this.state.beamerAnimation_move;
+		// 	let beamerAnimation_opacity = this.state.beamerAnimation_opacity;
+		// 	let beamerAnimation_info_move = this.state.beamerAnimation_info_move;
 
-			beamerAnimation_move = 100 - scrollValue/16;
-			beamerAnimation_opacity = (100 - scrollValue/35) / 100;
-			beamerAnimation_info_move = -scrollValue * 0.4;
+		// 	beamerAnimation_move = 100 - scrollValue/16;
+		// 	beamerAnimation_opacity = (100 - scrollValue/35) / 100;
+		// 	beamerAnimation_info_move = -scrollValue * 0.4;
 
-			generalInfo_move = -scrollValue * 0.5;
-			generalInfo_move_background = -(20*beamerAnimation_move - welcomeTextTitle.getBoundingClientRect().top)/20;
+		// 	this.setState({ beamerAnimation_move, beamerAnimation_opacity, beamerAnimation_info_move });
+		// }
 
-			this.setState({ beamerAnimation_move, beamerAnimation_opacity, beamerAnimation_info_move, generalInfo_move, generalInfo_move_background });
-		}
+		// if(scrollValue > 1300) {
+		// 	let beamerAnimation_opacity = this.state.beamerAnimation_opacity;
 
-		if(scrollValue > 1300) {
-			let beamerAnimation_opacity = this.state.beamerAnimation_opacity;
-			let generalInfo_move = this.state.generalInfo_move;
+		// 	beamerAnimation_opacity = (100 - scrollValue/35) / 100;
+		// 	beamerAnimation_opacity = beamerAnimation_opacity < 0 ? 0 : beamerAnimation_opacity;
 
-			beamerAnimation_opacity = (100 - scrollValue/35) / 100;
-			beamerAnimation_opacity = beamerAnimation_opacity < 0 ? 0 : beamerAnimation_opacity;
-
-			generalInfo_move = -scrollValue * 0.5;
-
-			this.setState({ beamerAnimation_opacity, generalInfo_move });
-		}
+		// 	this.setState({ beamerAnimation_opacity });
+		// }
 
 		if(window.scrollY > 0) {
 			beamerSharebar.classList.add("after");
@@ -182,15 +171,15 @@ class Home extends Component {
 			<div id="homeWrap">
 				<div id="beamerImage"
 					style={{
-						backgroundPosition: `50% ${this.state.beamerAnimation_move}%`,
-						opacity: this.state.beamerAnimation_opacity
+						// backgroundPosition: `50% ${this.state.beamerAnimation_move}%`,
+						// opacity: this.state.beamerAnimation_opacity
 					}}
 				/>
 				<div id="beamerWrap">
 					<div id="beamerInfo"
 						style={{
-							top: `${this.state.beamerAnimation_info_move}px`,
-							opacity: this.state.beamerAnimation_opacity
+							// transform: `translate(0, ${this.state.beamerAnimation_info_move}px)`,
+							// opacity: this.state.beamerAnimation_opacity
 						}}
 					>
 						<h3>{general[this.state.lang].name + " " + general.year}</h3>
@@ -227,30 +216,26 @@ class Home extends Component {
 				<div id="landingContent">
 					<div id="generalInfo"
 						style={{
-							top: `${this.state.generalInfo_move}px`
+							// top: `${this.state.generalInfo_move}px`
+							// transform: `translate(0, ${this.state.beamerAnimation_info_move}px)`
 						}}
 					>
 						<h1>
-							<span id="welcomeTextTitle"
-								style={{
-									backgroundPosition: `50% ${this.state.generalInfo_move_background}%`
-								}}
-							>
+							<span id="welcomeTextTitle">
 								{home[this.state.lang].welcome}
 							</span>
 						</h1>
 						<p>
-							<span
-								style={{
-									backgroundPosition: `50% ${this.state.generalInfo_move_background}%`
-								}}
-							>
+							<span>
 								{home[this.state.lang].welcomeText}
 								<Link to={settings.url + "about/"}>{home[this.state.lang].welcomeReadMore}</Link>
 							</span>
 						</p>
 					</div>
-					{}<h1 className="stickyHeading">
+
+					<div className="deadspace"/>
+
+					<h1 className="stickyHeading">
 						{home[this.state.lang].partnerTitle}
 					</h1>
 					<div id="partners">
@@ -264,7 +249,7 @@ class Home extends Component {
 						<div className="silverPartners">
 							{silverComp}
 						</div>
-					</div>{}
+					</div>
 				</div>
 
 				{/*}

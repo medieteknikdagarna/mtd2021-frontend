@@ -11,7 +11,8 @@ import general from "./content/general.json";
 
 import '../css/header.scss';
 
-import logo from '../bilder/logo.svg';
+import logo_regular from '../bilder/logo.svg';
+import logo_white from '../bilder/white.svg';
 
 class Header extends Component {
 	constructor(props) {
@@ -44,7 +45,6 @@ class Header extends Component {
 		this.accountClose = this.accountClose.bind(this);
 		this.accountSelect = this.accountSelect.bind(this);
 		this.imageload = this.imageload.bind(this);
-		this.setTitle = this.setTitle.bind(this);
 		this.hoverBrand = this.hoverBrand.bind(this);
 		this.notHoverBrand = this.notHoverBrand.bind(this);
 	}
@@ -88,13 +88,13 @@ class Header extends Component {
 
 		if(scrollValue <= 30) {
 			scrolledClass = "";
-			logo = require('../bilder/logo.svg');
+			logo = logo_regular;
 
 			if(nav[3] === "" || nav[3] === "about" || nav[3] === "companies") {
 				const isOnSubpageOfAbout = (nav[4] === "" && nav[3] === "about");
 				if(isOnSubpageOfAbout || nav[3] === "" || nav[3] === "companies") {
 					this.headerRef.current.classList.add("transparent");
-					logo = require('../bilder/white.svg');
+					logo = logo_white;
 				}
 			}
 		}
@@ -102,22 +102,18 @@ class Header extends Component {
 			this.headerRef.current.classList.remove("transparent");
 
 			scrolledClass = "scrolled";
-			logo = require('../bilder/logo.svg');
+			logo = logo_regular;
 		}
 
-		// if(scrollValue >= 30) {
-		// 	this.headerRef.current.classList.remove("transparent");
-		// 	scrolledClass = "scrolled";
-		// 	logo = require('../bilder/logo.svg');
-		// }
-
-		this.setState({ scrolledClass });
+		if(this.state.scrolledClass !== scrolledClass) {
+			this.setState({ scrolledClass });
+		}
 
 		if(this.state.logo !== logo) {
 			this.setState({ logo });
 		}
 
-		this.handleResize();
+		// this.handleResize();
 	}
 
 	hoverBrand() {
@@ -155,15 +151,6 @@ class Header extends Component {
 	imageload(e) {
 		e.target.style.display = "block";
 		e.target.parentNode.childNodes[0].style.display = "none";
-	}
-
-	setTitle() {
-		// try {
-		// 	document.title = `${content[this.state.lang][this.props.navSelect].title} - ${general[this.state.lang].name} ${general.year}`;
-		// }
-		// catch(e) {
-		// 	document.title = `${general[this.state.lang].name} ${general.year} - ${general[this.state.lang].date}, ${general.city}`;
-		// }
 	}
 
 	navUpdate(oldNav = "") {
@@ -244,7 +231,6 @@ class Header extends Component {
 			}
 
 			this.setState({ logo });
-			this.setTitle();
 		}
 	}
 
@@ -270,9 +256,9 @@ class Header extends Component {
 	async componentDidMount() {
 		window.addEventListener("scroll", this.handleScroll);
 		window.addEventListener("resize", this.handleResize);
-		['webkitTransitionEnd', 'transitionend', 'msTransitionEnd', 'oTransitionEnd'].forEach( evt =>
-    	this.headerRef.current.addEventListener(evt, this.handleResize)
-		);
+		// ['webkitTransitionEnd', 'transitionend', 'msTransitionEnd', 'oTransitionEnd'].forEach( evt =>
+    // 	this.headerRef.current.addEventListener(evt, this.handleResize)
+		// );
 
 		this.navUpdate();
 		this.handleResize();
@@ -352,7 +338,7 @@ class Header extends Component {
 							<FontAwesomeIcon icon={['fas', 'times']} className="fa" id="closeNavButton" onClick={this.hideHamburger}/>
 						</div>
 						<nav id="nav">
-							<img id="navLogo" src={logo} alt="logo" className={this.state.scrolledClass}/>
+							<img id="navLogo" alt="logo" className={this.state.scrolledClass}/>
 							<Link to={settings.url} id="home" onMouseEnter={this.hoverBrand} onMouseLeave={this.notHoverBrand} onClick={this.hideHamburger}>
 								{content[this.state.lang].home.title}
 							</Link>
@@ -429,7 +415,7 @@ class Header extends Component {
 
 						<div id="navbar">
 							<nav id="nav">
-								<img id="navLogo" src={logo} alt="logo" className={this.state.scrolledClass}/>
+								<img id="navLogo" src={logo_regular} alt="logo" className={this.state.scrolledClass}/>
 								<Link to={settings.url} id="home" style={this.state.borderBottom} onMouseEnter={this.hoverBrand} onMouseLeave={this.notHoverBrand}>
 									{content[this.state.lang].home.title}
 								</Link>

@@ -13,27 +13,55 @@ import previous from "../components/content/previous.json";
 import '../css/about.scss';
 import imageCarouselStyles from '../css/wholeWidth_narrowHeight_ImageCarousel.module.scss';
 
-import mtLogo from '../bilder/MTlogo.png';
+// import mtLogo from '../bilder/MTlogo.png';
 import mtdSphere from '../bilder/logo.svg';
 
-import fairpic1 from '../bilder/fairpictures/fairpic1.jpg';
-import fairpic2 from '../bilder/fairpictures/fairpic2.jpg';
-import fairpic3 from '../bilder/fairpictures/fairpic3.jpg';
-import fairpic4 from '../bilder/fairpictures/fairpic4.jpg';
-import fairpic5 from '../bilder/fairpictures/fairpic5.jpg';
-import fairpic6 from '../bilder/fairpictures/fairpic6.jpg';
+// import fairpic1 from '../bilder/fairpictures/fairpic1.jpg';
+// import fairpic2 from '../bilder/fairpictures/fairpic2.jpg';
+// import fairpic3 from '../bilder/fairpictures/fairpic3.jpg';
+// import fairpic4 from '../bilder/fairpictures/fairpic4.jpg';
+// import fairpic5 from '../bilder/fairpictures/fairpic5.jpg';
+// import fairpic6 from '../bilder/fairpictures/fairpic6.jpg';
 
-import lecturePic1 from '../bilder/lecturers/1.jpg';
-import lecturePic2 from '../bilder/lecturers/2.jpg';
-import lecturePic3 from '../bilder/lecturers/3.jpg';
-import lecturePic4 from '../bilder/lecturers/4.jpg';
+// import lecturePic1 from '../bilder/lecturers/1.jpg';
+// import lecturePic2 from '../bilder/lecturers/2.jpg';
+// import lecturePic3 from '../bilder/lecturers/3.jpg';
+// import lecturePic4 from '../bilder/lecturers/4.jpg';
 
 import mtdSphereVideoAnimation from '../bilder/mtdSphereVideo/intro_snabbt_motionblur.mp4';
-import mtdSphereVideoAnimation_still from '../bilder/mtdSphereVideo/MTDSphereVideo_still.jpg';
+// import mtdSphereVideoAnimation_still from '../bilder/mtdSphereVideo/MTDSphereVideo_still.jpg';
 
-const fairpics = [fairpic1, fairpic2, fairpic3, fairpic4, fairpic5, fairpic6];
+var supportsWebP = (function () {
+	var index = new Promise(function (resolve) {
+		var image = new Image();
+		image.onerror = function () { return resolve(false); };
+		image.onload = function () { return resolve(image.width === 1); };
+		image.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=';
+	}).catch(function () { return false; });
+	
+	return index;
+	
+}());
 
-const lecturePics = [lecturePic1, lecturePic2, lecturePic3, lecturePic4];
+let fairpics = "";
+let lecturePics = "";
+let mtLogo = "";
+let mtdSphereVideoAnimation_still = "";
+console.log(supportsWebP);
+
+if(supportsWebP) {
+	mtdSphereVideoAnimation_still = require('../bilder/mtdSphereVideo/MTDSphereVideo_still.webp');
+	mtLogo = require('../bilder/MTlogo.webp');
+	fairpics = [require('../bilder/fairpictures/fairpic1.webp'), require('../bilder/fairpictures/fairpic2.webp'), require('../bilder/fairpictures/fairpic3.webp'), require('../bilder/fairpictures/fairpic4.webp'), require('../bilder/fairpictures/fairpic5.webp'), require('../bilder/fairpictures/fairpic6.webp')];
+	lecturePics = [require('../bilder/lecturers/1.webp'), require('../bilder/lecturers/2.webp'), require('../bilder/lecturers/3.webp'), require('../bilder/lecturers/4.webp')];
+}
+else{
+	mtdSphereVideoAnimation_still = require('../bilder/mtdSphereVideo/MTDSphereVideo_still.jpg');
+	mtLogo = require('../bilder/MTlogo.png');
+	fairpics = [require('../bilder/fairpictures/fairpic1.jpg'), require('../bilder/fairpictures/fairpic2.jpg'), require('../bilder/fairpictures/fairpic3.jpg'), require('../bilder/fairpictures/fairpic4.jpg'), require('../bilder/fairpictures/fairpic5.jpg'), require('../bilder/fairpictures/fairpic6.jpg')];
+	lecturePics = [require('../bilder/lecturers/1.jpg'), require('../bilder/lecturers/2.jpg'), require('../bilder/lecturers/3.jpg'), require('../bilder/lecturers/4.jpg')];
+}
+
 
 class About extends Component {
 	constructor(props) {
