@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Map from './modifiedModules/pigeon-maps-modified';
+import Map from './modifiedModules/pigeon-maps-modified/lib';
 import Marker from 'pigeon-marker';
 // import Overlay from 'pigeon-overlay';
 
@@ -8,7 +8,7 @@ import '../css/maps.scss';
 
 import content from "../components/content/contact.json";
 
-class Maps extends Component {
+class GlobalMaps extends Component {
 	constructor(props) {
 		super(props);
 
@@ -88,4 +88,4 @@ class Maps extends Component {
 	}
 }
 
-export default Maps;
+export default GlobalMaps;

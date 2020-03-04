@@ -21,9 +21,10 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Companies from "./components/Companies";
-import Studentexpo from "./components/Studentexpo";
+// import Studentexpo from "./components/Studentexpo";
 import Lectures from "./components/Lectures";
-import Pictures from "./components/Pictures";
+import CompanyMap from "./components/CompanyMap";
+// import Pictures from "./components/Pictures";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -89,10 +90,11 @@ const staticSites = [
 	{url: "", comp: Home, active: true},
 	{url: "about", comp: About, active: true},
 	{url: "contact", comp: Contact, active: true},
-	{url: "studentexpo", comp: Studentexpo, active: true},
+	// {url: "studentexpo", comp: Studentexpo, active: true},
 	{url: "companies", comp: Companies, active: true},
 	{url: "lectures", comp: Lectures, active: false},
-	{url: "pictures", comp: Pictures, active: false}
+	{url: "map", comp: CompanyMap, active: true},
+	// {url: "pictures", comp: Pictures, active: false}
 ];
 
 class App extends Component {
@@ -382,13 +384,14 @@ class Static extends Component {
 						<Route exact path={settings.url + "contact/:subpage/"} render={(props) => <Contact {...props} lang={this.state.lang} />}/>
 						<Route exact path={settings.url + "companies/"} render={(props) => <Companies {...props} lang={this.state.lang} />}/>
 						<Route exact path={settings.url + "companies/:companyID/"} render={(props) => <Companies {...props} lang={this.state.lang} />}/>
-						<Route exact path={settings.url + "studentexpo/"} render={(props) => <Studentexpo {...props} lang={this.state.lang} />}/>
+						{/* <Route exact path={settings.url + "studentexpo/"} render={(props) => <Studentexpo {...props} lang={this.state.lang} />}/> */}
+						<Route exact path={settings.url + "map/"} render={(props) => <CompanyMap {...props} lang={this.state.lang} />}/>
 						{/*}
 						<Route exact path={settings.url + "lectures"} render={(props) => <Lectures {...props} lang={this.state.lang} />}/>
 						<Route exact path={settings.url + "pictures"} render={(props) => <Pictures {...props} lang={this.state.lang} />}/>
 						*/}
 
-						<Route render={(props) => <Error404 {...props} lang={this.state.lang} />}/>
+						<Route render={(props) => <Error404 {...props} lang={this.state.lang} />} status={404}/>
 					</Switch>
 				</main>
 

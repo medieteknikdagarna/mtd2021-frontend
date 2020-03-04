@@ -1,0 +1,193 @@
+@import "colors";
+
+#companyMapWrap {
+  overflow: hidden;
+
+  #mapContainer {
+    margin: -1px 0 15px 0;
+    // border: 1px solid $borderColor;
+    position: relative;
+    height: calc(100vh + 90px - 150px);
+    transition: transform 0.1s linear;
+  }
+
+  .boothGroup {
+    cursor: pointer;
+
+    &:hover {
+
+      .booth {
+        fill: $turqFade;
+      }
+    }
+  }
+
+  .booth {
+    fill: $turq;
+    transition: all 0.3s ease;
+  }
+
+  .number {
+    fill: #fff;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+
+  .floorInfo {
+    fill: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  .floorInfoPlace {
+    font-size: 9pt;
+    user-select: none;
+  }
+
+  .plan {
+    position: absolute;
+  }
+
+  #plan4 {
+    width: 43%;
+    top: 45%;
+    left: 10px;
+
+    .floorInfo {
+      font-size: 18pt;
+    }
+  
+    .floorInfoPlace {
+      font-size: 12pt;
+    }
+
+    .number {
+      font-size: 14pt;
+    }
+  }
+
+  #plan5 {
+    width: 65%;
+    right: 10px;
+    top: 3%;
+
+    .floorInfo {
+      font-size: 14pt;
+    }
+  
+    .floorInfoPlace {
+      font-size: 10pt;
+    }
+    .number {
+      font-size: 10pt;
+    }
+  }
+
+  #plan4 {
+    .cls-1 {
+      fill: #052330;
+    }
+
+    .cls-2, .cls-3 {
+      fill: #eb6613;
+    }
+
+    .cls-10, .cls-11, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-8, .cls-9 {
+      stroke: #fff;
+      stroke-miterlimit: 10;
+    }
+
+    .cls-11, .cls-2, .cls-3 {
+      stroke-width: 0.75px;
+    }
+
+    .cls-3, .cls-6 {
+      fill-rule: evenodd;
+    }
+
+    .cls-10, .cls-11, .cls-4, .cls-5, .cls-6, .cls-8, .cls-9 {
+      fill: none;
+    }
+
+    .cls-4 {
+      stroke-width: 3px;
+    }
+
+    .cls-5 {
+      stroke-width: 2px;
+    }
+
+    .cls-6, .cls-8 {
+      stroke-width: 0.5px;
+    }
+
+    .cls-7 {
+      fill: #fff;
+    }
+
+    .cls-9 {
+      stroke-width: 0.25px;
+    }
+  }
+
+  #plan5 {
+    .cls-1 {
+      fill: #14293d;
+    }
+
+    .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-4, .cls-5, .cls-6, .cls-7, .cls-9 {
+      stroke: #fff;
+      stroke-miterlimit: 10;
+    }
+
+    .cls-1, .cls-4 {
+      stroke-width: 0.5px;
+    }
+
+    .cls-1, .cls-2, .cls-4, .cls-6 {
+      fill-rule: evenodd;
+    }
+
+    .cls-2 {
+      fill: #255477;
+    }
+
+    .cls-3 {
+      fill: #fff;
+    }
+
+    .cls-10, .cls-11, .cls-12, .cls-13, .cls-4, .cls-9 {
+      fill: none;
+    }
+
+    .cls-5, .cls-6 {
+      fill: #eb6711;
+    }
+
+    .cls-13, .cls-5, .cls-6, .cls-7 {
+      stroke-width: 0.25px;
+    }
+
+    .cls-7 {
+      fill: #d54c95;
+    }
+
+    .cls-8 {
+      fill: #a34817;
+    }
+
+    .cls-9 {
+      stroke-width: 0.75px;
+    }
+
+    .cls-10 {
+      stroke-width: 3px;
+    }
+
+    .cls-11 {
+      stroke-width: 2px;
+    }
+  }
+}

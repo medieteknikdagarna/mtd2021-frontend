@@ -1,9 +1,9 @@
 @import "colors";
 
-#header {
+#headerWrap {
   background-color: $bannerBackground;
   border-bottom: $border;
-  width: 100%;
+  width: 110vw;
   z-index: 10000;
   box-shadow: $boxShadow;
   position: -webkit-sticky;
@@ -13,192 +13,217 @@
   transition: all 0.3s ease;
   user-select: none;
 
-  #dropdown {
-    position: absolute;
-    left: 0;
-    top: 149px;
-    border: none;
-    background-color: $navy;
-    box-shadow: none;
-    border-radius: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 0px;
-    transition: height 0.2s ease, width 0.1s ease;
-    width: 0;
+  #header {
+    // background-color: $bannerBackground;
+    // border-bottom: $border;
+    width: 100vw;
+    
 
-    &.dropdownShown {
-      width: 200px;
-      height: 170px;
-      box-shadow: $boxShadow;
-      border: $border;
-      border-radius: 0 0 3px 3px;
-      border-top: none;
-    }
-
-    #navigationBox {
+    #dropdown {
+      position: absolute;
+      left: 0;
+      top: 149px;
+      border: none;
+      background-color: $navy;
+      box-shadow: none;
+      border-radius: 0;
+      overflow: hidden;
       display: flex;
-      flex-flow: column wrap;
-      font-family: "Lato", "Open Sans", Helvetica, Arial, sans-serif;
-      font-weight: normal;
-      text-transform: uppercase;
-      font-size: 10pt;
-      width: 100%;
+      align-items: center;
+      justify-content: center;
+      height: 0px;
+      transition: height 0.2s ease, width 0.1s ease;
+      width: 0;
 
-      .navButton {
-        width: 100%;
+      &.dropdownShown {
+        width: 200px;
+        height: 170px;
+        box-shadow: $boxShadow;
+        border: $border;
+        border-radius: 0 0 3px 3px;
+        border-top: none;
+      }
+
+      #navigationBox {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 20px 15px 20px 15px;
-        user-select: none;
-        cursor: pointer;
-        color: #fff;
-        border-left: 4px solid transparent;
+        flex-flow: column wrap;
+        font-family: "Lato", "Open Sans", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 10pt;
+        width: 100%;
 
-        &:hover {
-          color: rgba(230, 230, 230, 1);
-          border-color: rgba(255, 255, 255, 0.3);
-          text-decoration: none;
-        }
-
-        &.selected {
+        .navButton {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 20px 15px 20px 15px;
+          user-select: none;
+          cursor: pointer;
           color: #fff;
-          border-color: #fff;
+          border-left: 4px solid transparent;
 
           &:hover {
+            color: rgba(230, 230, 230, 1);
+            border-color: rgba(255, 255, 255, 0.3);
+            text-decoration: none;
+          }
+
+          &.selected {
             color: #fff;
             border-color: #fff;
+
+            &:hover {
+              color: #fff;
+              border-color: #fff;
+            }
           }
         }
       }
     }
-  }
 
-  #navis {
-    margin: auto;
-    max-width: 1200px;
-    min-width: 300px;
-    padding-right: 10px;
-    padding-left: 10px;
-    height: 100%;
+    #navis {
+      margin: auto;
+      max-width: 1200px;
+      min-width: 300px;
+      padding-right: 10px;
+      padding-left: 10px;
+      height: 100%;
 
-    #banner {
-      display: flex;
-      width: 100%;
-      transition: height 0.2s ease;
-      height: 90px;
-
-      a:hover {
-        text-decoration: none;
-      }
-
-      #brand {
-        height: 100%;
+      #banner {
         display: flex;
-        align-items: center;
+        width: 100%;
+        transition: height 0.2s ease;
+        height: 90px;
 
-        .logo {
-          padding: 2px;
+        a:hover {
+          text-decoration: none;
+        }
+
+        #brand {
           height: 100%;
+          display: flex;
+          align-items: center;
 
-          #highreslogo {
+          .logo {
+            padding: 2px;
+            height: 100%;
+
+            #highreslogo {
+              position: relative;
+              bottom: 0;
+              width: 65px;
+              height: auto;
+              transition: all 0.2s ease;
+
+              &.scrolled {
+                bottom: 300px;
+              }
+            }
+          }
+
+          #brandName {
             position: relative;
             bottom: 0;
-            width: 65px;
-            height: auto;
+            padding: 5px;
+            padding-left: 20px;
+            color: #000;
+            font-family: "Barlow";
+            font-size: 40px;
+            font-weight: 700;
+            margin-top: 6px;
             transition: all 0.2s ease;
 
             &.scrolled {
               bottom: 300px;
             }
-          }
-        }
 
-        #brandName {
-          position: relative;
-          bottom: 0;
-          padding: 5px;
-          padding-left: 20px;
-          color: #000;
-          font-family: "Barlow";
-          font-size: 40px;
-          font-weight: 700;
-          margin-top: 6px;
-          transition: all 0.2s ease;
-
-          &.scrolled {
-            bottom: 300px;
+            span {
+              font-weight: 600;
+            }
           }
 
-          span {
-            font-weight: 600;
-          }
-        }
-
-        &:hover {
-          #brandName {
-            text-decoration: none;
+          &:hover {
+            #brandName {
+              text-decoration: none;
+            }
           }
         }
       }
-    }
 
-    #navbar {
-      position: relative;
-      bottom: 0;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      height: 60px;
-      max-width: 1200px;
-      z-index: 6000;
-      transition: all 0.2s ease;
-
-      #nav {
-        font-family: "Lato", "Open Sans", Helvetica, Arial, sans-serif;
-        font-weight: normal;
-        text-transform: uppercase;
-        font-size: 11pt;
-        height: 100%;
+      #navbar {
+        position: relative;
+        bottom: 0;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        max-width: 1200px;
+        z-index: 6000;
+        transition: all 0.2s ease;
 
-        #navLogo {
-          transition: opacity 0.2s ease, width 0.2s ease, margin-right 0.2s ease;
-          opacity: 0;
-          width: 0;
-          margin-right: 0;
-          padding-top: 3px;
-          height: auto;
+        #nav {
+          font-family: "Lato", "Open Sans", Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          text-transform: uppercase;
+          font-size: 11pt;
+          height: 100%;
+          display: flex;
+          align-items: center;
 
-          &.scrolled {
-            opacity: 1;
-            width: 40px;
-            margin-right: 5px;
+          #navLogo {
+            transition: opacity 0.2s ease, width 0.2s ease, margin-right 0.2s ease;
+            opacity: 0;
+            width: 0;
+            margin-right: 0;
+            padding-top: 3px;
+            height: auto;
+
+            &.scrolled {
+              opacity: 1;
+              width: 40px;
+              margin-right: 5px;
+            }
           }
-        }
 
-        a {
-          padding: 20px 10px 16px 10px;
-          border-bottom: 4px solid transparent;
-          margin: 5px;
-          color: $orange;
-          white-space: nowrap;
+          a {
+            padding: 20px 10px 16px 10px;
+            border-bottom: 4px solid transparent;
+            margin: 5px;
+            color: $orange;
+            white-space: nowrap;
 
-          .fa {
-            padding: 2px;
-            margin-left: 2px;
+            .fa {
+              padding: 2px;
+              margin-left: 2px;
+            }
+
+            &:not(.selected) {
+
+              &:hover,
+              &.hover {
+                border-color: $orangeHoverFade;
+                text-decoration: none;
+              }
+
+              &#contact {
+                &.hover {
+                  color: #fff;
+                  background-color: $navy;
+                  border-color: transparent;
+                }
+              }
+            }
           }
 
-          &:not(.selected) {
+          .selected {
+            border-bottom: 4px solid $orange;
 
             &:hover,
             &.hover {
-              border-color: $orangeHoverFade;
               text-decoration: none;
+              color: $orange;
             }
 
             &#contact {
@@ -211,84 +236,66 @@
           }
         }
 
-        .selected {
-          border-bottom: 4px solid $orange;
-
-          &:hover,
-          &.hover {
-            text-decoration: none;
-            color: $orange;
-          }
-
-          &#contact {
-            &.hover {
-              color: #fff;
-              background-color: $navy;
-              border-color: transparent;
-            }
-          }
-        }
-      }
-
-      #sharebar {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-        //flag
-        img {
-          cursor: pointer;
-          height: 16px;
-          width: auto;
-          margin-right: 10px;
-          transition: all 0.2s ease;
-          border-radius: 4px;
-
-          &:hover {
-            filter: brightness(75%);
-            -webkit-filter: brightness(75%);
-          }
-        }
-
-        .line {
-          height: 50%;
-          width: 2px;
-          border-left: 2px solid $orangeFade;
-          margin: 0 15px 0 15px;
-        }
-
-        a {
-          .fa {
-            margin: 0 7px 0 7px;
-            font-size: 1.1em;
-            color: $orange;
-            transition: color 0.2s ease;
-          }
-
-          &:hover {
-            .fa {
-              color: $orangeHover;
-              text-decoration: none;
-            }
-          }
-        }
-
-        #accountIcon {
+        #sharebar {
           display: flex;
           align-items: center;
           justify-content: space-around;
 
-          .fa-sort-down {
-            font-size: 14px;
-            padding-left: 0;
+          //flag
+          img {
+            cursor: pointer;
+            height: 16px;
+            width: auto;
+            margin-right: 10px;
+            transition: all 0.2s ease;
+            border-radius: 4px;
+
+            &:hover {
+              filter: brightness(75%);
+              -webkit-filter: brightness(75%);
+            }
           }
 
-          .fa-user-circle {
-            padding-right: 4px;
+          .line {
+            height: 50%;
+            width: 2px;
+            border-left: 2px solid $orangeFade;
+            margin: 0 15px 0 15px;
           }
 
-          &:hover {
-            text-decoration: none;
+          a {
+            .fa {
+              margin: 0 7px 0 7px;
+              font-size: 1.1em;
+              color: $orange;
+              transition: color 0.2s ease;
+            }
+
+            &:hover {
+              .fa {
+                color: $orangeHover;
+                text-decoration: none;
+              }
+            }
+          }
+
+          #accountIcon {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .fa-sort-down {
+              font-size: 14px;
+              padding-left: 0;
+            }
+
+            .fa-user-circle {
+              padding-right: 4px;
+            }
+
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
       }
@@ -320,8 +327,8 @@
       width: 100%;
       transition: height 0.2s ease;
       height: 90px;
-			justify-content: space-between;
-			align-items: center;
+      justify-content: space-between;
+      align-items: center;
 
       a:hover {
         text-decoration: none;
@@ -347,11 +354,11 @@
             &.scrolled {
               bottom: -27px;
               width: 40px;
-						}
-						
-						@media screen and (max-width: $smallPhone) {
-							width: 55px;
-						}
+            }
+            
+            @media screen and (max-width: $smallPhone) {
+              width: 55px;
+            }
           }
         }
 
@@ -370,16 +377,16 @@
             font-weight: 600;
           }
 
-					&.scrolled {
-						bottom: -27px;
-						font-size: 25px;
-						padding-left: 10px;
-					}
+          &.scrolled {
+            bottom: -27px;
+            font-size: 25px;
+            padding-left: 10px;
+          }
 
-					@media screen and (max-width: $smallPhone) {
-						font-size: 30px;
-						padding-left: 10px;
-					}
+          @media screen and (max-width: $smallPhone) {
+            font-size: 30px;
+            padding-left: 10px;
+          }
         }
 
         &:hover {
@@ -387,19 +394,19 @@
             text-decoration: none;
           }
         }
-			}
+      }
 
-			#openNavButton {
-				position: relative;
-				bottom: 0;
-				transition: all 0.2s ease;
-				cursor: pointer;
-				font-size: 40px;
+      #openNavButton {
+        position: relative;
+        bottom: 0;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        font-size: 40px;
 
-				&.scrolled {
-					bottom: -27px;
-				}
-			}
+        &.scrolled {
+          bottom: -27px;
+        }
+      }
     }
 
     #navPopOut {
@@ -414,25 +421,25 @@
       height: 100%;
       z-index: 6000;
       transition: all 0.2s ease;
-			background-color: $navy;
-			overflow-y: auto;
+      background-color: $navy;
+      overflow-y: auto;
 
-			&.show {
-				width: 100vw;
-			}
+      &.show {
+        width: 100vw;
+      }
 
       #closeNavButtonContainer {
-				display: flex;
-				justify-content: flex-end;
-				padding: 15px;
-				width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        width: 100%;
 
         #closeNavButton {
-					font-size: 40px;
-					margin-right: 5px;
-					color: #fff;
-					cursor: pointer;
-				}
+          font-size: 40px;
+          margin-right: 5px;
+          color: #fff;
+          cursor: pointer;
+        }
       }
 
       #nav {
@@ -497,7 +504,7 @@
       }
 
         a {
-					display: block;
+          display: block;
 
           .fa {
             margin: 0 7px 0 7px;
@@ -539,7 +546,107 @@
   }
 }
 
-#header.transparent,
+#headerWrap.transparent {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+
+  #header {
+    #dropdown {
+
+      &.dropdownShown {
+        box-shadow: none;
+        border: none;
+      }
+    }
+
+    #navis {
+      #banner {
+        a {
+          #brand {
+            #brandName {
+              color: #fff;
+            }
+
+            &:hover {
+              #brandName {
+                text-decoration: none;
+                cursor: context-menu;
+              }
+
+              #highreslogo {
+                cursor: context-menu;
+              }
+            }
+          }
+        }
+        
+        #openNavButton {
+          position: relative;
+          bottom: 0;
+          transition: all 0.2s ease;
+          cursor: pointer;
+          font-size: 40px;
+          color: #fff;
+
+          &.scrolled {
+            bottom: -27px;
+            color: #000;
+          }
+        }
+      }
+
+      #navbar {
+        #nav {
+          a {
+            color: #fff;
+          }
+
+          a:not(.selected) {
+
+            &:hover,
+            &.hover {
+              border-color: rgba(255, 255, 255, 0.3);
+              color: rgba(230, 230, 230, 1);
+
+              &#contact {
+                border-color: transparent;
+              }
+            }
+          }
+
+          .selected {
+            border-bottom: 4px solid #fff;
+
+            &:hover {
+              text-decoration: none;
+              color: #fff;
+            }
+          }
+        }
+
+        #sharebar {
+          .line {
+            border-left: 2px solid #fff;
+          }
+
+          a {
+            .fa {
+              color: #fff;
+            }
+
+            &:hover {
+              .fa {
+                color: rgba(190, 190, 190, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 #headerHamburger.transparent {
   background-color: transparent;
   border-bottom: 1px solid transparent;
@@ -559,7 +666,7 @@
         #brand {
           #brandName {
             color: #fff;
-					}
+          }
 
           &:hover {
             #brandName {
@@ -572,21 +679,21 @@
             }
           }
         }
-			}
-			
-			#openNavButton {
-				position: relative;
-				bottom: 0;
-				transition: all 0.2s ease;
-				cursor: pointer;
-				font-size: 40px;
-				color: #fff;
+      }
+      
+      #openNavButton {
+        position: relative;
+        bottom: 0;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        font-size: 40px;
+        color: #fff;
 
-				&.scrolled {
-					bottom: -27px;
-					color: #000;
-				}
-			}
+        &.scrolled {
+          bottom: -27px;
+          color: #000;
+        }
+      }
     }
 
     #navbar {
@@ -637,5 +744,4 @@
       }
     }
   }
-
 }

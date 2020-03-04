@@ -14,23 +14,23 @@
   #studentExpoForm {
     width: 100%;
     border: none;
-    height: 2000px;
+    height: 2105px;
     transition: all 0.3s ease;
 
     @media screen and (max-width: 625px) {
-      height: 2100px;
+      height: 2210px;
       
       @media screen and (max-width: 502px) {
-        height: 2200px;
+        height: 2310px;
 
         @media screen and (max-width: 414px) {
-          height: 2270px;
+          height: 2380px;
 
           @media screen and (max-width: 382px) {
-            height: 2300px;
+            height: 2410px;
 
             @media screen and (max-width: 360px) {
-              height: 2450px;
+              height: 2560px;
             }
           }
         }

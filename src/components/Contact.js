@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink as Link } from 'react-router-dom';
 
-import Maps from './Maps';
+import GlobalMaps from './GlobalMaps';
 
 import '../css/contact.scss';
 
@@ -224,7 +224,7 @@ class GeneralContent extends Component {
 					<h1>{content[this.state.lang]["0"].addresses.title}</h1>
 					<div id="maps">
 						<div className="mapContainer">
-							<Maps
+							<GlobalMaps
 								lang={this.state.lang}
 								link={"https://www.google.com/maps/place/Bredgatan+34,+602+21+Norrk%C3%B6ping,+Sverige/@58.5902,16.176455,17z/data=!4m5!3m4!1s0x46593bcaca24468f:0xb46627b69deb7113!8m2!3d58.5902002!4d16.1764545?hl=sv-SE"}
 								zoom={16}
@@ -245,7 +245,7 @@ class GeneralContent extends Component {
 							</div>
 						</div>
 						<div className="mapContainer">
-							<Maps
+							<GlobalMaps
 								lang={this.state.lang}
 								link={"https://www.google.com/maps/place/K%C3%A5rhuset+Trappan/@58.589629,16.180517,15z/data=!4m5!3m4!1s0x0:0xb5407c6e2bcc6df9!8m2!3d58.589629!4d16.180517?hl=sv-SE"}
 								zoom={16}
@@ -269,7 +269,7 @@ class GeneralContent extends Component {
 							</div>
 						</div>
 						<div className="mapContainer">
-							<Maps
+							<GlobalMaps
 								lang={this.state.lang}
 								link={"https://www.google.com/maps/place/Sandgatan+31,+602+47+Norrk%C3%B6ping,+Sverige/@58.590478,16.176271,15z/data=!4m5!3m4!1s0x46593bcaccb998cf:0xfd2f032a0b3e12c9!8m2!3d58.5904776!4d16.1762712?hl=sv-SE"}
 								zoom={16}
