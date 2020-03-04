@@ -21,7 +21,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Companies from "./components/Companies";
-// import Studentexpo from "./components/Studentexpo";
+import Studentexpo from "./components/Studentexpo";
 import Lectures from "./components/Lectures";
 import CompanyMap from "./components/CompanyMap";
 // import Pictures from "./components/Pictures";
@@ -90,7 +90,7 @@ const staticSites = [
 	{url: "", comp: Home, active: true},
 	{url: "about", comp: About, active: true},
 	{url: "contact", comp: Contact, active: true},
-	// {url: "studentexpo", comp: Studentexpo, active: true},
+	{url: "studentexpo", comp: Studentexpo, active: true},
 	{url: "companies", comp: Companies, active: true},
 	{url: "lectures", comp: Lectures, active: false},
 	{url: "map", comp: CompanyMap, active: true},
@@ -384,7 +384,7 @@ class Static extends Component {
 						<Route exact path={settings.url + "contact/:subpage/"} render={(props) => <Contact {...props} lang={this.state.lang} />}/>
 						<Route exact path={settings.url + "companies/"} render={(props) => <Companies {...props} lang={this.state.lang} />}/>
 						<Route exact path={settings.url + "companies/:companyID/"} render={(props) => <Companies {...props} lang={this.state.lang} />}/>
-						{/* <Route exact path={settings.url + "studentexpo/"} render={(props) => <Studentexpo {...props} lang={this.state.lang} />}/> */}
+						<Route exact path={settings.url + "studentexpo/"} render={(props) => <Studentexpo {...props} lang={this.state.lang} />}/>
 						<Route exact path={settings.url + "map/"} render={(props) => <CompanyMap {...props} lang={this.state.lang} />}/>
 						{/*}
 						<Route exact path={settings.url + "lectures"} render={(props) => <Lectures {...props} lang={this.state.lang} />}/>

@@ -4,14 +4,14 @@
   #studentExpoInfo {
     padding: 15px;
     width: 75%;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 
     @media screen and (max-width: $bigPhone) {
       width: 100%;
     }
   }
 
-  #studentExpoForm {
+  #studentExpoApplyForm {
     width: 100%;
     border: none;
     height: 2105px;
@@ -31,6 +31,33 @@
 
             @media screen and (max-width: 360px) {
               height: 2560px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #studentExpoVoteForm {
+    width: 100%;
+    border: none;
+    height: 1000px;
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: 625px) {
+      height: 1080px;
+      
+      @media screen and (max-width: 502px) {
+        height: 1190px;
+
+        @media screen and (max-width: 414px) {
+          height: 1260px;
+
+          @media screen and (max-width: 382px) {
+            height: 1310px;
+
+            @media screen and (max-width: 360px) {
+              height: 1900px;
             }
           }
         }

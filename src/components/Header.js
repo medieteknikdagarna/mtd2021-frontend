@@ -431,12 +431,12 @@ class Header extends Component {
 									<Link to={settings.url + "companies/"} id="companies">
 										{content[this.state.lang].companies.title}
 									</Link>
-									{/* <Link to={settings.url + "studentexpo/"} id="studentexpo">
-										{content[this.state.lang].studentexpo.title}
+									{/* <Link to={settings.url + "map/"} id="map">
+										{content[this.state.lang].map.title}
 									</Link> */}
-									<Link to={settings.url + "map/"} id="map">
-									{content[this.state.lang].map.title}
-								</Link>
+									<Link to={settings.url + "studentexpo/"} id="studentexpo">
+										{content[this.state.lang].studentexpo.title}
+									</Link>
 
 									{/*}
 									<Link to={settings.url + "lectures/"} id="lectures">

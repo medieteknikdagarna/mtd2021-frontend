@@ -1,14 +1,17 @@
 {
   "sv": {
-    "title": "Sök till Studentexpo",
-    "ingress": "Är du sugen på att ställa ut ditt projekt på Studentexpo? Här kan du skicka in din ansökan.",
-    "body": "Studentexpo erbjuder dig som student en unik chans att visa upp dig för företag, besökare och medstudenter. Studentexpo är en projektutställning som hålls parallellt med mässan, där tanken är att mässbesökare kan ta del av ert projekt i Studentexpos monter. Det finns ingen begränsning till vilka projekt som får vara med, kursprojekt eller fritidsprojekt, vi vill se allt möjligt! För att anmäla dig, fyll i formuläret nedan.",
+    "votetitle": "Rösta på bidrag till Studentexpo",
+    "voteingress": "Vilket bidrag tyckte du om mest på Studentexpo? Här kan du rösta.",
+    "votebody": "",
+    "applytitle": "Sök till Studentexpo",
+    "applyingress": "Är du sugen på att ställa ut ditt projekt på Studentexpo? Här kan du skicka in din ansökan.",
+    "applybody": "Studentexpo erbjuder dig som student en unik chans att visa upp dig för företag, besökare och medstudenter. Studentexpo är en projektutställning som hålls parallellt med mässan, där tanken är att mässbesökare kan ta del av ert projekt i Studentexpos monter. Det finns ingen begränsning till vilka projekt som får vara med, kursprojekt eller fritidsprojekt, vi vill se allt möjligt! För att anmäla dig, fyll i formuläret nedan.",
     "loading": "Läser in..."
   },
   "en": {
-    "title": "Apply to Student Expo",
-    "ingress": "Interested in showcasing your project in the Student Expo? Awesome! Here you can submit your application.",
-    "body": "Student Expo offers you a unique opportunity to showcase you for companies, visitors and fellow students. Student Expo is a project exhibition held in parallel with the fair, where the visitors are invited to attend your project at the Student Expos booth. There is no limit to which projects may be included, course projects or leisure projects, we want to see everything possible! To apply, fill out the form below.",
+    "applytitle": "Apply to Student Expo",
+    "applyingress": "Interested in showcasing your project in the Student Expo? Awesome! Here you can submit your application.",
+    "applybody": "Student Expo offers you a unique opportunity to showcase you for companies, visitors and fellow students. Student Expo is a project exhibition held in parallel with the fair, where the visitors are invited to attend your project at the Student Expos booth. There is no limit to which projects may be included, course projects or leisure projects, we want to see everything possible! To apply, fill out the form below.",
     "loading": "Loading form..."
   }
 }

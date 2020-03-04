@@ -31,23 +31,26 @@ class Studentexpo extends Component {
 	}
 
 	render() {
-		let src = "https://docs.google.com/forms/d/e/1FAIpQLSe6ZXLa5CJU945LMNSnyU0WvN3uOb665kbWEGloyZUPthlcIA/viewform?embedded=true";
+		let applysrc = "https://docs.google.com/forms/d/e/1FAIpQLSe6ZXLa5CJU945LMNSnyU0WvN3uOb665kbWEGloyZUPthlcIA/viewform?embedded=true";
 		if(this.state.lang === "en") {
-			src = "https://docs.google.com/forms/d/e/1FAIpQLSdbbFoiJG7QgOMqewg4FPfqd3fG3Iux8pzSMsF7bQbY-pPIjA/viewform?embedded=true";
+			applysrc = "https://docs.google.com/forms/d/e/1FAIpQLSdbbFoiJG7QgOMqewg4FPfqd3fG3Iux8pzSMsF7bQbY-pPIjA/viewform?embedded=true";
 		}
+
+		let votesrc = "https://docs.google.com/forms/d/e/1FAIpQLSdk1A6X5Y9f1XEpQUkyc-bAjBohJTGPahTxfW6BiRm_h1212A/viewform?embedded=true";
 
     return (
 			<div id="studentExpoContainer">
 				<div id="studentExpoInfo">
-					<h1>{content[this.state.lang].title}</h1>
-					<p className="ingress">{content[this.state.lang].ingress}</p>
-					<p>{content[this.state.lang].body}</p>
+					<h1>{content[this.state.lang].votetitle}</h1>
+					<p className="ingress">{content[this.state.lang].voteingress}</p>
+					<p>{content[this.state.lang].votebody}</p>
 				</div>
 
 				<iframe
-					id="studentExpoForm"
+					id="studentExpoVoteForm"
+					// id="studentExpoApplyForm"
 					title="Student Expo form"
-					src={src}
+					src={votesrc}
 				>
 					{content[this.state.lang].loading}
 				</iframe>
