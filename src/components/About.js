@@ -47,7 +47,6 @@ let fairpics = "";
 let lecturePics = "";
 let mtLogo = "";
 let mtdSphereVideoAnimation_still = "";
-console.log(supportsWebP);
 
 if(supportsWebP) {
 	mtdSphereVideoAnimation_still = require('../bilder/mtdSphereVideo/MTDSphereVideo_still.webp');

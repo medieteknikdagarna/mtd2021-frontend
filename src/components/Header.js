@@ -241,7 +241,7 @@ class Header extends Component {
 				flag: require(`../bilder/flags/${this.props.lang === "sv" ? "en" : "sv"}.svg`)
 			});
 			this.handleResize();
-			this.setTitle();
+			// this.setTitle();
 		}
 		if(this.props.loggedin !== prevProps.loggedin) {
 			this.setState({
@@ -256,9 +256,9 @@ class Header extends Component {
 	async componentDidMount() {
 		window.addEventListener("scroll", this.handleScroll);
 		window.addEventListener("resize", this.handleResize);
-		// ['webkitTransitionEnd', 'transitionend', 'msTransitionEnd', 'oTransitionEnd'].forEach( evt =>
-    // 	this.headerRef.current.addEventListener(evt, this.handleResize)
-		// );
+		['webkitTransitionEnd', 'transitionend', 'msTransitionEnd', 'oTransitionEnd'].forEach( evt =>
+    	this.headerRef.current.addEventListener(evt, this.handleResize)
+		);
 
 		this.navUpdate();
 		this.handleResize();
@@ -270,8 +270,6 @@ class Header extends Component {
 	}
 
 	render() {
-
-
 		let accountIcon;
 		let line;
 
@@ -351,8 +349,11 @@ class Header extends Component {
 							<Link to={settings.url + "companies/"} id="companies" onClick={this.hideHamburger}>
 								{content[this.state.lang].companies.title}
 							</Link>
-							<Link to={settings.url + "studentexpo/"} id="studentexpo" onClick={this.hideHamburger}>
+							{/* <Link to={settings.url + "studentexpo/"} id="studentexpo" onClick={this.hideHamburger}>
 								{content[this.state.lang].studentexpo.title}
+							</Link> */}
+							<Link to={settings.url + "map/"} id="map" onClick={this.hideHamburger}>
+								{content[this.state.lang].map.title}
 							</Link>
 
 							{/* <Link to={settings.url + "lectures/"} id="lectures" onClick={this.hideHamburger}>
@@ -391,81 +392,86 @@ class Header extends Component {
 		}
 		else {
 	  	return (
-				<header id="header" className={this.state.transparentClass} ref={this.headerRef}>
-
-					<div id="dropdown" ref={this.dropdownRef} style={this.state.navPosition} onMouseEnter={this.showDropdown} onMouseLeave={this.hideDropdown} onClick={this.hideDropdown}>
-						<nav id="navigationBox">
-							{links}
-						</nav>
-					</div>
-
-					<div id="navis">
-						<div id="banner">
-							<Link to={settings.url}>
-								<div id="brand" onMouseEnter={this.hoverBrand} onMouseLeave={this.notHoverBrand}>
-									<div className="logo">
-										<img id="highreslogo" src={this.state.logo} alt="logo" className={this.state.scrolledClass}></img>
-									</div>
-									<div id="brandName" className={this.state.scrolledClass}>
-										{general.nameShort}<span>{general.year}</span>
-									</div>
-								</div>
-							</Link>
+				<div id="headerWrap" className={this.state.transparentClass} ref={this.headerRef}>
+					<header id="header">
+					{/* <header id="header" className={this.state.transparentClass} ref={this.headerRef}> */}
+						<div id="dropdown" ref={this.dropdownRef} style={this.state.navPosition} onMouseEnter={this.showDropdown} onMouseLeave={this.hideDropdown} onClick={this.hideDropdown}>
+							<nav id="navigationBox">
+								{links}
+							</nav>
 						</div>
 
-						<div id="navbar">
-							<nav id="nav">
-								<img id="navLogo" src={logo_regular} alt="logo" className={this.state.scrolledClass}/>
-								<Link to={settings.url} id="home" style={this.state.borderBottom} onMouseEnter={this.hoverBrand} onMouseLeave={this.notHoverBrand}>
-									{content[this.state.lang].home.title}
+						<div id="navis">
+							<div id="banner">
+								<Link to={settings.url}>
+									<div id="brand" onMouseEnter={this.hoverBrand} onMouseLeave={this.notHoverBrand}>
+										<div className="logo">
+											<img id="highreslogo" src={this.state.logo} alt="logo" className={this.state.scrolledClass}></img>
+										</div>
+										<div id="brandName" className={this.state.scrolledClass}>
+											{general.nameShort}<span>{general.year}</span>
+										</div>
+									</div>
 								</Link>
-								<Link to={settings.url + "about/"} id="about">
-									{content[this.state.lang].about.title}
-								</Link>
-								<Link to={settings.url + "contact/"} id="contact" onMouseEnter={this.showDropdown} onMouseLeave={this.hideDropdown} onClick={(e) => { this.hideDropdown(e); e.currentTarget.classList.remove("hover"); }}>
-									{content[this.state.lang].contact.title}
-									<FontAwesomeIcon icon={['fas', 'chevron-down']} className="fa"/>
-								</Link>
-								<Link to={settings.url + "companies/"} id="companies">
-									{content[this.state.lang].companies.title}
-								</Link>
-								<Link to={settings.url + "studentexpo/"} id="studentexpo">
-									{content[this.state.lang].studentexpo.title}
+							</div>
+
+							<div id="navbar">
+								<nav id="nav">
+									<img id="navLogo" src={logo_regular} alt="logo" className={this.state.scrolledClass}/>
+									<Link to={settings.url} id="home" style={this.state.borderBottom} onMouseEnter={this.hoverBrand} onMouseLeave={this.notHoverBrand}>
+										{content[this.state.lang].home.title}
+									</Link>
+									<Link to={settings.url + "about/"} id="about">
+										{content[this.state.lang].about.title}
+									</Link>
+									<Link to={settings.url + "contact/"} id="contact" onMouseEnter={this.showDropdown} onMouseLeave={this.hideDropdown} onClick={(e) => { this.hideDropdown(e); e.currentTarget.classList.remove("hover"); }}>
+										{content[this.state.lang].contact.title}
+										<FontAwesomeIcon icon={['fas', 'chevron-down']} className="fa"/>
+									</Link>
+									<Link to={settings.url + "companies/"} id="companies">
+										{content[this.state.lang].companies.title}
+									</Link>
+									{/* <Link to={settings.url + "studentexpo/"} id="studentexpo">
+										{content[this.state.lang].studentexpo.title}
+									</Link> */}
+									<Link to={settings.url + "map/"} id="map">
+									{content[this.state.lang].map.title}
 								</Link>
 
-								{/*}
-								<Link to={settings.url + "lectures/"} id="lectures">
-									{content[this.state.lang].lectures.title}
-								</Link>
-								<Link to={settings.url + "pictures/"} id="pictures">
-									{content[this.state.lang].pictures.title}
-								</Link>
-								{*/}
-							</nav>
-							<div id="sharebar">
-								<img onClick={this.props.toggleLanguage} id="flag" src={this.state.flag} alt="flag"></img>
+									{/*}
+									<Link to={settings.url + "lectures/"} id="lectures">
+										{content[this.state.lang].lectures.title}
+									</Link>
+									<Link to={settings.url + "pictures/"} id="pictures">
+										{content[this.state.lang].pictures.title}
+									</Link>
+									{*/}
+								</nav>
+								<div id="sharebar">
+									<img onClick={this.props.toggleLanguage} id="flag" src={this.state.flag} alt="flag"></img>
 
-								<div className="line"/>
+									<div className="line"/>
 
-								<a href="https://facebook.com/medieteknikdagarna" target="_blank" rel="noopener noreferrer">
-									<FontAwesomeIcon icon={['fab', 'facebook-square']} className="fa"/>
-								</a>
-								<a href="https://youtube.com/mtdagarna" target="_blank" rel="noopener noreferrer">
-									<FontAwesomeIcon icon={['fab', 'youtube-square']} className="fa"/>
-								</a>
-								<a href="https://www.instagram.com/medieteknikdagarna/" target="_blank" rel="noopener noreferrer">
-									<FontAwesomeIcon icon={['fab', 'instagram']} className="fa"/>
-								</a>
-								<a href="https://www.linkedin.com/company/medieteknikdagarna-2014/" target="_blank" rel="noopener noreferrer">
-									<FontAwesomeIcon icon={['fab', 'linkedin']} className="fa"/>
-								</a>
+									<a href="https://facebook.com/medieteknikdagarna" target="_blank" rel="noopener noreferrer">
+										<FontAwesomeIcon icon={['fab', 'facebook-square']} className="fa"/>
+									</a>
+									<a href="https://youtube.com/mtdagarna" target="_blank" rel="noopener noreferrer">
+										<FontAwesomeIcon icon={['fab', 'youtube-square']} className="fa"/>
+									</a>
+									<a href="https://www.instagram.com/medieteknikdagarna/" target="_blank" rel="noopener noreferrer">
+										<FontAwesomeIcon icon={['fab', 'instagram']} className="fa"/>
+									</a>
+									<a href="https://www.linkedin.com/company/medieteknikdagarna-2014/" target="_blank" rel="noopener noreferrer">
+										<FontAwesomeIcon icon={['fab', 'linkedin']} className="fa"/>
+									</a>
 
-								{line}
-								{accountIcon}
+									{line}
+									{accountIcon}
+								</div>
 							</div>
 						</div>
-					</div>
-				</header>
+					</header>
+				</div>
 			);
 		}
 	}

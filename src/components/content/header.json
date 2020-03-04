@@ -20,6 +20,9 @@
     "studentexpo": {
       "title": "Studentexpo"
     },
+    "map": {
+      "title": "Mässkarta"
+    },
     "previous": {
       "title": "Tidigare år"
     },
@@ -55,11 +58,14 @@
     "studentexpo": {
       "title": "Student Expo"
     },
+    "map": {
+      "title": "Fair Map"
+    },
     "previous": {
-      "title": "Previous years"
+      "title": "Previous Years"
     },
     "lectures": {
-      "title": "Lectures & schedule"
+      "title": "Lectures & Schedule"
     },
     "pictures": {
       "title": "Pictures"
