@@ -1,31 +1,3 @@
-
-Färgpalette:
-
-Huvudfärg: RGB Hex: 226666
-Komplement:
-Ljusare: 407F7F
-         669999
-Mörkare: 0D4D4D
-         003333
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
