@@ -3,7 +3,7 @@
 #headerWrap {
   background-color: $bannerBackground;
   border-bottom: $border;
-  width: 110vw;
+  width: 100%;
   z-index: 10000;
   box-shadow: $boxShadow;
   position: -webkit-sticky;
@@ -16,8 +16,7 @@
   #header {
     // background-color: $bannerBackground;
     // border-bottom: $border;
-    width: 100vw;
-    
+    width: 100%;
 
     #dropdown {
       position: absolute;
@@ -173,7 +172,8 @@
           align-items: center;
 
           #navLogo {
-            transition: opacity 0.2s ease, width 0.2s ease, margin-right 0.2s ease;
+            transition: opacity 0.2s ease, width 0.2s ease,
+              margin-right 0.2s ease;
             opacity: 0;
             width: 0;
             margin-right: 0;
@@ -200,7 +200,6 @@
             }
 
             &:not(.selected) {
-
               &:hover,
               &.hover {
                 border-color: $orangeHoverFade;
@@ -355,7 +354,7 @@
               bottom: -27px;
               width: 40px;
             }
-            
+
             @media screen and (max-width: $smallPhone) {
               width: 55px;
             }
@@ -397,14 +396,84 @@
       }
 
       #openNavButton {
-        position: relative;
-        bottom: 0;
-        transition: all 0.2s ease;
+        z-index: 7000;
+        width: 60px;
+        height: 45px;
+        margin: 50px 20px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
         cursor: pointer;
-        font-size: 40px;
+
+        span {
+          display: block;
+          position: absolute;
+          height: 9px;
+          width: 100%;
+          background: whitesmoke;
+          border-radius: 9px;
+          opacity: 1;
+          left: 0;
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          -webkit-transition: 0.25s ease-in-out;
+          -moz-transition: 0.25s ease-in-out;
+          -o-transition: 0.25s ease-in-out;
+          transition: 0.25s ease-in-out;
+
+          &:nth-child(1) {
+            top: 0px;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            top: 18px;
+          }
+          &:nth-child(4) {
+            top: 36px;
+          }
+        } //span end
+
+        &.open span:nth-child(1) {
+          top: 18px;
+          width: 0%;
+          left: 50%;
+          background: whitesmoke;
+        }
+
+        &.open span:nth-child(2) {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          background: whitesmoke;
+        }
+
+        &.open span:nth-child(3) {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          background: whitesmoke;
+        }
+
+        &.open span:nth-child(4) {
+          top: 18px;
+          width: 0%;
+          left: 50%;
+          background: whitesmoke;
+        }
 
         &.scrolled {
+          height: 0px;
           bottom: -27px;
+
+          span {
+            background: black;
+          }
         }
       }
     }
@@ -415,7 +484,8 @@
       right: 0;
       display: flex;
       flex-flow: column wrap;
-      justify-content: flex-start;
+      justify-content: space-between;
+
       align-items: center;
       width: 0;
       height: 100%;
@@ -450,6 +520,7 @@
         width: 100%;
         display: flex;
         flex-flow: column;
+        padding: 10px;
 
         #navLogo {
           display: none;
@@ -461,7 +532,7 @@
           border-left: 10px solid transparent;
           padding-top: 20px;
           padding-bottom: 20px;
-          color: $orange;
+          color: whitesmoke;
 
           .fa {
             padding: 2px;
@@ -470,7 +541,7 @@
         }
 
         .selected {
-          border-left: 10px solid $orange;
+          border-left: 10px solid whitesmoke;
         }
       }
 
@@ -481,27 +552,28 @@
         width: 100%;
         margin-top: 50px;
         flex-wrap: wrap;
+        padding: 10px;
 
         //flag
-      #flag {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
+        #flag {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 50px;
 
-        img {
-          cursor: pointer;
-          height: 50px;
-          width: auto;
-          transition: all 0.2s ease;
-          border-radius: 4px;
+          img {
+            cursor: pointer;
+            height: 50px;
+            width: auto;
+            transition: all 0.2s ease;
+            border-radius: 4px;
 
-          &:hover {
-            filter: brightness(75%);
-            -webkit-filter: brightness(75%);
+            &:hover {
+              filter: brightness(75%);
+              -webkit-filter: brightness(75%);
+            }
           }
         }
-      }
 
         a {
           display: block;
@@ -509,7 +581,7 @@
           .fa {
             margin: 0 7px 0 7px;
             font-size: 3em;
-            color: $orange;
+            color: whitesmoke;
             transition: color 0.2s ease;
           }
 
@@ -542,7 +614,8 @@
       }
     }
 
-    @media screen and (max-width: 650px) {}
+    @media screen and (max-width: 650px) {
+    }
   }
 }
 
@@ -553,7 +626,6 @@
 
   #header {
     #dropdown {
-
       &.dropdownShown {
         box-shadow: none;
         border: none;
@@ -580,7 +652,7 @@
             }
           }
         }
-        
+
         #openNavButton {
           position: relative;
           bottom: 0;
@@ -591,7 +663,7 @@
 
           &.scrolled {
             bottom: -27px;
-            color: #000;
+            background: black;
           }
         }
       }
@@ -603,7 +675,6 @@
           }
 
           a:not(.selected) {
-
             &:hover,
             &.hover {
               border-color: rgba(255, 255, 255, 0.3);
@@ -653,7 +724,6 @@
   box-shadow: none;
 
   #dropdown {
-
     &.dropdownShown {
       box-shadow: none;
       border: none;
@@ -680,7 +750,7 @@
           }
         }
       }
-      
+
       #openNavButton {
         position: relative;
         bottom: 0;
@@ -703,7 +773,6 @@
         }
 
         a:not(.selected) {
-
           &:hover,
           &.hover {
             border-color: rgba(255, 255, 255, 0.3);

@@ -16,7 +16,7 @@
         "en": "Saab   är ett svenskt företag med huvudkontor i Stockholm med huvudsaklig inriktning mot högteknologi inom försvarsindustri, civil säkerhet samt luftfart. Företaget fokuserar på tre strategiska områden: försvars- och säkerhetslösningar, system och produkter samt aeronautik. Medverkar på MTD gör avdelningen som jobbar med flygsimulatorer."
       },
       "img": "saab.svg",
-      "map":  { "number": 24, "x": 130.42, "y": 6.48 },
+      "map": { "number": 24, "x": 130.42, "y": 6.48 },
       "show": true,
       "level": "gold"
     },
@@ -36,7 +36,7 @@
         "en": "Cygni grundades med visionen att skapa \"den bästa arbetsplatsen för en skicklig och ambitiös systemutvecklare\". Vi har vunnit titeln Sveriges Bästa Arbetsplats 6 år i rad och dessutom vunnit titeln Europas Bästa Arbetsplats 5 gånger i Great Place To Works världsledande medarbetarundersökning som genomförs i över 50 länder: ett fint kvitto på våra ambitioner.\n\nVi söker varje år ambitiösa nyutexade till vårt talangprogram. Talangerna får en personlig mentor, gå en rad skräddarsydda utbildningar, jobba i riktiga kundprojekt, ta relevanta certifieringar och snabbt bygga upp sin kompetens som professionella systemutvecklare. Det bästa sättet att kickstarta karriären är att gå Cygnis talangprogram!"
       },
       "img": "cygni.svg",
-      "map":  { "number": 2, "x": 232.14, "y": 6.48 },
+      "map": { "number": 2, "x": 232.14, "y": 6.48 },
       "show": true,
       "level": "gold"
     },
@@ -56,7 +56,7 @@
         "en": "Vi är övertygade om att det krävs ett öppet sinne för att lösa de stora utmaningar som världen står inför. Med dina idéer kan vi utvecklas, förstå och skapa fler innovationer. Vi älskar teknik och människor, gör du också det? Då skulle du förmodligen gilla att arbeta som teknikkonsult.\n\nMed djupgående erfarenheter från flera branscher tillämpar vi vår kunskap inom tre områden: Engineering, Software och Inbyggda system samt Teknisk Dokumentation. Resultatet av Etteplans innovativa ingenjörskunnande syns i många av marknadens ledande industrilösningar och konsumentprodukter.\n\nHär finns många möjligheter för alla som brinner för att lära sig nytt och trivs med att utvecklas med kollegor. Nyfiken på att bli en i vårt team? Ta tillfället, kom och bekanta dig med oss och se om Etteplan är rätt för dig och din framtid!"
       },
       "img": "etteplan.svg",
-      "map":  { "number": 27, "x": 381.42, "y": 60.19 },
+      "map": { "number": 27, "x": 381.42, "y": 60.19 },
       "show": true,
       "level": "gold"
     },
@@ -76,7 +76,7 @@
         "en": "Vi är experter inom IoT, modern systemutveckling, Business Intelligence och Machine Learning med Microsofts molnteknologi. Data och teknik är hörnstenarna i våra lösningar men alltid med användarupplevelsen i fokus. Från behovsanalys till lösningsdesign, från agil utveckling till kvalitetssäkring. Med andra ord, vi är involverade i att skapa värde i hela processen av digital transformation."
       },
       "img": "gaia_purple.svg",
-      "map":  { "number": 1, "x": 169.14, "y": 6.48 },
+      "map": { "number": 1, "x": 169.14, "y": 6.48 },
       "show": true,
       "level": "gold"
     },
@@ -97,7 +97,7 @@
         "en": "SICK är en världsledande leverantör av sensorer och sensorlösningar för industriella tillämpningar. SICK-koncernen har ca 10 000 anställda runt om i världen och huvudkontoret ligger i Waldkirch, Tyskland. SICK i Linköping är kompetenscenter för Machine Vision. Teknikområdet består av 3D-avbildning och mjukvara för bildanalys och visualisering. SICK i Linköping sysselsätter ca 100 personer och finns i Science Park Mjärdevi."
       },
       "img": "sick.svg",
-      "map":  { "number": 3, "x": 266.65, "y": 46.25 },
+      "map": { "number": 3, "x": 266.65, "y": 46.25 },
       "show": true,
       "level": "silver"
     },
@@ -117,7 +117,7 @@
         "en": "Adding new dimensions.\n\nWe enable a smarter and safer world by creating network solutions to improve security and to find new ways of doing business.\n\nThe world is changing fast, and we make sure we stay ahead of those changes. We operate in the IT and security industries and have extended into the audio, voice over IP and building automation markets."
       },
       "img": "axis.svg",
-      "map":  { "number": 5, "x": 358.74, "y": 6.48 },
+      "map": { "number": 5, "x": 358.74, "y": 6.48 },
       "show": true,
       "level": "silver"
     },
@@ -137,7 +137,7 @@
         "en": "Lifesum is a Stockholm-based digital health startup with a mission to help create a world full of healthy, happy people. Our approach to health is personalized and we hope to be the daily companion you need along the way. We rely on technology, data and behavioral science to provide you with the best possible experience in your journey toward health.\n\nAs a company, we are very proud of how far we’ve come, and how hard we are working to reach our own exciting goals for the future. While standing steadily on the foundation we’ve built over the years, our passion and devotion for what we are creating and building takes us forward every single day.\n\nDo you want to join us on our mission to help people live healthier and happier lives?"
       },
       "img": "lifesum.svg",
-      "map":  { "number": 4, "x": 309.35, "y": 46.25 },
+      "map": { "number": 4, "x": 309.35, "y": 46.25 },
       "show": true,
       "level": "silver"
     },
@@ -157,7 +157,7 @@
         "en": "Att jobba på Sveriges Radio innebär att du kommer få vara med och driva utvecklingen av Sveriges Radios teknik som gör att vi kan fortsätta ligga i framkant och göra radio i världsklass. Vi säkerställer alla sändningar för våra lyssnare och mitt i händelsernas centrum blir du en viktig del av ett företag som värnar om demokrati, det fria ordet och alla människors lika värde.\nPå vår teknikenhet implementerar vi IT-lösningar som är både unika och världsledande och inom vissa områden är det vi som driver marknadens utveckling. För att kunna ta fram ny teknik i ett samhälle där allt går snabbare och snabbare måste vi vara föregångare i det nya, modiga utmanare i det oprövade och kritiska granskare av det självklara."
       },
       "img": "sveriges_radio.svg",
-      "map":  { "number": 26, "x": 345.26, "y": 60.19 },
+      "map": { "number": 26, "x": 345.26, "y": 60.19 },
       "show": true,
       "level": "silver"
     },
@@ -178,7 +178,7 @@
         "en": "VISIARC är Sveriges först appstudio som designar och utvecklar kvalitetsappar. Vi är nu en erfaren design- och utvecklingsbyrå som erbjuder agil full-stack-utveckling av appar, webbappar och spel med tillhörande infrastruktur, även integrationer. Vi är passionerade och drivna innovatörer som kombinerar egen teknikutveckling av ramverk, verktyg och plattformar med innovativa konsultprojekt. "
       },
       "img": "visiarc.svg",
-      "map":  { "number": 32, "x": 439.22, "y": 190.31 },
+      "map": { "number": 32, "x": 439.22, "y": 190.31 },
       "show": true,
       "level": "bronze"
     },
@@ -198,7 +198,7 @@
         "en": "Sveriges yngsta och hungrigaste konsultföretag inom mjukvaruutveckling."
       },
       "img": "digitalcap.svg",
-      "map":  { "number": 25, "x": 309.06, "y": 60.19 },
+      "map": { "number": 25, "x": 309.06, "y": 60.19 },
       "show": true,
       "level": "bronze"
     },
@@ -218,7 +218,7 @@
         "en": "Our customers operate in some of society’s most critical functions. Our job is to help them become more efficient, and to give them the tools to make peoples’ lives healthier, safer and more secure. Driven by knowledge and passion, our vision is to contribute to a healthier and safer society. Sectra develops and sells cutting-edge solutions in the expanding niche segments of medical IT and secure communications. The Sectra Group has over 700 employees worldwide, and customers in over 60 countries.\n\nAt Sectra, we work with products that are beneficial for life and society. Do you want to join us and help make a difference?"
       },
       "img": "sectra.svg",
-      "map":  { "number": 23, "x": 110.35, "y": 57.84 },
+      "map": { "number": 23, "x": 110.35, "y": 57.84 },
       "show": true,
       "level": "bronze"
     },
@@ -238,7 +238,7 @@
         "en": "Vi är ett av Sveriges snabbast växande IT- och managementbolag med 1000 anställda fördelade på 19 kontor runtom i Sverige. Vi ser till att våra kunder blir bäst i världen på det de gör genom att ta vara på den digitala världens möjligheter."
       },
       "img": "consid.svg",
-      "map":  { "number": 19, "x": 110.94, "y": 185.03 },
+      "map": { "number": 19, "x": 110.94, "y": 185.03 },
       "show": true,
       "level": "bronze"
     },
@@ -258,7 +258,7 @@
         "en": "Visualiseringscenter C är ett konsortium som består av Norrköping Visualisering  , Cnema, C-Research Linköpings Universitet, Norrköping Science Park och RISE Interactive C-Studio. Centret är en mötesplats kring visualisering för forskning, näringsliv, allmänhet och skola. Utgångspunkten ligger i den visualiseringsforskning av världsklass som bedrivs vid Linköpings universitet, Campus Norrköping."
       },
       "img": "visualiseringscenter_text.svg",
-      "map":  { "number": 22, "x": 110.35, "y": 87.5 },
+      "map": { "number": 22, "x": 110.35, "y": 87.5 },
       "show": true,
       "level": "bronze"
     },
@@ -278,7 +278,7 @@
         "en": "Norrköping Science Park är bryggan mellan Campus Norrköping och näringslivet. Enkelt förklarat kopplar vi ihop människor med varandra som i sin tur kan leda till exjobb, anställningar, nya projekt och innovativa kunskapsföretag, exempelvis inom området visualisering.\n\nVisual Sweden är Europas mest attraktiva innovationsmiljö för visualisering och bildanalys. Tillsammans med forskningen, behovsägarna och ett 70-tal anslutna företag skapar vi event och projekt med fokus på industri, medicin och samhälle."
       },
       "img": "nosp_vs.svg",
-      "map":  { "number": 21, "x": 110.35, "y": 125.34 },
+      "map": { "number": 21, "x": 110.35, "y": 125.34 },
       "show": true,
       "level": "bronze"
     },
@@ -299,7 +299,7 @@
         "en": "Vi är Sveriges största fackförbund och intresseorganisation för alla ingenjörer och teknologer. Vi hjälper dig att landa ditt drömjobb med hjälp av våra förmåner som CV-granskning, LinkedIn-granskning, intervjuträning m.m. Ett studentmedlemskap hos oss kostar 15kr/mån. Välkommen att börja ditt liv som ingenjör med oss!"
       },
       "img": "sveriges_ingenjorer.svg",
-      "map":  { "number": 14, "x": 316.57, "y": 310.34 },
+      "map": { "number": 14, "x": 316.57, "y": 310.34 },
       "show": true,
       "level": "regular"
     },
@@ -319,7 +319,7 @@
         "en": "Vi är en digital produktionsstudio i Norrköping som bygger det mesta som involverar teknik. Vi skapar produkter, upplevelser och värde till företag genom koncept, design och utveckling. That's it, mer eller mindre."
       },
       "img": "significant_bit.svg",
-      "map":  { "number": 30, "x": 439.22, "y": 140.38 },
+      "map": { "number": 30, "x": 439.22, "y": 140.38 },
       "show": true,
       "level": "regular"
     },
@@ -339,7 +339,7 @@
         "en": "Sogeti levererar högkvalitativa IT-konsulttjänster på den lokala marknaden. I vår heltäckande tjänsteportfölj ryms IT-styrningstjänster, IT-specialisttjänster, utvecklings-, integrations- och migreringsprojekt, testning, systemförvaltning samt Rightshore-tjänster. Sogeti har cirka 23 000 medarbetare i 15 länder. Av dessa arbetar 1 150 konsulter vid företagets 21 svenska kontor. Mer information finns på www.sogeti.se."
       },
       "img": "sogeti.svg",
-      "map":  { "number": 20, "x": 110.35, "y": 155.29 },
+      "map": { "number": 20, "x": 110.35, "y": 155.29 },
       "show": true,
       "level": "regular"
     },
@@ -359,7 +359,7 @@
         "en": "Xamera jobbar med att hjälpa unga ingenjörer inom IT och teknik att hitta rätt jobb efter examen."
       },
       "img": "xamera.svg",
-      "map":  { "number": 17, "x": 110.35, "y": 298.69 },
+      "map": { "number": 17, "x": 110.35, "y": 298.69 },
       "show": true,
       "level": "regular"
     },
@@ -379,7 +379,7 @@
         "en": "Academic Work är Home of the Young Professionals. Vi arbetar med personaluthyrning och rekrytering av akademiker i början av sina karriärer. Det är vår nisch, vårt expertområde och en målgrupp vi tror på. Nyfiken på vad vi har för tjänster ute just nu? Kom förbi Academic Works monter så hjälper vi dig hitta din väg!"
       },
       "img": "academic_work.svg",
-      "map":  { "number": 11, "x": 367.96, "y": 264.71 },
+      "map": { "number": 11, "x": 367.96, "y": 264.71 },
       "show": true,
       "level": "regular"
     },
@@ -399,7 +399,7 @@
         "en": "Qlik helps enterprises around the world move faster, work smarter, and lead the way forward with an end-to-end solution for getting value out of data. Our platform is the only one on the market that allows for open-ended, curiosity-driven exploration, giving everyone – at any skill level – the ability to make real discoveries that lead to real outcomes and transformative changes. We are a values-driven organization, operating over 100 countries with 45,000 customers around the world."
       },
       "img": "qlik.svg",
-      "map":  { "number": 10, "x": 367.96, "y": 216.71},
+      "map": { "number": 10, "x": 367.96, "y": 216.71 },
       "show": true,
       "level": "regular"
     },
@@ -419,7 +419,7 @@
         "en": "AmberWing är ett spelföretag som fokuserar på att skapa en franchise där story ligger till grund till spel. Teknisk innovation kombineras med kreativ frihet för att dels bygga företaget och dels medarbetarnas egna skills. AmberWing tror på att frihet under eget ansvar i längden leder till ökad kompetens, lojalitet, och resultat men framför allt livsglädje!"
       },
       "img": "amberwing.svg",
-      "map":  { "number": 38, "x": 279.98, "y": 60.19 },
+      "map": { "number": 38, "x": 279.98, "y": 60.19 },
       "show": true,
       "level": "regular"
     },
@@ -439,7 +439,7 @@
         "en": "Ericsson empowers an intelligent, sustainable and connected world and we do it by relentlessly innovating technology that are easy to use, scale and adapt.\nThe core of Ericsson is our networks where we  connect you, via your device, to all that the world has to offer – calling home, listening to music or sharing the latest cat meme. With 5G we lay the foundation for the future – enabling smart manufacturing, self-driving cars, large scale IoT and more. \nCome by us at MTD and let us show you who we are.\nBecoming a part of us means we’ll give you access to hundreds of career opportunities in locations all over the world with the support to really find ‘your great’ and the ability to rediscover it, again and again.\nAre you in?"
       },
       "img": "ericsson.svg",
-      "map":  { "number": 15, "x": 130.42, "y": 376.92 },
+      "map": { "number": 15, "x": 130.42, "y": 376.92 },
       "show": true,
       "level": "regular"
     },
@@ -459,7 +459,7 @@
         "en": "MindRoad är ett företag som satsar på spetskompetens. Vi sätter en ära i att ha de mest kompetenta, engagerade och affärsmässiga medarbetarna. Hos oss är kunden, de anställda, kompetens, trivsel, tillväxt och strukturkapital ledorden."
       },
       "img": "mindroad.svg",
-      "map":  { "number": 18, "x": 110.35, "y": 249.03 },
+      "map": { "number": 18, "x": 110.35, "y": 249.03 },
       "show": true,
       "level": "regular"
     },
@@ -479,7 +479,7 @@
         "en": "IST is the leading Nordic supplier of support systems and resources for schools (educational institutions and organizations). For over 30 years, we have played a leading role in building the schools of tomorrow and a future where everyone has an opportunity to learn more. With modern and smart solutions and services within administration, learning and scheduling, we make the workday simpler and more efficient for all who work in and with schools, including pupils and teachers."
       },
       "img": "ist.svg",
-      "map":  { "number": 12, "x": 367.96, "y": 322.71 },
+      "map": { "number": 12, "x": 367.96, "y": 322.71 },
       "show": true,
       "level": "regular"
     },
@@ -499,7 +499,7 @@
         "en": "At Cybercom we are Makers of Tomorrow. By learning through experience, we know what really matters, and we apply our skills and creative use of technology to every client and situation in order to create truly unique solutions for the future. Our areas of expertise lie within Agile Teams, Digitalization, IoT, Cloud and Secure - Where do YOU find yourself in the future?"
       },
       "img": "cybercom.svg",
-      "map":  { "number": 7, "x": 367.96, "y": 80.59 },
+      "map": { "number": 7, "x": 367.96, "y": 80.59 },
       "show": true,
       "level": "regular"
     },
@@ -519,7 +519,7 @@
         "en": "Bontouch is an award-winning product innovation agency. We have all skills required for modern digital product development, including strategy, design, development and maintenance.\n\nWe specialize in analog-to-digital experiences, using digital technologies to reduce friction in the real world. Built as a product startup, we offer a unique long-term engagement model to our brand partners and become their software startup as-a-service.\n\nBy adding software as a “layer” on top of physical goods and services, we help our clients to transform their customer experience, to significantly increase their rate of innovation, and to create sustainable differentiation in completely new areas. Ever since our start in 2008, we have been fortunate enough to join up with amazing brands such as Post-it®, Swedish Railways (SJ), PostNord and Swish."
       },
       "img": "bontouch.svg",
-      "map":  { "number": 33, "x": 281.92, "y": 228.41 },
+      "map": { "number": 33, "x": 281.92, "y": 228.41 },
       "show": true,
       "level": "regular"
     },
@@ -539,7 +539,7 @@
         "en": "We empower everyone to create games\n\nTo realize this dream of ours, we explore and apply the latest technology, and we reimagine what games can become and how they should be built. All of us at Embark take part in shaping our culture. We succeed together, we fail together, and we learn together. If you’re passionate about games and our mission, bring your expertise, your enthusiasm, your crazy ideas, and let’s change the games industry forever. At Embark we offer a journey into the unknown, to build creative, surprising and beautiful experiences together."
       },
       "img": "embark_studios.svg",
-      "map":  { "number": 29, "x": 439.22, "y": 111.36 },
+      "map": { "number": 29, "x": 439.22, "y": 111.36 },
       "show": true,
       "level": "regular"
     },
@@ -559,7 +559,7 @@
         "en": "På FindOut får du utvecklas genom våra egna visualiseringsprodukter och hos våra kunder som teknikkonsult. Det kan innebära allt från fullstackutveckling till hårdvarunära programmering. Allt för att hjälpa våra kunder att bli bättre och effektivare. Vi kan erbjuda en tillvaro med mycket driv, engagerade medarbetare som vill hjälpas åt att utveckla och utvecklas, där du har möjlighet att påverka din egen roll och bidrag. Ett intressant och hållbart arbetsliv är viktigt för oss!\n\nVi söker främst ingenjörer som är nyfikna, har ett grymt driv och älskar programmering.  De personliga egenskaperna är det som i slutändan avgör om du är en FindOut:are!"
       },
       "img": "findout_technologies.svg",
-      "map":  { "number": 34, "x": 281.92, "y": 196.25 },
+      "map": { "number": 34, "x": 281.92, "y": 196.25 },
       "show": true,
       "level": "regular"
     },
@@ -579,7 +579,7 @@
         "en": "Dimfrost, ett dotterbolag till Zordix (publ), är en Norrköpingsbaserad spelutvecklare med inriktningen story-drivna äventyrs- och strategispel.  2019 tilldelades Dimfrost Epic Games utvecklingsstöd, Epic MegaGrants för deras arbete med det egenutvecklade varumärket; Bramble."
       },
       "img": "dimfrost_studio.svg",
-      "map":  { "number": 6, "x": 367.96, "y": 51.09 },
+      "map": { "number": 6, "x": 367.96, "y": 51.09 },
       "show": true,
       "level": "regular"
     },
@@ -599,7 +599,7 @@
         "en": "Polismyndigheten består av sju polisregioner, fem gemensamma avdelningar, NOA, NFC och särskilda utredningar. Inom regionen så finns IT-relaterade jobb framförallt på NFC samt på polisens IT-avdelning."
       },
       "img": "",
-      "map":  { "number": 28, "x": 453.25, "y": 60.19 },
+      "map": { "number": 28, "x": 453.25, "y": 60.19 },
       "show": true,
       "level": "regular"
     },
@@ -619,7 +619,7 @@
         "en": "Can Teleoperation outperform human presence?\n\nWe believe so, and that's our mission!\n\nThe Voysys in-house developed 3D render engine is optimized for ultra low latency. Using our embedded streamer, low end-to-end latency may also be accomplished over WIFI, 4G or 5G networks.\n\nThe render engine also allows for rendering of high-resolution gigantic screens including cylindrical and spherical domes. Thanks to our flexible 3D editor, Voysys customers can create flexible screen layouts optimized for fleet monitoring and/or teleoperation. The operator can quickly switch between several screen presets in order to use the best one for the current situation."
       },
       "img": "voysys.svg",
-      "map":  { "number": 35, "x": 281.92, "y": 164.1 },
+      "map": { "number": 35, "x": 281.92, "y": 164.1 },
       "show": true,
       "level": "regular"
     },
@@ -639,7 +639,7 @@
         "en": "We at iMatrics develop cloud-based services for text and data analysis that enable the media industry to become data driven. Our services employ machine learning and AI techniques and provide news organisations with a foundation for a profitable digital business."
       },
       "img": "imatrics.svg",
-      "map":  { "number": 36, "x": 281.92, "y": 133.21 },
+      "map": { "number": 36, "x": 281.92, "y": 133.21 },
       "show": true,
       "level": "regular"
     },
@@ -659,7 +659,7 @@
         "en": "Dataton has developed professional audio-visual products designed to enrich the visitor experience for more than 40 years. Dataton’s flagship product is the WATCHOUT multi-display system which is used worldwide to create, control and deliver spectacular productions across multiple display areas. You’ll find WATCHOUT in action at prestigious events such as Olympic ceremonies, in live broadcasts and major product launches, as well as permanent installations at museums and visitor attractions."
       },
       "img": "dataton.svg",
-      "map":  { "number": 13, "x": 350.13, "y": 375.6 },
+      "map": { "number": 13, "x": 350.13, "y": 375.6 },
       "show": true,
       "level": "regular"
     },
@@ -679,7 +679,7 @@
         "en": "TaxiCaller Nordic   was founded in 2011 and we’re located in Mjärdevi Science Park, Linköping. We are a band of 30 merry problem-solvers on a mission to transform the transport industry with our all-in-one digital dispatch system. We create solutions for tomorrow's need for Mobility as a Service using cutting-edge, blow-your-wig-off tech.\n\nThe responsibility of delivering a future-proof solution that meets the needs for existing and future customers is what fuels our fire. Our software has been used for over 100 million bookings worldwide and we serve over 650 000 app users.\n\nDo you want to break new ground with us? We look forward to meeting you!"
       },
       "img": "taxicaller.svg",
-      "map":  { "number": 9, "x": 367.96, "y": 174.26 },
+      "map": { "number": 9, "x": 367.96, "y": 174.26 },
       "show": true,
       "level": "regular"
     },
@@ -699,7 +699,7 @@
         "en": "Softube seeks to answer the question “what’s the best way to make music with a computer?” for musicians, engineers, and producers alike. Initially developing for big brands in the industry, such as Marshall, and later branching out into our own products and plug-ins, both original and in partnership with such legendary hardware manufacturers as Solid State Logic, Softube has always taken pride in being ahead of the curve on quality of sound. We never settle for keeping up with the competition. We lead the way."
       },
       "img": "softube.svg",
-      "map":  { "number": 31, "x": 439.22, "y": 166.71 },
+      "map": { "number": 31, "x": 439.22, "y": 166.71 },
       "show": true,
       "level": "regular"
     },
@@ -719,7 +719,7 @@
         "en": "Paf är ett nordiskt spelbolag som grundades 1966 på Åland för att generera vinst till samhällsnyttiga ändamål. Vi blev ett av de första spelbolagen online när vi 1999 tog verksamheten till nätet. Många av Paf.coms spel har skapats av vår egen Games Studio och finns därmed bara hos oss. Vi är prisbelönta och branschledande inom ansvarsfullt spelande. Paf bedriver också fysisk spelverksamhet ombord på över 30 kryssningsfartyg på Östersjön och Nordsjön.\n\nPaf har cirka 400 anställda från över 30 olika länder och vi har kontor på Åland samt i Helsingfors, Stockholm, Riga, Tallinn, Oslo, Norrköping och Madrid. Paf (Ålands Penningautomatförening) licensieras och kontrolleras av Ålands landskapsregering.\n\nUnder 2018 omsatte Paf-koncernen sammanlagt 111,8 miljoner euro och gjorde en vinst på 24,6 miljoner euro. Mer information finns på aboutpaf.com."
       },
       "img": "paf.svg",
-      "map":  { "number": 16, "x": 163.69, "y": 310.34 },
+      "map": { "number": 16, "x": 163.69, "y": 310.34 },
       "show": true,
       "level": "regular"
     },
@@ -739,7 +739,7 @@
         "en": "Goodbye Kansas Studios creates award-winning VFX, digital animation and perfomance capture for film, TV-series, games, gametrailers and commercials."
       },
       "img": "goodbye_kansas_studios.svg",
-      "map":  { "number": 37, "x": 281.92, "y": 105.97 },
+      "map": { "number": 37, "x": 281.92, "y": 105.97 },
       "show": true,
       "level": "regular"
     },
@@ -759,7 +759,7 @@
         "en": "Hemnet is Sweden's largest property portal. Since the start in 1998, we have been the natural meeting place for real estate agents as well as for property sellers and buyers. Our vision is to be the key to a simpler property transaction. Therefore, Hemnet offers the largest inventory of properties for sale on the market; the most number of potential buyers; products through which sellers are able to influence the selling of their property, and products that gives real estate agents the opportunity to strengthen their brand. We are one of Sweden's largest web sites and apps with 3.1 million visitors a week - and based on population we are the most popular property portal in the world."
       },
       "img": "hemnet.svg",
-      "map":  { "number": 8, "x": 367.96, "y": 130.57 },
+      "map": { "number": 8, "x": 367.96, "y": 130.57 },
       "show": true,
       "level": "regular"
     },
@@ -780,7 +780,7 @@
         "en": "Forna MTare som skapar ett smart rekryteringsverktyg, kom till oss för exjobb och blomjord."
       },
       "img": "cruitive.svg",
-      "map":  { "number": null, "x": null, "y": null },
+      "map": { "number": null, "x": null, "y": null },
       "show": true,
       "level": "startup"
     },
@@ -800,7 +800,7 @@
         "en": "East Sweden Game är ett community och arbetsplats för alla som utvecklar dataspel. Vi erbjuder rådgivning, nätverk och världens bästa arbetsplats - gratis för studenter!"
       },
       "img": "east_games_weden.svg",
-      "map":  { "number": null, "x": null, "y": null },
+      "map": { "number": null, "x": null, "y": null },
       "show": true,
       "level": "startup"
     },
@@ -820,7 +820,7 @@
         "en": "Edvira jobbar forskningsbaserat med fokus på att göra tech-branchen mer inkluderande. I form av informationsvisualiseringar, propaganda och events. Kom förbi vår monter för att få reda på hur du kan bidra till en mer inkluderande bransch."
       },
       "img": "edvira.svg",
-      "map":  { "number": null, "x": null, "y": null },
+      "map": { "number": null, "x": null, "y": null },
       "show": true,
       "level": "startup"
     },
@@ -840,7 +840,7 @@
         "en": "#799G52 är en tvärdisciplinär projektkurs på LiU där studenterna arbetar fram nya innovativa koncept, lösningar och idéer. Utmaningarna kommer direkt från det regionala näringslivet och skall ha en tydlig koppling till något av de globala målen i Agenda 2030."
       },
       "img": "ingenious.svg",
-      "map":  { "number": null, "x": null, "y": null },
+      "map": { "number": null, "x": null, "y": null },
       "show": true,
       "level": "startup"
     },
@@ -860,7 +860,7 @@
         "en": "Unitalent erbjuder studenter vid Linköpings universitet kvalitativa, spännande och lärorika konsultuppdrag under studietiden. Konsultuppdragen ger dig som student möjligheten att skaffa värdefulla erfarenheter och kontakter i näringslivet samtidigt som du får chansen att utveckla din kompetens. Vi söker drivna och ambitiösa studenter som vill ta ett första kliv ut i arbetslivet."
       },
       "img": "unitalent.svg",
-      "map":  { "number": null, "x": null, "y": null },
+      "map": { "number": null, "x": null, "y": null },
       "show": true,
       "level": "startup"
     }

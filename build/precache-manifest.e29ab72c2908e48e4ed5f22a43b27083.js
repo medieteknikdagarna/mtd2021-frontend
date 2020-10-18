@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3dbea40551b26621fa96f57c2db429c6",
+    "revision": "4d4ed3ec6195f3decc76f1d4834e971f",
     "url": "/index.html"
   },
   {
-    "revision": "ac355b17c8138a9c47bc",
-    "url": "/static/css/main.9e22356f.chunk.css"
+    "revision": "0efd0ebf82dcdd01986f",
+    "url": "/static/css/main.846ded8d.chunk.css"
   },
   {
-    "revision": "d221aaa6868c2730c6bb",
-    "url": "/static/js/2.dff1fdce.chunk.js"
+    "revision": "6cc1f058949074569b31",
+    "url": "/static/js/2.e5c932fd.chunk.js"
   },
   {
-    "revision": "65d43a2a1eb0296760785c775127120e",
-    "url": "/static/js/2.dff1fdce.chunk.js.LICENSE.txt"
+    "revision": "e4b9421bfe153e88ed73cb15a8076e6a",
+    "url": "/static/js/2.e5c932fd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ac355b17c8138a9c47bc",
-    "url": "/static/js/main.d8bf5e67.chunk.js"
+    "revision": "0efd0ebf82dcdd01986f",
+    "url": "/static/js/main.945c9922.chunk.js"
   },
   {
-    "revision": "0883fbb9ed724fc6b0cf",
-    "url": "/static/js/runtime-main.eebceba4.js"
+    "revision": "79f2bc7f90bbeb867344",
+    "url": "/static/js/runtime-main.d84a7a64.js"
+  },
+  {
+    "revision": "10d56adcd200033d24ef925606eaf5de",
+    "url": "/static/media/1.10d56adc.webp"
   },
   {
     "revision": "b9ca8caf5d2be8715a19e9f167c6b454",
     "url": "/static/media/1.b9ca8caf.jpg"
+  },
+  {
+    "revision": "17c12ee4abc302dc87bd73d2a0260e63",
+    "url": "/static/media/2.17c12ee4.webp"
   },
   {
     "revision": "b3fa73c9a26bb199951159a655631396",
@@ -36,12 +44,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/3.1234c628.jpg"
   },
   {
+    "revision": "337c1f7670500b3dd5ac60e831fb1526",
+    "url": "/static/media/3.337c1f76.webp"
+  },
+  {
     "revision": "31d493e8db5df9714a1a60badad9e695",
     "url": "/static/media/4.31d493e8.jpg"
   },
   {
+    "revision": "44834079d88c00cf954a3bb833a47b7f",
+    "url": "/static/media/4.44834079.webp"
+  },
+  {
     "revision": "663d773b55dceea6e09915eecc124fe5",
     "url": "/static/media/BFFF9619.663d773b.png"
+  },
+  {
+    "revision": "59f31d17a8d478946be7be999c97a408",
+    "url": "/static/media/MTDSphereVideo_still.59f31d17.webp"
   },
   {
     "revision": "dda40521e27aaf6e5ffe94e97d2d5d32",
@@ -58,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9050c97e9c19bd5d954632bceaef2f36",
     "url": "/static/media/MTlogo.9050c97e.png"
+  },
+  {
+    "revision": "d1b1c632b47821e30e40ee17acb86c83",
+    "url": "/static/media/MTlogo.d1b1c632.webp"
   },
   {
     "revision": "42eae13e06466345c46222e23ed394c8",
@@ -144,24 +168,48 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/fair.f0708729.jpg"
   },
   {
-    "revision": "6c0c594d3fa8f70a8e315935b94aff38",
-    "url": "/static/media/fairpic1.6c0c594d.jpg"
+    "revision": "4ae13cb22e46c6a862cca58cbb48f328",
+    "url": "/static/media/fairpic1.4ae13cb2.webp"
   },
   {
-    "revision": "0bb417e2b62b0873a1681b8eedb94d09",
-    "url": "/static/media/fairpic2.0bb417e2.jpg"
+    "revision": "5f086f4ada52121567c54eb0c55a680c",
+    "url": "/static/media/fairpic1.5f086f4a.jpg"
   },
   {
-    "revision": "83d916afd446f99952bdd252999f3221",
-    "url": "/static/media/fairpic3.83d916af.jpg"
+    "revision": "4972bc6ca5d8e5d12a1a66bfd82699db",
+    "url": "/static/media/fairpic2.4972bc6c.jpg"
+  },
+  {
+    "revision": "663cdc93630a1d109bfe032c5cfa62fc",
+    "url": "/static/media/fairpic2.663cdc93.webp"
+  },
+  {
+    "revision": "416c97f6a75fcc1e9da383d16b2a5e37",
+    "url": "/static/media/fairpic3.416c97f6.webp"
+  },
+  {
+    "revision": "8dc9f31f6f96fbab66d354b8e497791d",
+    "url": "/static/media/fairpic3.8dc9f31f.jpg"
   },
   {
     "revision": "7b3c3999add5cf485d10f56cf35f8c07",
     "url": "/static/media/fairpic4.7b3c3999.jpg"
   },
   {
+    "revision": "f72650e80a6530885b954cab868530b1",
+    "url": "/static/media/fairpic4.f72650e8.webp"
+  },
+  {
+    "revision": "2f9f17c63b78f7110f06128a3e88ac73",
+    "url": "/static/media/fairpic5.2f9f17c6.webp"
+  },
+  {
     "revision": "771369c6cae07f3af06a09591ecfad2b",
     "url": "/static/media/fairpic5.771369c6.jpg"
+  },
+  {
+    "revision": "60f951783be296c95b00c1912b709d5f",
+    "url": "/static/media/fairpic6.60f95178.webp"
   },
   {
     "revision": "9d854a0d412b1596b78cd1207d65468f",

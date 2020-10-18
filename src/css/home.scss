@@ -3,12 +3,12 @@
 #homeWrap {
   #beamerImage {
     width: 100vw;
-    margin-left: calc( calc(100% - 100vw) /2);
+    margin-left: calc(calc(100% - 100vw) / 2);
     height: 100vh;
-  	min-height: 600px;
+    min-height: 600px;
     background: $gray;
-    background-image: url('../bilder/fair.jpg');
-  	background-size: cover;
+    background-image: url("../bilder/fair.jpg");
+    background-size: cover;
     background-position: 50% 100%;
     background-attachment: fixed;
     position: -webkit-sticky; /* Safari */
@@ -18,20 +18,20 @@
     margin-top: -151px;
   }
 
-	#beamerWrap {
-		width: 100%;
-		max-width: 1200px;
+  #beamerWrap {
+    width: 100%;
+    max-width: 1200px;
     margin-top: -100vh;
-		padding: 10px;
-		padding-top: 150px;
-		padding-bottom: 150px;
-		height: 100vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+    padding: 10px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    
+
     @media screen and (max-width: $ipad) {
       margin-top: -95vh;
 
@@ -62,14 +62,30 @@
 
         /*animated scroll arrow animation*/
         @-webkit-keyframes fade_move_down {
-          0%   { top: -10px; opacity: 0; }
-          50%  { opacity: 1;  }
-          100% { top: 30px; opacity: 0; }
+          0% {
+            top: -10px;
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            top: 30px;
+            opacity: 0;
+          }
         }
         @keyframes fade_move_down {
-          0%   { top: -10px; opacity: 0; }
-          50%  { opacity: 1;  }
-          100% { top: 30px; opacity: 0; }
+          0% {
+            top: -10px;
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            top: 30px;
+            opacity: 0;
+          }
         }
       }
 
@@ -82,26 +98,26 @@
       }
     }
 
-		#beamerInfo {
-			color: #fff;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			position: relative;
+    #beamerInfo {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
 
-			h3 {
-				font-size: 25px;
-				font-weight: 600;
-				letter-spacing: 0.06em;
-				text-transform: uppercase;
-				padding: 8px 0 8px 0;
-			}
-
-			h2 {
-				padding: 15px 0 15px 0;
-				font-size: 55px;
+      h3 {
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 8px 0 8px 0;
       }
-      
+
+      h2 {
+        padding: 15px 0 15px 0;
+        font-size: 55px;
+      }
+
       @media screen and (max-width: $bigPhone) {
         text-align: center;
 
@@ -113,28 +129,28 @@
           font-size: 20px;
         }
       }
-		}
+    }
 
-		footer {
-			position: relative;
-			bottom: -35%;
-			width: 100%;
-			display: flex;
-			justify-content: center;
+    footer {
+      position: relative;
+      bottom: -35%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
       transition: opacity 0.2s ease;
 
       &.after {
         opacity: 0;
       }
 
-			.footCont {
-				position: absolute;
-				bottom: 0;
-				padding: 20px;
-				display: flex;
-				justify-content: space-around;
+      .footCont {
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        
+
         @media screen and (max-width: $bigPhone) {
           width: 100%;
 
@@ -145,29 +161,29 @@
           }
         }
 
-				p {
-					color: white;
-					font-size: 15px;
-					text-transform: uppercase;
+        p {
+          color: white;
+          font-size: 15px;
+          text-transform: uppercase;
           padding-top: 4px;
-          
+
           @media screen and (max-width: $bigPhone) {
             display: none;
           }
-				}
+        }
 
-				a {
-					color: #fff;
-					font-size: 15px;
-					text-transform: uppercase;
+        a {
+          color: #fff;
+          font-size: 15px;
+          text-transform: uppercase;
           cursor: pointer;
           display: flex;
 
-					.fa {
-						margin: 0 7px 0 20px;
-						font-size: 22px;
+          .fa {
+            margin: 0 7px 0 20px;
+            font-size: 22px;
           }
-          
+
           @media screen and (max-width: $bigPhone) {
             display: block;
 
@@ -179,10 +195,10 @@
               display: block;
             }
           }
-				}
-			}
-		}
-	}
+        }
+      }
+    }
+  }
 
   #landingContent {
     min-height: 100vh;
@@ -234,16 +250,23 @@
 
     .stickyHeading {
       text-align: center;
-      padding: 10px;
+      padding: 40px;
+      // padding: 10px;
       width: 100%;
       // margin-left: calc(calc(-100vw + 100%)/2);
-      margin: 15px 0 15px 0;
+      margin: 15px 0 200px 0;
       color: #fff;
       font-size: 50px;
       letter-spacing: 1px;
       background: $gray;
-      background: linear-gradient(90deg, rgba(0,0,0,0) 0%, $gray 20%, $gray 80%, rgba(0,0,0,0) 100%);
-      
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 0%,
+        $gray 20%,
+        $gray 80%,
+        rgba(0, 0, 0, 0) 100%
+      );
+
       @media screen and (max-width: $smallPhone) {
         font-size: 40px;
       }
@@ -323,7 +346,13 @@
     #silverPartners {
       margin-top: 100px;
       background: $navyFade;
-      background: linear-gradient(90deg, rgba(0,0,0,0) 0%, $navyFade 20%, $navyFade 80%, rgba(0,0,0,0) 100%);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 0%,
+        $navyFade 20%,
+        $navyFade 80%,
+        rgba(0, 0, 0, 0) 100%
+      );
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -356,7 +385,7 @@
             padding: 10px;
             width: 20%;
             height: 120px;
-          
+
             @media screen and (max-width: $bigPhone) {
               width: 50%;
               flex-wrap: wrap;

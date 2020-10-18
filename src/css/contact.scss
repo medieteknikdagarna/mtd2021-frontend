@@ -1,5 +1,9 @@
 @import "colors";
 
+#headerHamburger #navis #banner #openNavButton span {
+  background: black;
+}
+
 #contactWrap {
   padding: 0 10px 0 10px;
   .goBack {
@@ -257,10 +261,13 @@
               flex-direction: row;
               flex-wrap: wrap;
               width: 100%;
+              margin-bottom: 30px;
 
               .imageContainer {
-                width: 40%;
-                padding-bottom: 40%;
+                width: 50%;
+                padding-bottom: 50%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 overflow: hidden;
                 border-radius: 50%;
                 position: relative;
@@ -286,7 +293,9 @@
                   padding-right: 3px;
                 }
 
-                h2, h3, a {
+                h2,
+                h3,
+                a {
                   overflow: hidden;
                   white-space: nowrap;
                   text-overflow: ellipsis;

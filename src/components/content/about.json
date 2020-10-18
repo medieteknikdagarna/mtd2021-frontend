@@ -19,6 +19,7 @@
     },
     "fairInfo": {
       "title": "På mässan",
+      "videoTitle": "MTD 2020 Aftermovie",
       "1": {
         "title": "Reception",
         "body": "Det kommer finnas en receptionssdisk på bottenplan under mässdagen. Om du har frågor, behöver hjälp eller letar efter borttappade saker kan du alltid vända dig dit."
@@ -30,9 +31,15 @@
       "3": {
         "title": "Tävlingar",
         "body1": "Delta i tävlingarna som anordnas innan och under mässan för chansen att vinna värdefulla priser. Mer info om tävlingarna kommer finnas på vår ",
-        "link1": { "text": "Instagram-", "url": "https://www.instagram.com/medieteknikdagarna/" },
+        "link1": {
+          "text": "Instagram-",
+          "url": "https://www.instagram.com/medieteknikdagarna/"
+        },
         "body2": " och ",
-        "link2": { "text": "Facebook-sidor", "url": "https://facebook.com/medieteknikdagarna" },
+        "link2": {
+          "text": "Facebook-sidor",
+          "url": "https://facebook.com/medieteknikdagarna"
+        },
         "body3": "."
       },
       "4": {
@@ -66,6 +73,7 @@
     },
     "fairInfo": {
       "title": "During the fair",
+      "videoTitle": "MTD 2020 Aftermovie",
       "1": {
         "title": "Reception",
         "body": "There will be a reception desk on the ground floor during the fair. If you have any questions, need help, or are looking for lost items, you can visit us there."
@@ -77,9 +85,15 @@
       "3": {
         "title": "Competitions",
         "body1": "Participate in the competitions organized before and during the fair for the chance to win valuable prices. More information about the competitions will be found on our ",
-        "link1": { "text": "Instagram", "url": "https://www.instagram.com/medieteknikdagarna/" },
+        "link1": {
+          "text": "Instagram",
+          "url": "https://www.instagram.com/medieteknikdagarna/"
+        },
         "body2": " and ",
-        "link2": { "text": "Facebook", "url": "https://facebook.com/medieteknikdagarna" },
+        "link2": {
+          "text": "Facebook",
+          "url": "https://facebook.com/medieteknikdagarna"
+        },
         "body3": " pages."
       },
       "4": {

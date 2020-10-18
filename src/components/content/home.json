@@ -1,21 +1,26 @@
 {
   "sv": {
     "welcome": "Välkommen!",
-    "welcomeText": "Medieteknikdagarna är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugonde året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva. Läs mer om Medieteknikdagarna ",
+    "welcomeText": "Medieteknikdagarna är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugoförsta året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva. Läs mer om Medieteknikdagarna ",
     "welcomeReadMore": "här.",
     "newsTitle": "Nyheter",
     "partnerTitle": "Huvudpartner",
     "press": "Tryck för att läsa mer",
-    "silverPartnersTitle": "Silverpartner"
+    "silverPartnersTitle": "Silverpartner",
+    "companyTitle": "Företag som vill medverka?",
+    "companyText1": "Vill ditt företag medverka på mässan och delta som utställare på vår arbetsmarknadsdag? Kul tycker vi! Läs mer ",
+    "companyText2": " eller hör av dig direkt till företagskontakt på: "
   },
 
   "en": {
     "welcome": "Welcome!",
-    "welcomeText": "The Media Technology Days is a day full with inspiration, a fair and hundreds of students and companies from the industry. Here, you'll find everything you need to know about the day. Read more about the Media Technology Days ",
+    "welcomeText": "The Media Technology Day is a day full with inspiration, a fair and hundreds of students and companies from the industry. Here, you'll find everything you need to know about the day. Read more about the Media Technology Days ",
     "welcomeReadMore": "here.",
     "newsTitle": "News",
     "partnerTitle": "Main Partners",
     "press": "Click to read more",
-    "silverPartnersTitle": "Silver Partners"
+    "silverPartnersTitle": "Silver Partners",
+    "companyTitle": "Företag som vill ställa ut?",
+    "companyText": "Är ni intresserade av att delta som utställare på vår arbetsmarknadsdag? Kul! "
   }
 }

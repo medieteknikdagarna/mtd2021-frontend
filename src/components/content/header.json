@@ -17,6 +17,12 @@
     "companies": {
       "title": "Företag"
     },
+    "info": {
+      "title": "För Företag"
+    },
+    "covid": {
+      "title": "Covid-19"
+    },
     "studentexpo": {
       "title": "Studentexpo"
     },
@@ -54,6 +60,12 @@
     },
     "companies": {
       "title": "Companies"
+    },
+    "info": {
+      "title": "For Exhibitors"
+    },
+    "covid": {
+      "title": "Covid-19"
     },
     "studentexpo": {
       "title": "Student Expo"
