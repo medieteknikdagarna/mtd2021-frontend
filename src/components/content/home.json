@@ -8,19 +8,22 @@
     "press": "Tryck för att läsa mer",
     "silverPartnersTitle": "Silverpartner",
     "companyTitle": "Företag som vill medverka?",
-    "companyText1": "Vill ditt företag medverka på mässan och delta som utställare på vår arbetsmarknadsdag? Kul tycker vi! Läs mer ",
+    "companyText1": "Vill ditt företag medverka på mässan och delta som utställare på vår arbetsmarknadsdag? Kul! Läs mer ",
+    "companyLink": " här ",
     "companyText2": " eller hör av dig direkt till företagskontakt på: "
   },
 
   "en": {
     "welcome": "Welcome!",
-    "welcomeText": "The Media Technology Day is a day full with inspiration, a fair and hundreds of students and companies from the industry. Here, you'll find everything you need to know about the day. Read more about the Media Technology Days ",
+    "welcomeText": "Media Technology Days is a day full with inspiration, a fair and hundreds of students and companies from the industry. Here, you'll find everything you need to know about the day. Read more about the Media Technology Days ",
     "welcomeReadMore": "here.",
     "newsTitle": "News",
     "partnerTitle": "Main Partners",
     "press": "Click to read more",
     "silverPartnersTitle": "Silver Partners",
-    "companyTitle": "Företag som vill ställa ut?",
-    "companyText": "Är ni intresserade av att delta som utställare på vår arbetsmarknadsdag? Kul! "
+    "companyTitle": "Want your company to exhibit?",
+    "companyText1": "Does your company want to participate in the fair and participate as an exhibitor on our media technology day? Read more",
+    "companyLink": " here ",
+    "companyText2": "or contact business contact directly at: "
   }
 }

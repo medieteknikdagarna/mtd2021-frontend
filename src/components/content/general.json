@@ -1,7 +1,7 @@
 {
   "year": "2021",
   "nameShort": "MTD",
-  "place": "Täppan",
+  "place": "",
   "city": "Norrköping",
   "time": "",
   "http": "http://",
@@ -25,7 +25,7 @@
     }
   },
   "en": {
-    "name": "The Media Technology Day",
+    "name": "Media Technology Days",
     "date": "March 4",
     "dateShort": "4/3",
     "shortInfo": "MTD is arranged by the Media Technology Association at Linköping University.",

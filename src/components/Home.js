@@ -209,7 +209,7 @@ class Home extends Component {
             <h3>{general[this.state.lang].name + " " + general.year}</h3>
             <h2>{general[this.state.lang].date}</h2>
             <h3>{general.time}</h3>
-            <h3>{general.place}</h3>
+            <h3>{general.city}</h3>
           </div>
           <footer id="beamerSharebar">
             <div className="footCont">
@@ -298,7 +298,9 @@ class Home extends Component {
             <p>
               <span>
                 {home[this.state.lang].companyText1}
-                <Link to={settings.url + "info/"}>här</Link>
+                <Link to={settings.url + "info/"}>
+                  {home[this.state.lang].companyLink}
+                </Link>
                 {home[this.state.lang].companyText2}
                 <a className="mailTo" href={email}>
                   {group.business.email}

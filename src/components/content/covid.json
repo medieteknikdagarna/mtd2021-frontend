@@ -1,11 +1,13 @@
 {
     "sv": {
       "title": "Covid-19",
-      "contentText1": "Tidigare år har Medieteknikdagarnas mässa anordnats som ett fysiskt event där både besökare och utställare befinner sig på plats. På grund av den pågående pandemin har däremot vi i MTD-gruppen 2021 behövt tänka om. Vi följer Folkhälsomyndighetens rekommendationer och agerar enligt dessa. Därmed planeras MTD 2021 anpassningsbart vilket gör det möjligt att ändra mässkoncept beroende på rådande situation. ",
+      "contentText1": "Tidigare år har Medieteknikdagarnas mässa anordnats som ett fysiskt event där både besökare och utställare är närvarande. På grund av den pågående pandemin har däremot vi i MTD-gruppen 2021 behövt tänka om. Vi följer Folkhälsomyndighetens rekommendationer och agerar enligt dessa. Därmed planeras MTD 2021 anpassningsbart vilket gör det möjligt att ändra mässkoncept beroende på rådande situation. ",
       "contentText2": "Idag prioriterar vi en mässa där studenter som besökare kan delta fysiskt. Om restriktionerna tillåter det vill vi också erbjuda alla inbjudna företag en möjlighet att välja om de deltar fysiskt eller digitalt."
     },
     "en": {
-      "title": "Covid-19"
+      "title": "Covid-19",
+      "contentText1": "In previous years, the Media Technology Days' fair has been organized as a physical event where both visitors and exhibitors are present. Due to the ongoing pandemic, however, we in the MTD group 2021 have had to rethink. We follow the Swedish Public Health Agency's recommendations and act in accordance with them. Thus, MTD 2021 is planned adaptably, which makes it possible to change the fair concept depending on the current situation.",
+      "contentText2": "Today we prioritize a fair where students as visitors can participate physically. If the restrictions allow it, we also want to offer all invited companies an opportunity to choose whether they participate physically or digitally."
       
     }
   }
