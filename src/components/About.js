@@ -347,8 +347,10 @@ class About extends Component {
               <p className="ingress">
                 {content[this.state.lang].MTDinfo.ingress1}{" "}
                 {general[this.state.lang].name}{" "}
-                {content[this.state.lang].MTDinfo.ingress2} {general.nameShort}{" "}
-                {general.year} {content[this.state.lang].MTDinfo.ingress3}
+                {content[this.state.lang].MTDinfo.ingress2}
+                {/* {general.nameShort}{" "}
+                {general.year}  */}
+                {content[this.state.lang].MTDinfo.ingress3}
               </p>
               <p>
                 {content[this.state.lang].MTDinfo.body1}
