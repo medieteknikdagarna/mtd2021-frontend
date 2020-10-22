@@ -661,10 +661,6 @@
           font-size: 40px;
           color: #fff;
 
-          span {
-            background: white;
-          }
-
           &.scrolled {
             bottom: -27px;
             // background: black;
@@ -762,6 +758,10 @@
         cursor: pointer;
         font-size: 40px;
         color: #fff;
+
+        span {
+          background: white;
+        }
 
         &.scrolled {
           bottom: -27px;

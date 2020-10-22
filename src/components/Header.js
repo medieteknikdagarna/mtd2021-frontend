@@ -113,14 +113,28 @@ class Header extends Component {
     let scrolledClass = "";
     let logo;
 
+    if (nav[3] === "about") {
+      this.headerRef.current.classList.remove("transparent");
+      console.log("under about");
+      logo = logo_regular;
+    }
+
     if (scrollValue <= 30) {
       scrolledClass = "";
       logo = logo_regular;
 
-      if (nav[3] === "" || nav[3] === "about" || nav[3] === "companies") {
-        const isOnSubpageOfAbout = nav[4] === "" && nav[3] === "about";
-        if (isOnSubpageOfAbout || nav[3] === "" || nav[3] === "companies") {
+      // if (nav[3] === "" || nav[3] === "about" || nav[3] === "companies") {
+      //   const isOnSubpageOfAbout = nav[4] === "" && nav[3] === "about";
+      //   if (isOnSubpageOfAbout || nav[3] === "" || nav[3] === "companies") {
+      //     this.headerRef.current.classList.add("transparent");
+      //     logo = logo_white;
+      //   }
+      // }
+
+      if (nav[3] === "" || nav[3] === "companies") {
+        if (nav[3] === "" || nav[3] === "companies") {
           this.headerRef.current.classList.add("transparent");
+          console.log("add transparent");
           logo = logo_white;
         }
       }
@@ -187,7 +201,6 @@ class Header extends Component {
       let homeNav = document.getElementById("home");
       let aboutNAV = document.getElementById("about");
       let companiesNAV = document.getElementById("companies");
-      let infoNAV = document.getElementById("info");
 
       let logo = require("../bilder/logo.svg");
 
@@ -203,23 +216,23 @@ class Header extends Component {
           });
           break;
 
-        case "about":
-          homeNav.classList.remove("selected");
-          homeNav.removeAttribute("aria-current");
+        // case "about":
+        //   homeNav.classList.remove("selected");
+        //   homeNav.removeAttribute("aria-current");
 
-          this.setState({
-            borderBottom: { borderBottom: "4px solid transparent" },
-          });
+        //   this.setState({
+        //     borderBottom: { borderBottom: "4px solid transparent" },
+        //   });
 
-          if (this.props.navSelect[4] === "") {
-            aboutNAV.classList.add("selected");
-            this.setState({ transparentClass: "transparent" });
-            logo = require("../bilder/white.svg");
-          } else {
-            aboutNAV.classList.remove("selected");
-            this.setState({ transparentClass: "" });
-          }
-          break;
+        //   if (this.props.navSelect[4] === "") {
+        //     aboutNAV.classList.add("selected");
+        //     this.setState({ transparentClass: "transparent" });
+        //     logo = require("../bilder/white.svg");
+        //   } else {
+        //     aboutNAV.classList.remove("selected");
+        //     this.setState({ transparentClass: "" });
+        //   }
+        //   break;
         case "companies":
           homeNav.classList.remove("selected");
           homeNav.removeAttribute("aria-current");
@@ -468,13 +481,13 @@ class Header extends Component {
                 >
                   {content[this.state.lang].companies.title}
                 </Link> */}
-                <Link
+                {/* <Link
                   to={settings.url + "info/"}
                   id="info"
                   onClick={this.hideHamburger}
                 >
                   {content[this.state.lang].info.title}
-                </Link>
+                </Link> */}
                 <Link
                   to={settings.url + "covid/"}
                   id="covid"
@@ -634,9 +647,9 @@ class Header extends Component {
                   {/* <Link to={settings.url + "companies/"} id="companies">
                     {content[this.state.lang].companies.title}
                   </Link> */}
-                  <Link to={settings.url + "info/"} id="info">
+                  {/* <Link to={settings.url + "info/"} id="info">
                     {content[this.state.lang].info.title}
-                  </Link>
+                  </Link> */}
                   <Link to={settings.url + "covid/"} id="covid">
                     {content[this.state.lang].covid.title}
                   </Link>

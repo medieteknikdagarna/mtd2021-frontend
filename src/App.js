@@ -96,7 +96,7 @@ const staticSites = [
   { url: "companies", comp: Companies, active: false },
   { url: "lectures", comp: Lectures, active: false },
   { url: "map", comp: CompanyMap, active: true },
-  { url: "info", comp: CompanyInfo, active: true },
+  { url: "info", comp: CompanyInfo, active: false },
   { url: "covid", comp: Covid, active: true },
   // {url: "pictures", comp: Pictures, active: false}
 ];
@@ -449,13 +449,13 @@ class Static extends Component {
                 <Companies {...props} lang={this.state.lang} />
               )}
             /> */}
-            <Route
+            {/* <Route
               exact
               path={settings.url + "info/"}
               render={(props) => (
                 <CompanyInfo {...props} lang={this.state.lang} />
               )}
-            />
+            /> */}
             <Route
               exact
               path={settings.url + "covid/"}

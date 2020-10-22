@@ -29,7 +29,8 @@ import mtdSphere from "../bilder/logo.svg";
 // import lecturePic4 from '../bilder/lecturers/4.jpg';
 
 import mtdSphereVideoAnimation from "../bilder/mtdSphereVideo/intro_snabbt_motionblur.mp4";
-// import mtdSphereVideoAnimation_still from '../bilder/mtdSphereVideo/MTDSphereVideo_still.jpg';
+// import mtdSphereVideoAnimation_still from "../bilder/mtdSphereVideo/MTDSphereVideo_still.jpg";
+import mtd21PrelBackground from "../bilder/omslagMobil.jpg";
 
 var supportsWebP = (function () {
   var index = new Promise(function (resolve) {
@@ -277,10 +278,17 @@ class About extends Component {
 
     this.handleResize();
 
+    // if (!isBrowser) {
+    //   document.getElementById(
+    //     "mtdSphereVideoContainer"
+    //   ).style.backgroundImage = `url(${mtdSphereVideoAnimation_still})`;
+    // }
+
     if (!isBrowser) {
+      console.log("not browser");
       document.getElementById(
         "mtdSphereVideoContainer"
-      ).style.backgroundImage = `url(${mtdSphereVideoAnimation_still})`;
+      ).style.backgroundImage = `url(${mtd21PrelBackground})`;
     }
 
     this.determineNav();
@@ -327,8 +335,12 @@ class About extends Component {
         >
           <FontAwesomeIcon icon={["fas", "chevron-up"]} className="fa" />
         </div>
+        {/* logo animation */}
+        {/* <div id="mtdSphereVideoContainer">{video}</div> */}
 
-        <div id="mtdSphereVideoContainer">{video}</div>
+        <div id="mtdSphereVideoContainer">
+          <div id="mtdAboutCoverImg"></div>
+        </div>
 
         <div
           id="aboutChevron_down"
