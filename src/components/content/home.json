@@ -8,9 +8,7 @@
     "press": "Tryck för att läsa mer",
     "silverPartnersTitle": "Silverpartner",
     "companyTitle": "Företag som vill medverka?",
-    "companyText1": "Vill ditt företag medverka på mässan och delta som utställare på vår arbetsmarknadsdag? Kul! Läs mer ",
-    "companyLink": " här ",
-    "companyText2": " eller hör av dig direkt till företagskontakt på: "
+    "companyText1": "Vill ditt företag medverka på mässan och delta som utställare på vår arbetsmarknadsdag? Kul! Hör av dig direkt till företagskontakt för mer information på: "
   },
 
   "en": {
@@ -22,8 +20,7 @@
     "press": "Click to read more",
     "silverPartnersTitle": "Silver Partners",
     "companyTitle": "Want your company to exhibit?",
-    "companyText1": "Does your company want to participate in the fair and participate as an exhibitor on our media technology day? Read more",
-    "companyLink": " here ",
-    "companyText2": "or contact business contact directly at: "
+    "companyText1": "Does your company want to participate in the fair and participate as an exhibitor on our media technology day? Contact us directly for more information at: "
+    
   }
 }

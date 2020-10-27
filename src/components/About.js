@@ -285,7 +285,6 @@ class About extends Component {
     // }
 
     if (!isBrowser) {
-      console.log("not browser");
       document.getElementById(
         "mtdSphereVideoContainer"
       ).style.backgroundImage = `url(${mtd21PrelBackground})`;

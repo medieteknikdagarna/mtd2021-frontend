@@ -298,10 +298,7 @@ class Home extends Component {
             <p>
               <span>
                 {home[this.state.lang].companyText1}
-                <Link to={settings.url + "info/"}>
-                  {home[this.state.lang].companyLink}
-                </Link>
-                {home[this.state.lang].companyText2}
+
                 <a className="mailTo" href={email}>
                   {group.business.email}
                 </a>

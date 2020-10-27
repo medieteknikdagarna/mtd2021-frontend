@@ -115,7 +115,6 @@ class Header extends Component {
 
     if (nav[3] === "about") {
       this.headerRef.current.classList.remove("transparent");
-      console.log("under about");
       logo = logo_regular;
     }
 
@@ -134,7 +133,6 @@ class Header extends Component {
       if (nav[3] === "" || nav[3] === "companies") {
         if (nav[3] === "" || nav[3] === "companies") {
           this.headerRef.current.classList.add("transparent");
-          console.log("add transparent");
           logo = logo_white;
         }
       }
