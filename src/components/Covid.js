@@ -42,12 +42,28 @@ class Covid extends Component {
     return (
       <div id="generalContentContainer">
         <div class="contentTitle">
-          <h1>{covid[this.state.lang].title}</h1>
+          <h1>{covid[this.state.lang].covidTitle}</h1>
         </div>
         <div id="landingContent">
           <p class="contentText">{covid[this.state.lang].contentText1}</p>
+
+          <div class="deadspace"></div>
+
+          <div class="contentTitle">
+            <h1>{covid[this.state.lang].platform}</h1>
+          </div>
           <p class="contentText">{covid[this.state.lang].contentText2}</p>
+          <div class="deadspace"></div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/AYt-2L9gOpo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
+        <div class="deadspace"></div>
       </div>
     );
   }
