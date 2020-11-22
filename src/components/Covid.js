@@ -40,7 +40,7 @@ class Covid extends Component {
 
   render() {
     return (
-      <div id="generalContentContainer">
+      <div id="infoGeneralContentContainer">
         <div class="contentTitle">
           <h1>{covid[this.state.lang].covidTitle}</h1>
         </div>

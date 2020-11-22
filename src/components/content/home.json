@@ -1,26 +1,31 @@
 {
   "sv": {
     "welcome": "Välkommen!",
-    "welcomeText": "Medieteknikdagarna är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugoförsta året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva. Läs mer om Medieteknikdagarna ",
+    "welcomeText": "Medieteknikdagen är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugoförsta året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva. Läs mer om Medieteknikdagen ",
     "welcomeReadMore": "här.",
     "newsTitle": "Nyheter",
     "partnerTitle": "Huvudpartner",
     "press": "Tryck för att läsa mer",
     "silverPartnersTitle": "Silverpartner",
     "companyTitle": "Företag som vill medverka?",
-    "companyText1": "Vill ditt företag medverka på mässan och delta som utställare på vår arbetsmarknadsdag? Kul! Hör av dig direkt till företagskontakt för mer information på: "
+    "companyText1": "Vill ditt företag medverka på mässan och delta som utställare på vår arbetsmarknadsdag? Kul! Hör av dig direkt till företagskontakt för mer information på: ",
+    "companyText2": "Eller fyll i din mejladdress i formuläret nedan:",
+    "inputField": "Din email ...",
+    "successMessage": "Ditt meddelande har skickats. Vi kontaktar dig snart!"
   },
 
   "en": {
     "welcome": "Welcome!",
-    "welcomeText": "Media Technology Days is a day full with inspiration, a fair and hundreds of students and companies from the industry. Here, you'll find everything you need to know about the day. Read more about the Media Technology Days ",
+    "welcomeText": "The Media Technology Day is a day full with inspiration, a fair and hundreds of students and companies from the industry. Here, you'll find everything you need to know about the day. Read more about the Media Technology Days ",
     "welcomeReadMore": "here.",
     "newsTitle": "News",
     "partnerTitle": "Main Partners",
     "press": "Click to read more",
     "silverPartnersTitle": "Silver Partners",
     "companyTitle": "Want your company to exhibit?",
-    "companyText1": "Does your company want to participate in the fair and participate as an exhibitor on our media technology day? Contact us directly for more information at: "
-    
+    "companyText1": "Does your company want to participate in the fair and participate as an exhibitor on our media technology day? Contact us directly for more information at: ",
+    "companyText2": "Or fill in your email in the form below:",
+    "inputField": "Your email...",
+    "successMessage": "Your message has been sent. We will contact you soon!"
   }
 }

@@ -4,8 +4,12 @@
   background: black;
 }
 
-#generalContentContainer {
+#infoGeneralContentContainer {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 .contentText {
   margin-top: 15px;

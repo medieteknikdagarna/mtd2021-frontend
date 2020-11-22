@@ -6,27 +6,15 @@ import { isBrowser } from "react-device-detect";
 
 import ImageCarousel from "./ImageCarousel";
 
-import general from "../components/content/general.json";
-import content from "../components/content/about.json";
-import previous from "../components/content/previous.json";
+import general from "./content/general.json";
+import content from "./content/about.json";
+import previous from "./content/previous.json";
 
 import "../css/about.scss";
 import imageCarouselStyles from "../css/wholeWidth_narrowHeight_ImageCarousel.module.scss";
 
 // import mtLogo from '../bilder/MTlogo.png';
 import mtdSphere from "../bilder/logo.svg";
-
-// import fairpic1 from '../bilder/fairpictures/fairpic1.jpg';
-// import fairpic2 from '../bilder/fairpictures/fairpic2.jpg';
-// import fairpic3 from '../bilder/fairpictures/fairpic3.jpg';
-// import fairpic4 from '../bilder/fairpictures/fairpic4.jpg';
-// import fairpic5 from '../bilder/fairpictures/fairpic5.jpg';
-// import fairpic6 from '../bilder/fairpictures/fairpic6.jpg';
-
-// import lecturePic1 from '../bilder/lecturers/1.jpg';
-// import lecturePic2 from '../bilder/lecturers/2.jpg';
-// import lecturePic3 from '../bilder/lecturers/3.jpg';
-// import lecturePic4 from '../bilder/lecturers/4.jpg';
 
 import mtdSphereVideoAnimation from "../bilder/mtdSphereVideo/intro_snabbt_motionblur.mp4";
 // import mtdSphereVideoAnimation_still from "../bilder/mtdSphereVideo/MTDSphereVideo_still.jpg";
@@ -70,7 +58,6 @@ if (supportsWebP) {
     require("../bilder/lecturers/1.webp"),
     require("../bilder/lecturers/2.webp"),
     require("../bilder/lecturers/3.webp"),
-    require("../bilder/lecturers/4.webp"),
   ];
 } else {
   mtdSphereVideoAnimation_still = require("../bilder/mtdSphereVideo/MTDSphereVideo_still.jpg");
@@ -87,7 +74,6 @@ if (supportsWebP) {
     require("../bilder/lecturers/1.jpg"),
     require("../bilder/lecturers/2.jpg"),
     require("../bilder/lecturers/3.jpg"),
-    require("../bilder/lecturers/4.jpg"),
   ];
 }
 
@@ -132,29 +118,6 @@ class About extends Component {
         this.props.history.push("/error");
         break;
     }
-
-    // let containerWidth = this.state.containerWidth;
-    // let containerHeight = this.state.containerHeight;
-    // switch (nav) {
-    // 	case 0:
-    // 		containerWidth = [100, 0, 0];
-    // 		containerHeight = document.getElementById("generalContentContainer").scrollHeight;
-    // 		break;
-    // 	case 1:
-    // 		containerHeight = document.getElementById("groupContentContainer").scrollHeight;
-    // 		containerWidth = [0, 100, 0];
-    // 		break;
-    // 	case 2:
-    // 		console.log("hej");
-    // 		containerHeight = document.getElementById("pressContentContainer").scrollHeight;
-    // 		containerWidth = [0, 0, 100];
-    // 		break;
-    // 	default:
-    // 		containerWidth = [100, 0, 0];
-    // 		containerHeight = document.getElementById("generalContentContainer").scrollHeight;
-    // 		break;
-    // }
-
     this.setState({ nav });
   }
 
@@ -195,15 +158,14 @@ class About extends Component {
     try {
       let aboutChevron_down = document.getElementById("aboutChevron_down");
       let mtinfo = document.getElementById("MTinfo");
-      let reception = document.getElementById("reception");
-      let lounge = document.getElementById("lounge");
-      let competitions = document.getElementById("competitions");
-      let infoBeam = document.getElementById("infoBeam");
+      //let reception = document.getElementById("reception");
+      //let lounge = document.getElementById("lounge");
+      //let competitions = document.getElementById("competitions");
+      //let infoBeam = document.getElementById("infoBeam");
       let lecturerTitleBig = document.getElementById("lecturerTitleBig");
       let lecturerTitleSmall = document.getElementById("lecturerTitleSmall");
       let lecturer_2 = document.getElementById("lecturer_2");
       let lecturer_3 = document.getElementById("lecturer_3");
-      let lecturer_4 = document.getElementById("lecturer_4");
 
       if (window.scrollY > 0) {
         aboutChevron_down.classList.add("after");
@@ -215,30 +177,6 @@ class About extends Component {
         mtinfo.classList.remove("before");
       } else {
         mtinfo.classList.add("before");
-      }
-
-      if (this.isAtTopOfElement(reception)) {
-        reception.classList.remove("before");
-      } else {
-        reception.classList.add("before");
-      }
-
-      if (this.isAtTopOfElement(lounge)) {
-        lounge.classList.remove("before");
-      } else {
-        lounge.classList.add("before");
-      }
-
-      if (this.isAtTopOfElement(competitions)) {
-        competitions.classList.remove("before");
-      } else {
-        competitions.classList.add("before");
-      }
-
-      if (this.isAtTopOfElement(infoBeam)) {
-        infoBeam.classList.remove("before");
-      } else {
-        infoBeam.classList.add("before");
       }
 
       if (this.isAtTopOfViewport(lecturerTitleBig)) {
@@ -259,12 +197,6 @@ class About extends Component {
         lecturer_3.classList.remove("before");
       } else {
         lecturer_3.classList.add("before");
-      }
-
-      if (this.isAtTopOfPage(lecturer_4)) {
-        lecturer_4.classList.remove("before");
-      } else {
-        lecturer_4.classList.add("before");
       }
     } catch (e) {}
   }
@@ -410,73 +342,11 @@ class About extends Component {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="deadspace" />
-        <div className="deadspace" />
-        <div className="deadspace" />
-        <div className="deadspace" />
-        <div className="deadspace" />
-        <div className="deadspace" />
-
-        <div id="FAIRinfo">
-          <div id="imageCarousel" className="imageCarousel before">
-            <ImageCarousel
-              fairpics={fairpics}
-              styles={imageCarouselStyles}
-              intervalTime={8000}
-            />
-          </div>
-
-          <div id="reception" className="FAIRcontent sideBySide before">
-            <FontAwesomeIcon icon={["fas", "concierge-bell"]} className="fa" />
-            <h1>{content[this.state.lang].fairInfo["1"].title}</h1>
-            <p>{content[this.state.lang].fairInfo["1"].body}</p>
-          </div>
 
           <div className="deadspace" />
           <div className="deadspace" />
 
-          <div id="lounge" className="FAIRcontent sideBySide before">
-            <FontAwesomeIcon icon={["fas", "couch"]} className="fa" />
-            <h1>{content[this.state.lang].fairInfo["2"].title}</h1>
-            <p>{content[this.state.lang].fairInfo["2"].body}</p>
-          </div>
-
-          <div className="deadspace" />
-          <div className="deadspace" />
-
-          <div id="competitions" className="FAIRcontent sideBySide before">
-            <FontAwesomeIcon icon={["fas", "medal"]} className="fa" />
-            <h1>{content[this.state.lang].fairInfo["3"].title}</h1>
-            <p>
-              {content[this.state.lang].fairInfo["3"].body1}
-              <a
-                href={content[this.state.lang].fairInfo["3"].link1.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {content[this.state.lang].fairInfo["3"].link1.text}
-              </a>
-              {content[this.state.lang].fairInfo["3"].body2}
-              <a
-                href={content[this.state.lang].fairInfo["3"].link2.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {content[this.state.lang].fairInfo["3"].link2.text}
-              </a>
-              {content[this.state.lang].fairInfo["3"].body3}
-            </p>
-          </div>
-
-          <div className="deadspace" />
-          <div className="deadspace" />
-          <div className="deadspace" />
-          <div className="deadspace" />
-          <div className="deadspace" />
-
-          <div id="infoBeam" className="FAIRcontent beam before">
+          <div id="infoBeam" className="FAIRcontent beam">
             <div className="aloneContent">
               <FontAwesomeIcon icon={["fas", "comments"]} className="fa" />
               <h1>{content[this.state.lang].fairInfo["4"].title}</h1>
@@ -489,10 +359,9 @@ class About extends Component {
               <p>{content[this.state.lang].fairInfo["5"].body}</p>
             </div>
           </div>
+        </div>
 
-          <div className="deadspace" />
-          <div className="deadspace" />
-          <div className="deadspace" />
+        <div id="FAIRinfo">
           <div className="deadspace" />
           <div className="deadspace" />
           <div className="deadspace" />
@@ -512,13 +381,17 @@ class About extends Component {
               <div className="lecturerInfo left before">
                 <h1>{previous[this.state.lang]["1"].title}</h1>
                 <p>{previous[this.state.lang]["1"].body}</p>
-                <a
-                  href={previous[this.state.lang]["1"].link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {previous[this.state.lang]["1"].link}
-                </a>
+
+                {/* <p>
+                  {previous[this.state.lang].video}
+                  <a
+                    href={previous[this.state.lang]["1"].link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {previous[this.state.lang].videoLink}
+                  </a>
+                </p> */}
               </div>
 
               <div id="lecturer_2" className="lecturer before">
@@ -531,13 +404,17 @@ class About extends Component {
                 <div className="lecturerInfo right before">
                   <h1>{previous[this.state.lang]["2"].title}</h1>
                   <p>{previous[this.state.lang]["2"].body}</p>
-                  <a
-                    href={previous[this.state.lang]["2"].link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {previous[this.state.lang]["2"].link}
-                  </a>
+                  <br></br>
+                  <p>
+                    {previous[this.state.lang].video}
+                    <a
+                      href={previous[this.state.lang]["2"].link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {previous[this.state.lang].videoLink}
+                    </a>
+                  </p>
                 </div>
 
                 <div id="lecturer_3" className="lecturer before">
@@ -550,34 +427,17 @@ class About extends Component {
                   <div className="lecturerInfo left before">
                     <h1>{previous[this.state.lang]["3"].title}</h1>
                     <p>{previous[this.state.lang]["3"].body}</p>
-                    <a
-                      href={previous[this.state.lang]["3"].link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {previous[this.state.lang]["3"].link}
-                    </a>
-                  </div>
-
-                  <div id="lecturer_4" className="lecturer before">
-                    <div
-                      className="lecturerImage"
-                      style={{ backgroundImage: `url(${lecturePics[3]})` }}
-                    >
-                      <h2>{previous[this.state.lang]["4"].title}</h2>
-                    </div>
-                    <div className="lecturerInfo right before">
-                      <h1>{previous[this.state.lang]["4"].title}</h1>
-                      <p>{previous[this.state.lang]["4"].body}</p>
+                    <br></br>
+                    <p>
+                      {previous[this.state.lang].video}
                       <a
-                        href={previous[this.state.lang]["4"].link}
+                        href={previous[this.state.lang]["3"].link}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {previous[this.state.lang]["4"].link}
+                        {previous[this.state.lang].videoLink}
                       </a>
-                    </div>
-                    <div className="deadspace"></div>
+                    </p>
                   </div>
                 </div>
               </div>

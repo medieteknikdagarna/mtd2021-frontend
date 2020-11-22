@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import emailjs from "emailjs-com";
+import React, { Component, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink as Link } from "react-router-dom";
@@ -75,9 +76,15 @@ class Home extends Component {
       beamerAnimation_move: 100,
       beamerAnimation_opacity: 1,
       beamerAnimation_info_move: 0,
+      formButton: false,
+      email: "",
+      success: "0",
+      opacity: 0,
     };
-
     this.handleScroll = this.handleScroll.bind(this);
+    this.checkEmail = this.checkEmail.bind(this);
+    this.sendEmail = this.sendEmail.bind(this);
+    this.checkEmail = this.showSuccess.bind(this);
   }
 
   handleScroll(e = null) {
@@ -130,6 +137,58 @@ class Home extends Component {
         lang: this.props.lang,
       });
     }
+  }
+
+  showSuccess = () => {
+    this.setState({
+      success: "100px",
+      opacity: 1,
+    });
+    setTimeout(() => {
+      this.setState({
+        success: "0",
+        opacity: 0,
+      });
+    }, 3000);
+  };
+
+  sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_y0onmh7",
+        e.target,
+        "user_7SAv3fMO0PxYm9jAg5tyJ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          this.showSuccess();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
+  checkEmail(event) {
+    this.setState({ email: event.target.value });
+    console.log(this.state.email);
+    // don't remember from where i copied this code, but this works.
+    //let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    // if (re.test(email)) {
+    //   console.log("giltig");
+    //   // this is a valid email address
+    //   // call setState({email: email}) to update the email
+    //   // or update the data in redux store.
+    // } else {
+    //   console.log("inte giltig");
+    //   // invalid email, maybe show an error to the user.
+    // }
   }
 
   render() {
@@ -187,6 +246,13 @@ class Home extends Component {
 
     return (
       <div id="homeWrap">
+        <div id="success">
+          <div id="successInnerDiv" style={{ height: this.state.success }}>
+            <p style={{ opacity: this.state.opacity }}>
+              {home[this.state.lang].successMessage}
+            </p>
+          </div>
+        </div>
         <div
           id="beamerImage"
           style={
@@ -298,12 +364,27 @@ class Home extends Component {
             <p>
               <span>
                 {home[this.state.lang].companyText1}
-
                 <a className="mailTo" href={email}>
                   {group.business.email}
                 </a>
               </span>
             </p>
+            <br></br>
+            <p>
+              <span>{home[this.state.lang].companyText2}</span>
+            </p>
+            <form onSubmit={this.sendEmail}>
+              <input
+                placeholder={home[this.state.lang].inputField}
+                type="email"
+                id="email_input"
+                name="email_input"
+                //value={this.state.email}
+                //onChange={this.checkEmail()}
+                required
+              />
+              <input type="submit" value="Kontakta mig!" />
+            </form>
           </div>
 
           <div className="deadspace" />

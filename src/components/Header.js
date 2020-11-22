@@ -122,20 +122,20 @@ class Header extends Component {
       scrolledClass = "";
       logo = logo_regular;
 
-      // if (nav[3] === "" || nav[3] === "about" || nav[3] === "companies") {
-      //   const isOnSubpageOfAbout = nav[4] === "" && nav[3] === "about";
-      //   if (isOnSubpageOfAbout || nav[3] === "" || nav[3] === "companies") {
-      //     this.headerRef.current.classList.add("transparent");
-      //     logo = logo_white;
-      //   }
-      // }
-
-      if (nav[3] === "" || nav[3] === "companies") {
-        if (nav[3] === "" || nav[3] === "companies") {
+      if (nav[3] === "" || nav[3] === "about" || nav[3] === "companies") {
+        const isOnSubpageOfAbout = nav[4] === "" && nav[3] === "about";
+        if (isOnSubpageOfAbout || nav[3] === "" || nav[3] === "companies") {
           this.headerRef.current.classList.add("transparent");
           logo = logo_white;
         }
       }
+
+      // if (nav[3] === "" || nav[3] === "companies") {
+      //   if (nav[3] === "" || nav[3] === "companies") {
+      //     this.headerRef.current.classList.add("transparent");
+      //     logo = logo_white;
+      //   }
+      // }
     } else {
       this.headerRef.current.classList.remove("transparent");
 
@@ -214,23 +214,23 @@ class Header extends Component {
           });
           break;
 
-        // case "about":
-        //   homeNav.classList.remove("selected");
-        //   homeNav.removeAttribute("aria-current");
+        case "about":
+          homeNav.classList.remove("selected");
+          homeNav.removeAttribute("aria-current");
 
-        //   this.setState({
-        //     borderBottom: { borderBottom: "4px solid transparent" },
-        //   });
+          this.setState({
+            borderBottom: { borderBottom: "4px solid transparent" },
+          });
 
-        //   if (this.props.navSelect[4] === "") {
-        //     aboutNAV.classList.add("selected");
-        //     this.setState({ transparentClass: "transparent" });
-        //     logo = require("../bilder/white.svg");
-        //   } else {
-        //     aboutNAV.classList.remove("selected");
-        //     this.setState({ transparentClass: "" });
-        //   }
-        //   break;
+          if (this.props.navSelect[4] === "") {
+            aboutNAV.classList.add("selected");
+            this.setState({ transparentClass: "transparent" });
+            logo = require("../bilder/white.svg");
+          } else {
+            aboutNAV.classList.remove("selected");
+            this.setState({ transparentClass: "" });
+          }
+          break;
         case "companies":
           homeNav.classList.remove("selected");
           homeNav.removeAttribute("aria-current");

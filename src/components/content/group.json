@@ -7,7 +7,7 @@
       "sv": "Projektledare"
       
     },
-    "email": "erik.salsborn@medieteknikdagarna.se",
+    "email": "erik.salsborn@medieteknikdagen.se",
     "tel": "+46 72 250 80 12"
   },
   "economy": {
@@ -17,7 +17,7 @@
       "en": "Economy manager",
       "sv": "Kassör"
     },
-    "email": "anton.jonsson@medieteknikdagarna.se",
+    "email": "anton.jonsson@medieteknikdagen.se",
     "tel": "+46 76 146 26 30"
   },
   "business": {
@@ -27,7 +27,7 @@
       "en": "Business contact",
       "sv": "Företagskontakt"
     },
-    "email": "victoria.straberg@medieteknikdagarna.se",
+    "email": "victoria.straberg@medieteknikdagen.se",
     "tel": "+46 70 916 60 68"
   },
   "fair": {
@@ -37,7 +37,7 @@
       "en": "Fair manager",
       "sv": "Mässansvarig"
     },
-    "email": "ludde.jahrl@medieteknikdagarna.se",
+    "email": "ludde.jahrl@medieteknikdagen.se",
     "tel": "+46 73 855 73 35"
   },
   "assistant": {
@@ -47,7 +47,7 @@
       "en": "Project assistant",
       "sv": "Projektassistent"
     },
-    "email": "robin.ridell@medieteknikdagarna.se",
+    "email": "robin.ridell@medieteknikdagen.se",
     "tel": "+46 73 211 76 11"
   },
   "lecture": {
@@ -57,17 +57,17 @@
       "en": "Lecture coordinator",
       "sv": "Föreläsningsansvarig"
     },
-    "email": "marcus.brostrom@medieteknikdagarna.se",
+    "email": "marcus.brostrom@medieteknikdagen.se",
     "tel": "+46 72 249 81 21"
   },
   "banquet": {
     "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content21/main/adam21.jpg",
     "name": "Adam Gardell",
     "pos": {
-      "en": "Banquet manager",
-      "sv": "Bankettansvarig"
+      "en": "Event manager",
+      "sv": "Eventansvarig"
     },
-    "email": "adam.gardell@medieteknikdagarna.se",
+    "email": "adam.gardell@medieteknikdagen.se",
     "tel": "+46 72 311 38 59"
   },
   "tech": {
@@ -77,7 +77,7 @@
       "en": "Technical coordinator",
       "sv": "Teknikansvarig"
     },
-    "email": "william.hepp@medieteknikdagarna.se",
+    "email": "william.hepp@medieteknikdagen.se",
     "tel": "+46 72 899 64 47"
   },
   "pr": {
@@ -87,7 +87,7 @@
       "en": "PR manager",
       "sv": "PR-ansvarig"
     },
-    "email": "alice.molin@medieteknikdagarna.se",
+    "email": "alice.molin@medieteknikdagen.se",
     "tel": "+46 70 539 22 65"
   },
   "coordinator": {
@@ -97,7 +97,7 @@
       "en": "Coordinator",
       "sv": "Koordinator"
     },
-    "email": "anders.lundkvist@medieteknikdagarna.se",
+    "email": "anders.lundkvist@medieteknikdagen.se",
     "tel": "+46 76 293 45 17"
   },
   "web": {
@@ -107,7 +107,7 @@
       "en": "Web manager",
       "sv": "Webbansvarig"
     },
-    "email": "amanda.hult@medieteknikdagarna.se",
+    "email": "amanda.hult@medieteknikdagen.se",
     "tel": "+46 72 749 18 00"
   },
   "print": {
@@ -117,17 +117,17 @@
       "en": "Print manager",
       "sv": "Tryckansvarig"
     },
-    "email": "alex.knutsson@medieteknikdagarna.se",
+    "email": "alex.knutsson@medieteknikdagen.se",
     "tel": "+46 73 053 28 38"
   },
   "app": {
     "pic": "https://raw.githubusercontent.com/medieteknikdagarna/content21/main/anne21.jpg",
     "name": "Anne Olthoff",
     "pos": {
-      "en": "App manager",
-      "sv": "Appansvarig"
+      "en": "Info & App",
+      "sv": "Info & App"
     },
-    "email": "anne.olthoff@medieteknikdagarna.se",
+    "email": "anne.olthoff@medieteknikdagen.se",
     "tel": "+46 73 980 81 17"
   }
 }

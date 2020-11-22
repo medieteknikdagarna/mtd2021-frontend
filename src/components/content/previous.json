@@ -1,49 +1,43 @@
 {
   "sv": {
     "title": "Föreläsare från tidigare år",
+    "video": "Se föreläsningen ",
+    "videoLink": "här.",
     "1": {
-      "title": "Unn Swanström",
-      "body": "Unn besökte oss 2016 och är specialist på att skapa användarupplevelser som gör människors liv lite mindre irriterande. Hon har varit en del av UX-teamen på Expressen och Aftonbladet. Hon är en av Sveriges mest framträdande experter på personaliserade användarupplevelser, arrangör av The Code Pub, årets IT-kvinna 2015, feminist, föreläsare och peppad återfallsryttare.",
-      "link": "https://www.youtube.com/watch?v=rPzZXE1uGvw"
+      "title": "Dan Englesson",
+      "body": "Dan besökte oss 2019 och pratade om hur hans karriär tog fart ut i världen direkt efter studietiden och hur det är att jobba på stora VFX och animation studios så som MPC i London, Pixar i San Francisco och Goodbye Kansas i Stockholm. Dan gav också en inblick i hur det var att jobba på Coco på Pixar som vann en Oscar för bästa animerade film och hur det är att jobba med VFX i Sverige.",
+      "link": "https://www.youtube.com/watch?v=ulo8i4eBwTw&list=PLTr8d6hW4fvHURvGdJLXAAghNPvGoUqPy&index=2"
     },
     "2": {
-      "title": "Ebbe Strandell",
-      "body": "MT-alumnen Ebbe från Tobii besökte oss 2017. Ebbe berättade om intressanta tillämpningar av ögon-tracking inom bland annat PC-spel och Virtual Reality. Han gav även inspirerande exempel på olika områden nyexaminerade MT-studenter kan arbeta inom.",
-      "link": "https://www.youtube.com/watch?v=RAY7AfPfAQA"
+      "title": "Nicholas Fernholm",
+      "body": "Nicholas föreläste under MTD 2018 om hur automation och AI påverkar världen på kort och lång sikt. Nicholas föreläsning fokuserade på hur den digitala världen påverkas oss, och hur AI, nya generationen och automation är nycklarna för att förstå och förbereda sig för framtiden.",
+      "link": "https://www.youtube.com/watch?v=ulo8i4eBwTw&list=PLTr8d6hW4fvHURvGdJLXAAghNPvGoUqPy&index=2"
     },
     "3": {
       "title": "Sofia Wennström & Aron Tornberg",
       "body": "Att göra film är dyrt, inte minst med tanke på den miljö som filmen ska utspelas i. Virtuella miljöer kan användas för att spara både tid och pengar, men faller ganska snabbt om ljus, reflektioner och andra visuella fenomen inte håller måttet. Med få begränsningar och en enorm utmaning gav sig Aron och Sofia ut i den växande spel och filmindustrin för att hitta den bästa lösningen för pre-visualisering under sitt examensarbete på Stiller Studios. På MTD 2018 fick vi höra om bland annat detta.",
       "link": "https://www.youtube.com/watch?v=jeVLX_GZ_oY"
-    },
-    "4": {
-      "title": "Per Karlsson",
-      "body": "MT-alumnen Per från Google besökte oss 2016. Han berättade om sitt tidigare jobb på Pixar, hur han började jobba med VR och visade några av de senaste utvecklingarna inom VR och AR.",
-      "link": "https://www.youtube.com/watch?v=XTs_o2KUYfg"
     }
   },
 
   "en": {
     "title": "Lecturers from previous years",
+    "video": "See the lecture ",
+    "videoLink": "here.",
     "1": {
-      "title": "Unn Swanström",
-      "body": "Unn visited us 2016 and she is a user experience specialist, making peoples lives much easier. She has been a part of the UX-teams at both Expressen and Aftonbladet. She is one of the most prominent experts on personalized user experience in Sweden, she is an organizer of The Code Pub and in 2015 she won the award IT Woman of the Year.",
-      "link": "https://www.youtube.com/watch?v=rPzZXE1uGvw"
+      "title": "Nicholas Fernholm",
+      "body": "Nicholas lectured during MTD 2018 on how automation and AI affect the world in the short and long term. Nicholas' lecture focused on how the digital world affects us, and how AI, the new generation and automation are the keys to understanding and preparing for the future.",
+      "link": "https://www.youtube.com/watch?v=ulo8i4eBwTw&list=PLTr8d6hW4fvHURvGdJLXAAghNPvGoUqPy&index=2"
     },
     "2": {
-      "title": "Ebbe Strandell",
-      "body": "The MT-alumnus Ebbe from Tobii visited us in 2017. Ebbe talked about applications for eye tracking, including PC gaming and Virtual Reality. He also talked about interesting areas of work for newly graduated MT-students.",
-      "link": "https://www.youtube.com/watch?v=RAY7AfPfAQA"
+      "title": "Nicholas Fernholm",
+      "body": "Nicholas lectured during MTD 2018 on how automation and AI affect the world in the short and long term. Nicholas' lecture focused on how the digital world affects us, and how AI, the new generation and automation are the keys to understanding and preparing for the future.",
+      "link": "https://www.youtube.com/watch?v=ulo8i4eBwTw&list=PLTr8d6hW4fvHURvGdJLXAAghNPvGoUqPy&index=2"
     },
     "3": {
       "title": "Sofia Wennström & Aron Tornberg",
       "body": "Making motion pictures is expensive, considering in which environment the movie is to be set. Virtual environments kan save both time and money. However, it falls flat to the ground if the lighting, reflections and other visual phenomena aren't up to standards. With few limitations, Aron and Sofia headed out into the rising games and movie industry during their master thesis at Stiller Studios. At MTD 2018 we got to hear about their work and much more.",
       "link": "https://www.youtube.com/watch?v=jeVLX_GZ_oY"
-    },
-    "4": {
-      "title": "Per Karlsson",
-      "body": "The MT-alumnus Per from Google visited us in 2016. He talked about his previous work at pixar, how he started working with VR and also showcased some of the latest developments in VR and AR.",
-      "link": "https://www.youtube.com/watch?v=XTs_o2KUYfg"
     }
   }
 }

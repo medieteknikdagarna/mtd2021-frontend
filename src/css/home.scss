@@ -1,6 +1,37 @@
 @import "colors";
 
 #homeWrap {
+  position: relative;
+  #success {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+
+    #successInnerDiv {
+      width: 55%;
+      //height: 100px;
+      background-color: rgba(67, 204, 104, 0.9);
+
+      display: flex;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 10000;
+      border-radius: 0px 0px 10px 10px;
+      box-shadow: 5px 10px 18px #4a4a4a;
+      transition: 0.5s;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
   #beamerImage {
     width: 100vw;
     margin-left: calc(calc(100% - 100vw) / 2);
@@ -242,10 +273,34 @@
           color: $orangeHover;
         }
       }
+      form {
+        input {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border-radius: 4px;
+          box-sizing: border-box;
+          color: black;
+          border: 0px;
+          font-size: 14pt;
+
+          &[type="submit"] {
+            background-color: $orange;
+          }
+          &[type="submit"]:hover {
+            background-color: $orangeHover;
+            cursor: pointer;
+          }
+          &[type="text"]:focus {
+            background-color: lightgrey;
+          }
+        }
+      }
     }
 
     .deadspace {
-      height: 200px;
+      height: 50px;
     }
 
     .stickyHeading {

@@ -27,7 +27,7 @@
         },
         {
           "title": "Mässinformation",
-          "body1": "Har du någon fråga kring mässan? Kontakta ",
+          "body1": "Har du någon fråga kring mässan eller Graduateland? Kontakta ",
           "body2": " på:",
           "pos": "fair"
         }
@@ -47,7 +47,7 @@
         "metaMove": "Använd två fingrar för att flytta kartan",
         "visiting": {
           "title": "Besöksadress",
-          "info": "Platsen där det händer!",
+          "info": "",
           "line1": "Täppan, Campus Norrköping",
           "line2": "Bredgatan 34",
           "line3": "602 21, Norrköping"
@@ -134,14 +134,14 @@
         "metaMove": "Use two fingers to move the map",
         "visiting": {
           "title": "Visiting address",
-          "info": "This is where MTD will be held!",
+          "info": "",
           "line1": "Täppan, Campus Norrköping",
           "line2": "Bredgatan 34",
           "line3": "602 21, Norrköping"
         },
         "post": {
           "title": "Mail address",
-          "line1": "Medieteknikdagarna, MT-sektionen",
+          "line1": "Medieteknikdagen, MT-sektionen",
           "line2": "Kårhuset Trappan",
           "line3": "Universitetet",
           "line4": "602 21, Norrköping",
@@ -150,7 +150,7 @@
         "delivery": {
           "title": "Goods",
           "info": "Before sending goods to the fair, please contact us and we'll make sure that it ends up where it should.",
-          "line1": "Medieteknikdagarna Gods, MT-sektionen",
+          "line1": "Medieteknikdagen Gods, MT-sektionen",
           "line2_1": "Att: ",
           "line2_2": " telefonnr: ",
           "line3": "Sandgatan 31",

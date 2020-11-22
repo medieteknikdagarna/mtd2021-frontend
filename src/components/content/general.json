@@ -6,7 +6,7 @@
   "time": "",
   "http": "http://",
   "sv": {
-    "name": "Medieteknikdagarna",
+    "name": "Medieteknikdagen",
     "date": "4 mars",
     "dateShort": "",
     "shortInfo": "MTD arrangeras av Medietekniksektionen vid Linköpings Universitet.",
@@ -25,7 +25,7 @@
     }
   },
   "en": {
-    "name": "Media Technology Days",
+    "name": "The Media Technology Day",
     "date": "March 4",
     "dateShort": "4/3",
     "shortInfo": "MTD is arranged by the Media Technology Association at Linköping University.",
