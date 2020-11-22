@@ -106,4 +106,3 @@ dist
 .now/
 
 .vercel
-node_modules
