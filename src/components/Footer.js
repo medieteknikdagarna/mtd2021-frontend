@@ -150,7 +150,7 @@ class Footer extends Component {
               <li>{general[this.state.lang].follow}</li>
               <li>
                 <a
-                  href="https://facebook.com/medieteknikdagarna"
+                  href="https://facebook.com/medieteknikdagen"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -176,7 +176,7 @@ class Footer extends Component {
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/medieteknikdagarna/"
+                  href="https://www.instagram.com/medieteknikdagen/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

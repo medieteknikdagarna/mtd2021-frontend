@@ -521,7 +521,7 @@ class Header extends Component {
                 </div>
 
                 <a
-                  href="https://facebook.com/medieteknikdagarna"
+                  href="https://facebook.com/medieteknikdagen"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -541,7 +541,7 @@ class Header extends Component {
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com/medieteknikdagarna/"
+                  href="https://www.instagram.com/medieteknikdagen/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

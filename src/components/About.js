@@ -55,9 +55,9 @@ if (supportsWebP) {
     require("../bilder/fairpictures/fairpic6.webp"),
   ];
   lecturePics = [
-    require("../bilder/lecturers/1.webp"),
-    require("../bilder/lecturers/2.webp"),
-    require("../bilder/lecturers/3.webp"),
+    require("../bilder/lecturers/1_small.jpg"),
+    require("../bilder/lecturers/2_small.jpg"),
+    require("../bilder/lecturers/3_small.jpg"),
   ];
 } else {
   mtdSphereVideoAnimation_still = require("../bilder/mtdSphereVideo/MTDSphereVideo_still.jpg");
@@ -71,9 +71,9 @@ if (supportsWebP) {
     require("../bilder/fairpictures/fairpic6.jpg"),
   ];
   lecturePics = [
-    require("../bilder/lecturers/1.jpg"),
-    require("../bilder/lecturers/2.jpg"),
-    require("../bilder/lecturers/3.jpg"),
+    require("../bilder/lecturers/1_small.jpg"),
+    require("../bilder/lecturers/2_small.jpg"),
+    require("../bilder/lecturers/3_small.jpg"),
   ];
 }
 

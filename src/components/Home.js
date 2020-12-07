@@ -16,8 +16,10 @@ import "../css/home.scss";
 // --------------------------------------------
 // ------------ make inside module ------------
 // --------------------------------------------
+
 var silverCompanies = [];
 var goldCompanies = [];
+var days = 0;
 
 for (let i = companyInformation.companies.length - 1; i > 0; i--) {
   const j = Math.floor(Math.random() * (i + 1));
@@ -63,6 +65,40 @@ companyInformation.companies.forEach((item, index) => {
   }
 });
 
+function countDown() {
+  let countTo = new Date("Mar 4, 2021 11:00:00").getTime();
+  let now = new Date(),
+    timeDifference = countTo - now;
+
+  const secondsInADay = 60 * 60 * 1000 * 24,
+    secondsInAHour = 60 * 60 * 1000;
+
+  days = Math.floor((timeDifference / secondsInADay) * 1);
+  // let hours = Math.floor(
+  //   ((timeDifference % secondsInADay) / secondsInAHour) * 1
+  // );
+  // let mins = Math.floor(
+  //   (((timeDifference % secondsInADay) % secondsInAHour) / (60 * 1000)) * 1
+  // );
+  // let secs = Math.floor(
+  //   ((((timeDifference % secondsInADay) % secondsInAHour) % (60 * 1000)) /
+  //     1000) *
+  //     1
+  // );
+
+  console.log(days);
+  // var idEl = document.getElementById(id);
+  // idEl.getElementsByClassName("days")[0].innerHTML = days;
+  // idEl.getElementsByClassName("hours")[0].innerHTML = hours;
+  // idEl.getElementsByClassName("minutes")[0].innerHTML = mins;
+  // idEl.getElementsByClassName("seconds")[0].innerHTML = secs;
+
+  // clearTimeout(countDownToTime.interval);
+  countDown.interval = setTimeout(function () {
+    countDown();
+  }, 99999);
+}
+
 // --------------------------------------------
 // --------------------------------------------
 // --------------------------------------------
@@ -80,11 +116,10 @@ class Home extends Component {
       email: "",
       success: "0",
       opacity: 0,
+      daysUntil: 0,
     };
     this.handleScroll = this.handleScroll.bind(this);
-    this.checkEmail = this.checkEmail.bind(this);
     this.sendEmail = this.sendEmail.bind(this);
-    this.checkEmail = this.showSuccess.bind(this);
   }
 
   handleScroll(e = null) {
@@ -123,6 +158,7 @@ class Home extends Component {
   }
 
   async componentDidMount() {
+    countDown();
     await window.scrollTo(0, 0);
     window.addEventListener("scroll", this.handleScroll);
   }
@@ -172,23 +208,6 @@ class Home extends Component {
         }
       );
     e.target.reset();
-  }
-
-  checkEmail(event) {
-    this.setState({ email: event.target.value });
-    console.log(this.state.email);
-    // don't remember from where i copied this code, but this works.
-    //let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-    // if (re.test(email)) {
-    //   console.log("giltig");
-    //   // this is a valid email address
-    //   // call setState({email: email}) to update the email
-    //   // or update the data in redux store.
-    // } else {
-    //   console.log("inte giltig");
-    //   // invalid email, maybe show an error to the user.
-    // }
   }
 
   render() {
@@ -272,16 +291,17 @@ class Home extends Component {
               }
             }
           >
-            <h3>{general[this.state.lang].name + " " + general.year}</h3>
-            <h2>{general[this.state.lang].date}</h2>
-            <h3>{general.time}</h3>
-            <h3>{general.city}</h3>
+            <h3>{days} dagar kvar till</h3>
+            <h2>{general[this.state.lang].name + " " + general.year}</h2>
+            <h3>{general[this.state.lang].date}</h3>
+            {/* <h3>{general.time}</h3> */}
+            {/* <h3>{general.city}</h3> */}
           </div>
           <footer id="beamerSharebar">
             <div className="footCont">
               <p>{general[this.state.lang].follow}:</p>
               <a
-                href="https://facebook.com/medieteknikdagarna"
+                href="https://www.facebook.com/medieteknikdagen"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -303,7 +323,7 @@ class Home extends Component {
                 <p>youtube</p>
               </a>
               <a
-                href="https://www.instagram.com/medieteknikdagarna/"
+                href="https://www.instagram.com/medieteknikdagen/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -379,8 +399,6 @@ class Home extends Component {
                 type="email"
                 id="email_input"
                 name="email_input"
-                //value={this.state.email}
-                //onChange={this.checkEmail()}
                 required
               />
               <input type="submit" value="Kontakta mig!" />

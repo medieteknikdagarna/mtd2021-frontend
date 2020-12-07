@@ -10,6 +10,10 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+
+  #landingContent {
+    max-width: 100%;
+  }
 }
 .contentText {
   margin-top: 15px;
@@ -17,4 +21,8 @@
 
 .deadspace {
   height: 50px;
+}
+
+iframe {
+  max-width: 100%;
 }
