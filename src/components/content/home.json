@@ -11,7 +11,9 @@
     "companyText1": "Vill ditt företag medverka på mässan och delta som utställare på vår arbetsmarknadsdag? Kul! Hör av dig direkt till företagskontakt för mer information på: ",
     "companyText2": "Eller fyll i din mejladdress i formuläret nedan:",
     "inputField": "Din email ...",
-    "successMessage": "Ditt meddelande har skickats. Vi kontaktar dig snart!"
+    "successMessage": "Ditt meddelande har skickats. Vi kontaktar dig snart!",
+    "daysText": " dagar kvar till",
+    "buttonText": "Kontakta mig!"
   },
 
   "en": {
@@ -26,6 +28,8 @@
     "companyText1": "Does your company want to participate in the fair and participate as an exhibitor on our media technology day? Contact us directly for more information at: ",
     "companyText2": "Or fill in your email in the form below:",
     "inputField": "Your email...",
-    "successMessage": "Your message has been sent. We will contact you soon!"
+    "successMessage": "Your message has been sent. We will contact you soon!",
+    "daysText": " days until ",
+    "buttonText": "Contact me!"
   }
 }

@@ -291,7 +291,9 @@ class Home extends Component {
               }
             }
           >
-            <h3>{days} dagar kvar till</h3>
+            <h3>
+              {days} {home[this.state.lang].daysText}
+            </h3>
             <h2>{general[this.state.lang].name + " " + general.year}</h2>
             <h3>{general[this.state.lang].date}</h3>
             {/* <h3>{general.time}</h3> */}
@@ -401,7 +403,7 @@ class Home extends Component {
                 name="email_input"
                 required
               />
-              <input type="submit" value="Kontakta mig!" />
+              <input type="submit" value={home[this.state.lang].buttonText} />
             </form>
           </div>
 
