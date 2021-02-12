@@ -113,10 +113,10 @@ class Header extends Component {
     let scrolledClass = "";
     let logo;
 
-    if (nav[3] === "about") {
-      this.headerRef.current.classList.remove("transparent");
-      logo = logo_regular;
-    }
+    // if (nav[3] === "about" && nav[3] === "companies") {
+    //   this.headerRef.current.classList.remove("transparent");
+    //   logo = logo_regular;
+    // }
 
     if (scrollValue <= 30) {
       scrolledClass = "";
@@ -129,13 +129,6 @@ class Header extends Component {
           logo = logo_white;
         }
       }
-
-      // if (nav[3] === "" || nav[3] === "companies") {
-      //   if (nav[3] === "" || nav[3] === "companies") {
-      //     this.headerRef.current.classList.add("transparent");
-      //     logo = logo_white;
-      //   }
-      // }
     } else {
       this.headerRef.current.classList.remove("transparent");
 
@@ -199,7 +192,8 @@ class Header extends Component {
       let homeNav = document.getElementById("home");
       let aboutNAV = document.getElementById("about");
       let companiesNAV = document.getElementById("companies");
-
+      console.log(aboutNAV);
+      console.log(companiesNAV);
       let logo = require("../bilder/logo.svg");
 
       switch (nav[3]) {
@@ -221,7 +215,7 @@ class Header extends Component {
           this.setState({
             borderBottom: { borderBottom: "4px solid transparent" },
           });
-
+          console.log("about");
           if (this.props.navSelect[4] === "") {
             aboutNAV.classList.add("selected");
             this.setState({ transparentClass: "transparent" });
@@ -238,7 +232,7 @@ class Header extends Component {
           this.setState({
             borderBottom: { borderBottom: "4px solid transparent" },
           });
-
+          console.log("companies");
           companiesNAV.classList.add("selected");
           this.setState({ transparentClass: "transparent" });
 
@@ -247,7 +241,6 @@ class Header extends Component {
           }
 
           break;
-
         case "error":
           homeNav.classList.remove("selected");
           homeNav.removeAttribute("aria-current");
@@ -472,13 +465,14 @@ class Header extends Component {
                 >
                   {content[this.state.lang].contact.title}
                 </Link>
-                {/* <Link
+                <Link
                   to={settings.url + "companies/"}
                   id="companies"
                   onClick={this.hideHamburger}
                 >
                   {content[this.state.lang].companies.title}
-                </Link> */}
+                </Link>
+
                 {/* <Link
                   to={settings.url + "info/"}
                   id="info"
@@ -493,6 +487,14 @@ class Header extends Component {
                 >
                   {content[this.state.lang].covid.title}
                 </Link>
+                <a
+                  href="https://fair.medieteknikdagen.se/sv/events"
+                  target="_blank"
+                  rel="noreferrer"
+                  rel="noopener"
+                >
+                  {general[this.state.lang].url.link}
+                </a>
                 {/* <Link to={settings.url + "studentexpo/"} id="studentexpo" onClick={this.hideHamburger}>
 								{content[this.state.lang].studentexpo.title}
 							</Link> */}
@@ -642,9 +644,9 @@ class Header extends Component {
                       className="fa"
                     />
                   </Link>
-                  {/* <Link to={settings.url + "companies/"} id="companies">
+                  <Link to={settings.url + "companies/"} id="companies">
                     {content[this.state.lang].companies.title}
-                  </Link> */}
+                  </Link>
                   {/* <Link to={settings.url + "info/"} id="info">
                     {content[this.state.lang].info.title}
                   </Link> */}

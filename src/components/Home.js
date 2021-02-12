@@ -20,6 +20,7 @@ import "../css/home.scss";
 var silverCompanies = [];
 var goldCompanies = [];
 var days = 0;
+let arrow = require(`../bilder/arrow.png`);
 
 for (let i = companyInformation.companies.length - 1; i > 0; i--) {
   const j = Math.floor(Math.random() * (i + 1));
@@ -39,15 +40,15 @@ companyInformation.companies.forEach((item, index) => {
       console.log(ex);
     }
 
-    // goldCompanies.push({
-    //   name: item.name,
-    //   img: pic,
-    //   description: {
-    //     sv: item.description.sv,
-    //     en: item.description.en,
-    //   },
-    //   inURL: item.inURL,
-    // });
+    goldCompanies.push({
+      name: item.name,
+      img: pic,
+      description: {
+        sv: item.description.sv,
+        en: item.description.en,
+      },
+      inURL: item.inURL,
+    });
   } else if (item.level === "silver" && item.show === true) {
     let pic = require(`../bilder/placeholder.jpg`);
 
@@ -57,11 +58,11 @@ companyInformation.companies.forEach((item, index) => {
       console.log("loading placeholder image for " + item.name);
     }
 
-    // silverCompanies.push({
-    //   name: item.name,
-    //   img: pic,
-    //   inURL: item.inURL,
-    // });
+    silverCompanies.push({
+      name: item.name,
+      img: pic,
+      inURL: item.inURL,
+    });
   }
 });
 
@@ -126,7 +127,7 @@ class Home extends Component {
     // const scrollValue = window.scrollY;
     let beamerSharebar = document.getElementById("beamerSharebar");
     let homeChevron_down = document.getElementById("homeChevron_down");
-
+    let arrow = document.getElementById("arrow");
     // if(scrollValue < 1300) {
     // 	let beamerAnimation_move = this.state.beamerAnimation_move;
     // 	let beamerAnimation_opacity = this.state.beamerAnimation_opacity;
@@ -151,9 +152,11 @@ class Home extends Component {
     if (window.scrollY > 0) {
       beamerSharebar.classList.add("after");
       homeChevron_down.classList.add("after");
+      arrow.classList.add("small");
     } else {
       beamerSharebar.classList.remove("after");
       homeChevron_down.classList.remove("after");
+      arrow.classList.remove("small");
     }
   }
 
@@ -261,7 +264,7 @@ class Home extends Component {
     });
 
     // EMAIL
-    let email = `mailto: ${group.business.email}`;
+    //let email = `mailto: ${group.business.email}`;
 
     return (
       <div id="homeWrap">
@@ -299,6 +302,13 @@ class Home extends Component {
             {/* <h3>{general.time}</h3> */}
             {/* <h3>{general.city}</h3> */}
           </div>
+
+          {/* <div id="arrow"> */}
+          <a href="https://fair.medieteknikdagen.se/" target="_blank">
+            <img id="arrow" src={arrow} alt="arrow" />
+          </a>
+          {/* </div> */}
+
           <footer id="beamerSharebar">
             <div className="footCont">
               <p>{general[this.state.lang].follow}:</p>
@@ -379,7 +389,8 @@ class Home extends Component {
             </p>
           </div>
 
-          <div id="generalInfo">
+          {/* MAIL FORM */}
+          {/* <div id="generalInfo">
             <h1>
               <span id="textTitle">{home[this.state.lang].companyTitle}</span>
             </h1>
@@ -405,20 +416,21 @@ class Home extends Component {
               />
               <input type="submit" value={home[this.state.lang].buttonText} />
             </form>
-          </div>
+          </div> */}
 
           <div className="deadspace" />
 
-          {/* <h1 className="stickyHeading">
+          <h1 className="stickyHeading">
             {home[this.state.lang].partnerTitle}
           </h1>
-          <div id="partners">{goldComp}</div> */}
+          <div id="partners">{goldComp}</div>
 
-          {/* <div id="silverPartners">
+          <div id="silverPartners">
             <h2>{home[this.state.lang].silverPartnersTitle}</h2>
-            <div className="silverPartners">{silverComp}</div>
-          </div> */}
+          </div>
+          <div className="silverPartners">{silverComp}</div>
         </div>
+        <div class="deadspace"></div>
 
         {/*}
 				<div id="newsContainer">

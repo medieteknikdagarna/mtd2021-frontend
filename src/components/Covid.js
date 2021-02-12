@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import covid from "../components/content/covid.json";
+import general from "../components/content/general.json";
 
 import "../css/info.scss";
 
@@ -52,7 +53,18 @@ class Covid extends Component {
           <div class="contentTitle">
             <h1>{covid[this.state.lang].platform}</h1>
           </div>
+
           <p class="contentText">{covid[this.state.lang].contentText2}</p>
+          <div style={{ height: 30 }}></div>
+          <a
+            id="link"
+            href="https://fair.medieteknikdagen.se/sv/events"
+            target="_blank"
+            rel="noreferrer"
+            rel="noopener"
+          >
+            {general[this.state.lang].url.link}
+          </a>
           <div class="deadspace"></div>
           <iframe
             width="560"

@@ -93,7 +93,7 @@ const staticSites = [
   { url: "about", comp: About, active: true },
   { url: "contact", comp: Contact, active: true },
   { url: "studentexpo", comp: Studentexpo, active: true },
-  { url: "companies", comp: Companies, active: false },
+  { url: "companies", comp: Companies, active: true },
   { url: "lectures", comp: Lectures, active: false },
   { url: "map", comp: CompanyMap, active: true },
   { url: "info", comp: CompanyInfo, active: false },
@@ -435,7 +435,7 @@ class Static extends Component {
               path={settings.url + "contact/:subpage/"}
               render={(props) => <Contact {...props} lang={this.state.lang} />}
             />
-            {/* <Route
+            <Route
               exact
               path={settings.url + "companies/"}
               render={(props) => (
@@ -448,7 +448,7 @@ class Static extends Component {
               render={(props) => (
                 <Companies {...props} lang={this.state.lang} />
               )}
-            /> */}
+            />
             {/* <Route
               exact
               path={settings.url + "info/"}

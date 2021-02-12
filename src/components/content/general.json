@@ -21,7 +21,8 @@
       "about": "Om",
       "contact": "Kontakt",
       "companies": "Besökande företag",
-      "studentexpo": "Studentexpo"
+      "studentexpo": "Studentexpo",
+      "link": "TILL MÄSSAN"
     }
   },
   "en": {
@@ -40,7 +41,8 @@
       "about": "About",
       "contact": "Contact",
       "companies": "Visiting companies",
-      "studentexpo": "Student Expo"
+      "studentexpo": "Student Expo",
+      "link": "TO THE FAIR"
     }
   }
 }
