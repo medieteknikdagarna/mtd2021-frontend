@@ -448,6 +448,26 @@
       "map": { "number": 35, "x": 281.92, "y": 164.1 },
       "show": true,
       "level": "regular"
+    },
+    {
+      "name": "Upsales Nordic AB",
+      "inURL": "upsales",
+      "outURL": "https://www.upsales.com/sv/",
+      "offers": {
+        "exjobb": true,
+        "praktik": false,
+        "trainee": false,
+        "sommarjobb": true,
+        "anstallning": true
+      },
+      "description": {
+        "sv": "Upsales vision från start har varit att lösa huvudvärken för företag inom B2B och erbjuda dem nästa generations mjukvara för försäljning och marknadsföring. \n\nVåren 2019 listades Upsales på Nasdaq First North och blev utnämnd till årets IPO. Upsales differentierar sig genom att fokusera helt på att leverera den smidigaste och enklaste lösningen för vanliga tillväxtproblem. I dagsläget har vi 2000 kunder i 10 olika länder och vår ambition är att växa inom Sverige och Europa. Vi är ett team på 70 personer på våra kontor i Stockholm och Linköping.",
+        "en": "Upsales was founded with a vision to solve pain points for B2B companies, building the next generation sales and marketing software.\n\nIn 2019, Upsales was listed on the Nasdaq Stockholm exchange, and was awarded IPO of the year. Upsales differentiates itself from competitors by being fully focused on delivering the fastest digital solution to the most common growth problems. Upsales is currently working with 2000 customers in 10 countries, and our ambition is to scale in Sweden and Europe to continue building the next generation sales and marketing platform for fast-growing B2B businesses. We are a team of 70 people in our offices in Stockholm & Linköping."
+      },
+      "img": "upsales.svg",
+      "map": { "number": 35, "x": 281.92, "y": 164.1 },
+      "show": true,
+      "level": "regular"
     }
   ]
 }
