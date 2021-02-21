@@ -1,5 +1,5 @@
 import emailjs from "emailjs-com";
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink as Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import general from "../components/content/general.json";
 import companyInformation from "../components/content/companyInformation.json";
 import settings from "../settings.json";
 
-//import group from "../components/content/group.json";
+import group from "../components/content/group.json";
 
 import "../css/home.scss";
 
@@ -67,12 +67,12 @@ companyInformation.companies.forEach((item, index) => {
 });
 
 function countDown() {
-  let countTo = new Date("Mar 4, 2021 09:00:00").getTime();
+  let countTo = new Date("Mar 4, 2021 11:00:00").getTime();
   let now = new Date(),
     timeDifference = countTo - now;
 
-  const secondsInADay = 60 * 60 * 1000 * 24;
-  //secondsInAHour = 60 * 60 * 1000;
+  const secondsInADay = 60 * 60 * 1000 * 24,
+    secondsInAHour = 60 * 60 * 1000;
 
   days = Math.floor((timeDifference / secondsInADay) * 1);
   // let hours = Math.floor(
@@ -87,6 +87,7 @@ function countDown() {
   //     1
   // );
 
+  console.log(days);
   // var idEl = document.getElementById(id);
   // idEl.getElementsByClassName("days")[0].innerHTML = days;
   // idEl.getElementsByClassName("hours")[0].innerHTML = hours;
@@ -303,11 +304,7 @@ class Home extends Component {
           </div>
 
           {/* <div id="arrow"> */}
-          <a
-            href="https://fair.medieteknikdagen.se/sv/event/4824"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://fair.medieteknikdagen.se/" target="_blank">
             <img id="arrow" src={arrow} alt="arrow" />
           </a>
           {/* </div> */}
@@ -433,7 +430,7 @@ class Home extends Component {
           </div>
           <div className="silverPartners">{silverComp}</div>
         </div>
-        <div className="deadspace"></div>
+        <div class="deadspace"></div>
 
         {/*}
 				<div id="newsContainer">

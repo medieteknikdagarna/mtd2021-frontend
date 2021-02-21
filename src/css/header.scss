@@ -100,10 +100,31 @@
           text-decoration: none;
         }
 
+        .goldLogos {
+          width: 50%;
+          margin-left: 70px;
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          a {
+            display: flex;
+            justify-content: center;
+            margin: 0 30px 0 30px;
+
+            img {
+              max-width: 100%;
+              height: 100px;
+              object-fit: contain;
+            }
+          }
+        }
+
         #brand {
           height: 100%;
           display: flex;
           align-items: center;
+          cursor: pointer;
 
           .logo {
             padding: 2px;
@@ -111,6 +132,7 @@
 
             #highreslogo {
               position: relative;
+
               bottom: 0;
               width: 65px;
               height: auto;
@@ -542,6 +564,22 @@
 
         .selected {
           border-left: 10px solid whitesmoke;
+        }
+      }
+
+      .goldLogos {
+        display: flex;
+        height: 30%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-around;
+
+        img {
+          //margin: 10px;
+          height: 20%;
+          //width: 50%;
+          object-fit: contain;
         }
       }
 

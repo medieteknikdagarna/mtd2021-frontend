@@ -26,6 +26,7 @@ import Studentexpo from "./components/Studentexpo";
 import Lectures from "./components/Lectures";
 import CompanyMap from "./components/CompanyMap";
 import Covid from "./components/Covid";
+import Schedule from "./components/Schedule";
 // import Pictures from "./components/Pictures";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -98,6 +99,7 @@ const staticSites = [
   { url: "map", comp: CompanyMap, active: true },
   { url: "info", comp: CompanyInfo, active: false },
   { url: "covid", comp: Covid, active: true },
+  { url: "schedule", comp: Schedule, active: false },
   // {url: "pictures", comp: Pictures, active: false}
 ];
 
@@ -198,11 +200,14 @@ class Static extends Component {
         case "companies":
           this.props.history.push("/companies/");
           break;
-        case "info":
-          this.props.history.push("/info/");
-          break;
+        // case "info":
+        //   this.props.history.push("/info/");
+        //   break;
         case "covid":
           this.props.history.push("/covid/");
+          break;
+        case "schedule":
+          this.props.history.push("/schedule/");
           break;
         case "forelasningar":
         case "lectures":
@@ -294,9 +299,9 @@ class Static extends Component {
         " " +
         general.year +
         " - " +
-        general[this.state.lang].date +
-        ", " +
-        general.city;
+        general[this.state.lang].date;
+      // ", " +
+      // general.city;
     } catch (e) {}
   }
 
@@ -460,6 +465,11 @@ class Static extends Component {
               exact
               path={settings.url + "covid/"}
               render={(props) => <Covid {...props} lang={this.state.lang} />}
+            />
+            <Route
+              exact
+              path={settings.url + "schedule/"}
+              render={(props) => <Schedule {...props} lang={this.state.lang} />}
             />
             <Route
               exact

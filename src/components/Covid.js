@@ -58,15 +58,15 @@ class Covid extends Component {
           <div style={{ height: 30 }}></div>
           <a
             id="link"
-            href="https://fair.medieteknikdagen.se/sv/events"
+            href="https://fair.medieteknikdagen.se/sv/event/4824"
             target="_blank"
-            rel="noreferrer"
-            rel="noopener"
+            rel="noreferrer noopener"
           >
             {general[this.state.lang].url.link}
           </a>
           <div class="deadspace"></div>
           <iframe
+            title="ytPlayer"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/AYt-2L9gOpo"

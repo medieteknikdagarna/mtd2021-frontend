@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FacebookPlayer from "react-player/lib/players/Facebook";
 import { isBrowser } from "react-device-detect";
 
-import ImageCarousel from "./ImageCarousel";
+//import ImageCarousel from "./ImageCarousel";
 
 import general from "./content/general.json";
 import content from "./content/about.json";
 import previous from "./content/previous.json";
 
 import "../css/about.scss";
-import imageCarouselStyles from "../css/wholeWidth_narrowHeight_ImageCarousel.module.scss";
+//import imageCarouselStyles from "../css/wholeWidth_narrowHeight_ImageCarousel.module.scss";
 
 // import mtLogo from '../bilder/MTlogo.png';
 import mtdSphere from "../bilder/logo.svg";

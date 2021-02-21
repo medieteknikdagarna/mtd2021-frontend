@@ -17,6 +17,9 @@ import "../css/header.scss";
 
 import logo_regular from "../bilder/logo.svg";
 import logo_white from "../bilder/white.svg";
+import goldLogo2 from "../bilder/companies/gold/sr_white.png";
+import goldLogo3 from "../bilder/companies/gold/saab_white.png";
+import goldLogo1 from "../bilder/companies/gold/svt_white.png";
 
 class Header extends Component {
   constructor(props) {
@@ -38,6 +41,7 @@ class Header extends Component {
       navPosition: null,
       popOutNavClass: "",
       hamburgerOpen: false,
+      showGold: false,
     };
 
     this.headerRef = React.createRef();
@@ -192,8 +196,7 @@ class Header extends Component {
       let homeNav = document.getElementById("home");
       let aboutNAV = document.getElementById("about");
       let companiesNAV = document.getElementById("companies");
-      console.log(aboutNAV);
-      console.log(companiesNAV);
+
       let logo = require("../bilder/logo.svg");
 
       switch (nav[3]) {
@@ -205,7 +208,10 @@ class Header extends Component {
           this.setState({
             transparentClass: "transparent",
             borderBottom: null,
+            showGold: true,
           });
+          console.log("showGold");
+
           break;
 
         case "about":
@@ -214,8 +220,9 @@ class Header extends Component {
 
           this.setState({
             borderBottom: { borderBottom: "4px solid transparent" },
+            showGold: false,
           });
-          console.log("about");
+
           if (this.props.navSelect[4] === "") {
             aboutNAV.classList.add("selected");
             this.setState({ transparentClass: "transparent" });
@@ -231,8 +238,9 @@ class Header extends Component {
 
           this.setState({
             borderBottom: { borderBottom: "4px solid transparent" },
+            showGold: false,
           });
-          console.log("companies");
+
           companiesNAV.classList.add("selected");
           this.setState({ transparentClass: "transparent" });
 
@@ -248,6 +256,7 @@ class Header extends Component {
           this.setState({
             transparentClass: "",
             borderBottom: { borderBottom: "4px solid transparent" },
+            showGold: false,
           });
           break;
 
@@ -260,6 +269,7 @@ class Header extends Component {
           this.setState({
             transparentClass: "",
             borderBottom: { borderBottom: "4px solid transparent" },
+            showGold: false,
           });
           break;
       }
@@ -334,6 +344,40 @@ class Header extends Component {
 
     const nav = this.props.navSelect[3];
     const subnav = this.props.navSelect[4];
+
+    let GoldComp = () => {
+      return (
+        <div className="goldLogos">
+          <Link to={settings.url + "companies/svt"} className="partner">
+            <img
+              id="highreslogo"
+              src={goldLogo1}
+              alt="logo"
+              className={this.state.scrolledClass}
+            ></img>
+          </Link>
+          <Link
+            to={settings.url + "companies/sveriges_radio"}
+            className="partner"
+          >
+            <img
+              id="highreslogo"
+              src={goldLogo2}
+              alt="logo"
+              className={this.state.scrolledClass}
+            ></img>
+          </Link>
+          <Link to={settings.url + "companies/saab"} className="partner">
+            <img
+              id="highreslogo"
+              src={goldLogo3}
+              alt="logo"
+              className={this.state.scrolledClass}
+            ></img>
+          </Link>
+        </div>
+      );
+    };
 
     let links = content[this.state.lang].contact.dropdown.map((item, index) => {
       let whichClass = "navButton";
@@ -488,13 +532,13 @@ class Header extends Component {
                   {content[this.state.lang].covid.title}
                 </Link>
                 <a
-                  href="https://fair.medieteknikdagen.se/sv/events"
+                  href="https://fair.medieteknikdagen.se/sv/event/4824"
                   target="_blank"
-                  rel="noreferrer"
-                  rel="noopener"
+                  rel="noreferrer noopener"
                 >
                   {general[this.state.lang].url.link}
                 </a>
+
                 {/* <Link to={settings.url + "studentexpo/"} id="studentexpo" onClick={this.hideHamburger}>
 								{content[this.state.lang].studentexpo.title}
 							</Link> */}
@@ -513,6 +557,7 @@ class Header extends Component {
 								{content[this.state.lang].pictures.title}
 							</Link> */}
               </nav>
+
               <div id="sharebar">
                 <div id="flag">
                   <img
@@ -606,6 +651,7 @@ class Header extends Component {
                     </div>
                   </div>
                 </Link>
+                {this.state.showGold ? <GoldComp></GoldComp> : <div></div>}
               </div>
 
               <div id="navbar">
