@@ -1,0 +1,25 @@
+{
+    "events": [
+      {
+        "name": "Saab",
+        "inURL": "saab",
+        "outURL": "https://saabgroup.com/",
+        "offers": {
+          "exjobb": true,
+          "praktik": false,
+          "trainee": true,
+          "sommarjobb": true,
+          "anstallning": true
+        },
+        "description": {
+          "sv": "Saab är ett globalt företag med världsledande produkter, tjänster och lösningar ifrån militärt försvar i alla domäner till civil säkerhet. Saab erbjuder ett brett utbud av komplexa system som innehåller omfattande forskning och utveckling så väl som tjänster med högt repetitionsvärde. Med en närvaro på varje kontinent fortsätter Saab att utveckla, anpassa och förbättra ny teknologi för att möta kunders förändrade behov. Medverkar på MTD gör områdena som jobbar med support- och träningssystem för Gripen. Du är mer än välkommen att fråga om visualisering, VR och AI.",
+          "en": "Saab serves the global market with world-leading products, services and solutions from military defence in all domains to civil security. Saab’s market offering is broad and consists of complex systems involving extensive research and development as well as services with a high degree of repetition. With operations on every continent, Saab continuously develops, adapts and improves new technology to meet customers’ changing needs. Participating on MTD are the departments working with support and training systems for Gripen. You are more than welcome to ask questions about visualisation, VR and AI."
+        },
+        "img": "saab.svg",
+        "map": { "number": 24, "x": 130.42, "y": 6.48 },
+        "show": true,
+        "level": "gold"
+      }
+    ]
+  }
+  

@@ -6,12 +6,13 @@ import { NavLink as Link } from "react-router-dom";
 
 import home from "../components/content/home.json";
 import general from "../components/content/general.json";
-import companyInformation from "../components/content/companyInformation.json";
+import eventInformation from "../components/content/companyInformation.json";
 import settings from "../settings.json";
 
 import group from "../components/content/group.json";
 
-import "../css/home.scss";
+//import "../css/home.scss";
+import "../css/schedule.scss";
 
 // --------------------------------------------
 // ------------ make inside module ------------
@@ -19,18 +20,16 @@ import "../css/home.scss";
 
 var silverCompanies = [];
 var goldCompanies = [];
-var days = 0;
-let arrow = require(`../bilder/arrow.png`);
 
-for (let i = companyInformation.companies.length - 1; i > 0; i--) {
+for (let i = eventInformation.companies.length - 1; i > 0; i--) {
   const j = Math.floor(Math.random() * (i + 1));
-  [companyInformation.companies[i], companyInformation.companies[j]] = [
-    companyInformation.companies[j],
-    companyInformation.companies[i],
+  [eventInformation.companies[i], eventInformation.companies[j]] = [
+    eventInformation.companies[j],
+    eventInformation.companies[i],
   ];
 }
 
-companyInformation.companies.forEach((item, index) => {
+eventInformation.companies.forEach((item, index) => {
   if (item.level === "gold" && item.show === true) {
     let pic = require(`../bilder/placeholder.jpg`);
 
@@ -66,40 +65,6 @@ companyInformation.companies.forEach((item, index) => {
   }
 });
 
-function countDown() {
-  let countTo = new Date("Mar 4, 2021 11:00:00").getTime();
-  let now = new Date(),
-    timeDifference = countTo - now;
-
-  const secondsInADay = 60 * 60 * 1000 * 24,
-    secondsInAHour = 60 * 60 * 1000;
-
-  days = Math.floor((timeDifference / secondsInADay) * 1);
-  // let hours = Math.floor(
-  //   ((timeDifference % secondsInADay) / secondsInAHour) * 1
-  // );
-  // let mins = Math.floor(
-  //   (((timeDifference % secondsInADay) % secondsInAHour) / (60 * 1000)) * 1
-  // );
-  // let secs = Math.floor(
-  //   ((((timeDifference % secondsInADay) % secondsInAHour) % (60 * 1000)) /
-  //     1000) *
-  //     1
-  // );
-
-  console.log(days);
-  // var idEl = document.getElementById(id);
-  // idEl.getElementsByClassName("days")[0].innerHTML = days;
-  // idEl.getElementsByClassName("hours")[0].innerHTML = hours;
-  // idEl.getElementsByClassName("minutes")[0].innerHTML = mins;
-  // idEl.getElementsByClassName("seconds")[0].innerHTML = secs;
-
-  // clearTimeout(countDownToTime.interval);
-  countDown.interval = setTimeout(function () {
-    countDown();
-  }, 99999);
-}
-
 // --------------------------------------------
 // --------------------------------------------
 // --------------------------------------------
@@ -114,54 +79,16 @@ class Home extends Component {
       beamerAnimation_opacity: 1,
       beamerAnimation_info_move: 0,
       formButton: false,
-      email: "",
-      success: "0",
       opacity: 0,
-      daysUntil: 0,
     };
     this.handleScroll = this.handleScroll.bind(this);
-    this.sendEmail = this.sendEmail.bind(this);
   }
 
   handleScroll(e = null) {
     // const scrollValue = window.scrollY;
-    let beamerSharebar = document.getElementById("beamerSharebar");
-    let homeChevron_down = document.getElementById("homeChevron_down");
-    let arrow = document.getElementById("arrow");
-    // if(scrollValue < 1300) {
-    // 	let beamerAnimation_move = this.state.beamerAnimation_move;
-    // 	let beamerAnimation_opacity = this.state.beamerAnimation_opacity;
-    // 	let beamerAnimation_info_move = this.state.beamerAnimation_info_move;
-
-    // 	beamerAnimation_move = 100 - scrollValue/16;
-    // 	beamerAnimation_opacity = (100 - scrollValue/35) / 100;
-    // 	beamerAnimation_info_move = -scrollValue * 0.4;
-
-    // 	this.setState({ beamerAnimation_move, beamerAnimation_opacity, beamerAnimation_info_move });
-    // }
-
-    // if(scrollValue > 1300) {
-    // 	let beamerAnimation_opacity = this.state.beamerAnimation_opacity;
-
-    // 	beamerAnimation_opacity = (100 - scrollValue/35) / 100;
-    // 	beamerAnimation_opacity = beamerAnimation_opacity < 0 ? 0 : beamerAnimation_opacity;
-
-    // 	this.setState({ beamerAnimation_opacity });
-    // }
-
-    if (window.scrollY > 0) {
-      beamerSharebar.classList.add("after");
-      homeChevron_down.classList.add("after");
-      arrow.classList.add("small");
-    } else {
-      beamerSharebar.classList.remove("after");
-      homeChevron_down.classList.remove("after");
-      arrow.classList.remove("small");
-    }
   }
 
   async componentDidMount() {
-    countDown();
     await window.scrollTo(0, 0);
     window.addEventListener("scroll", this.handleScroll);
   }
@@ -176,41 +103,6 @@ class Home extends Component {
         lang: this.props.lang,
       });
     }
-  }
-
-  showSuccess = () => {
-    this.setState({
-      success: "100px",
-      opacity: 1,
-    });
-    setTimeout(() => {
-      this.setState({
-        success: "0",
-        opacity: 0,
-      });
-    }, 3000);
-  };
-
-  sendEmail(e) {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_y0onmh7",
-        e.target,
-        "user_7SAv3fMO0PxYm9jAg5tyJ"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          this.showSuccess();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
   }
 
   render() {
@@ -263,20 +155,10 @@ class Home extends Component {
       );
     });
 
-    // EMAIL
-    //let email = `mailto: ${group.business.email}`;
-
     return (
       <div id="homeWrap">
-        <div id="success">
-          <div id="successInnerDiv" style={{ height: this.state.success }}>
-            <p style={{ opacity: this.state.opacity }}>
-              {home[this.state.lang].successMessage}
-            </p>
-          </div>
-        </div>
         <div
-          id="beamerImage"
+          id="background"
           style={
             {
               // backgroundPosition: `50% ${this.state.beamerAnimation_move}%`,
@@ -285,6 +167,7 @@ class Home extends Component {
           }
         />
         <div id="beamerWrap">
+          <h2>Schema</h2>
           <div
             id="beamerInfo"
             style={
@@ -294,20 +177,11 @@ class Home extends Component {
               }
             }
           >
-            <h3>
-              {days} {home[this.state.lang].daysText}
-            </h3>
             <h2>{general[this.state.lang].name + " " + general.year}</h2>
             <h3>{general[this.state.lang].date}</h3>
             {/* <h3>{general.time}</h3> */}
             {/* <h3>{general.city}</h3> */}
           </div>
-
-          {/* <div id="arrow"> */}
-          <a href="https://fair.medieteknikdagen.se/" target="_blank">
-            <img id="arrow" src={arrow} alt="arrow" />
-          </a>
-          {/* </div> */}
 
           <footer id="beamerSharebar">
             <div className="footCont">
@@ -391,32 +265,32 @@ class Home extends Component {
 
           {/* MAIL FORM */}
           {/* <div id="generalInfo">
-            <h1>
-              <span id="textTitle">{home[this.state.lang].companyTitle}</span>
-            </h1>
-            <p>
-              <span>
-                {home[this.state.lang].companyText1}
-                <a className="mailTo" href={email}>
-                  {group.business.email}
-                </a>
-              </span>
-            </p>
-            <br></br>
-            <p>
-              <span>{home[this.state.lang].companyText2}</span>
-            </p>
-            <form onSubmit={this.sendEmail}>
-              <input
-                placeholder={home[this.state.lang].inputField}
-                type="email"
-                id="email_input"
-                name="email_input"
-                required
-              />
-              <input type="submit" value={home[this.state.lang].buttonText} />
-            </form>
-          </div> */}
+              <h1>
+                <span id="textTitle">{home[this.state.lang].companyTitle}</span>
+              </h1>
+              <p>
+                <span>
+                  {home[this.state.lang].companyText1}
+                  <a className="mailTo" href={email}>
+                    {group.business.email}
+                  </a>
+                </span>
+              </p>
+              <br></br>
+              <p>
+                <span>{home[this.state.lang].companyText2}</span>
+              </p>
+              <form onSubmit={this.sendEmail}>
+                <input
+                  placeholder={home[this.state.lang].inputField}
+                  type="email"
+                  id="email_input"
+                  name="email_input"
+                  required
+                />
+                <input type="submit" value={home[this.state.lang].buttonText} />
+              </form>
+            </div> */}
 
           <div className="deadspace" />
 
@@ -430,15 +304,15 @@ class Home extends Component {
           </div>
           <div className="silverPartners">{silverComp}</div>
         </div>
-        <div class="deadspace"></div>
+        <div className="deadspace"></div>
 
         {/*}
-				<div id="newsContainer">
-					<div id="newsPreview">
-						<h1>{home[this.state.lang].newsTitle}</h1>
-					</div>
-				</div>
-				{*/}
+          <div id="newsContainer">
+            <div id="newsPreview">
+              <h1>{home[this.state.lang].newsTitle}</h1>
+            </div>
+          </div>
+          {*/}
       </div>
     );
   }

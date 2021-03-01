@@ -117,18 +117,23 @@ class Header extends Component {
     let scrolledClass = "";
     let logo;
 
-    // if (nav[3] === "about" && nav[3] === "companies") {
-    //   this.headerRef.current.classList.remove("transparent");
-    //   logo = logo_regular;
-    // }
-
     if (scrollValue <= 30) {
       scrolledClass = "";
       logo = logo_regular;
 
-      if (nav[3] === "" || nav[3] === "about" || nav[3] === "companies") {
+      if (
+        nav[3] === "" ||
+        nav[3] === "about" ||
+        nav[3] === "companies" ||
+        nav[3] === "schedule"
+      ) {
         const isOnSubpageOfAbout = nav[4] === "" && nav[3] === "about";
-        if (isOnSubpageOfAbout || nav[3] === "" || nav[3] === "companies") {
+        if (
+          isOnSubpageOfAbout ||
+          nav[3] === "" ||
+          nav[3] === "companies" ||
+          nav[3] === "schedule"
+        ) {
           this.headerRef.current.classList.add("transparent");
           logo = logo_white;
         }
@@ -196,6 +201,7 @@ class Header extends Component {
       let homeNav = document.getElementById("home");
       let aboutNAV = document.getElementById("about");
       let companiesNAV = document.getElementById("companies");
+      let scheduleNav = document.getElementById("schedule");
 
       let logo = require("../bilder/logo.svg");
 
@@ -213,6 +219,16 @@ class Header extends Component {
           console.log("showGold");
 
           break;
+        // case "schedule":
+        //   scheduleNav.classList.remove("selected");
+        //   scheduleNav.removeAttribute("aria-current");
+        //   logo = require("../bilder/white.svg");
+
+        //   this.setState({
+        //     borderBottom: { borderBottom: "4px solid transparent" },
+        //     showGold: false,
+        //   });
+        //   break;
 
         case "about":
           homeNav.classList.remove("selected");
@@ -601,7 +617,6 @@ class Header extends Component {
                 >
                   <FontAwesomeIcon icon={["fab", "linkedin"]} className="fa" />
                 </a>
-
                 {line}
                 {accountIcon}
               </div>
@@ -699,6 +714,9 @@ class Header extends Component {
                   <Link to={settings.url + "covid/"} id="covid">
                     {content[this.state.lang].covid.title}
                   </Link>
+                  {/* <Link to={settings.url + "schedule/"} id="schedule">
+                    {content[this.state.lang].schedule.title}
+                  </Link> */}
                   {/* <Link to={settings.url + "map/"} id="map">
 										{content[this.state.lang].map.title}
 									</Link> */}

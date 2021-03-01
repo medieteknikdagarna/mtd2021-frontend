@@ -89,6 +89,7 @@ const sites = [
   { url: "login", comp: Login, active: false },
   { url: "logout", comp: Logout, active: false },
 ];
+
 const staticSites = [
   { url: "", comp: Home, active: true },
   { url: "about", comp: About, active: true },
@@ -100,7 +101,6 @@ const staticSites = [
   { url: "info", comp: CompanyInfo, active: false },
   { url: "covid", comp: Covid, active: true },
   { url: "schedule", comp: Schedule, active: false },
-  // {url: "pictures", comp: Pictures, active: false}
 ];
 
 class App extends Component {
@@ -466,11 +466,11 @@ class Static extends Component {
               path={settings.url + "covid/"}
               render={(props) => <Covid {...props} lang={this.state.lang} />}
             />
-            <Route
+            {/* <Route
               exact
               path={settings.url + "schedule/"}
               render={(props) => <Schedule {...props} lang={this.state.lang} />}
-            />
+            /> */}
             <Route
               exact
               path={settings.url + "studentexpo/"}

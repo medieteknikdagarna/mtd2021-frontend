@@ -1,0 +1,18 @@
+#background {
+  width: 100vw;
+  margin-left: calc(calc(100% - 100vw) / 2);
+  height: 100vh;
+  min-height: 600px;
+  background: gray;
+  background-image: url("../bilder/omslagSchema3.jpg");
+  background-size: cover;
+  background-position: 50% 100%;
+  background-attachment: fixed;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  top: 0;
+  z-index: -10;
+  margin-top: -151px;
+}
