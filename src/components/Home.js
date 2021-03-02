@@ -21,7 +21,7 @@ var silverCompanies = [];
 var goldCompanies = [];
 var days = 0;
 var hours = 0;
-var mins = 0;
+
 let arrow = require(`../bilder/arrow.png`);
 
 for (let i = companyInformation.companies.length - 1; i > 0; i--) {
@@ -69,7 +69,7 @@ companyInformation.companies.forEach((item, index) => {
 });
 
 function countDown() {
-  let countTo = new Date("Mar 4, 2021 09:00:00").getTime();
+  let countTo = new Date("Mar 4, 2021 9:00:00").getTime();
   let now = new Date(),
     timeDifference = countTo - now;
 
@@ -78,9 +78,9 @@ function countDown() {
 
   days = Math.floor((timeDifference / secondsInADay) * 1);
   hours = Math.floor(((timeDifference % secondsInADay) / secondsInAHour) * 1);
-  mins = Math.floor(
-    (((timeDifference % secondsInADay) % secondsInAHour) / (60 * 1000)) * 1
-  );
+  // mins = Math.floor(
+  //   (((timeDifference % secondsInADay) % secondsInAHour) / (60 * 1000)) * 1
+  // );
   // let secs = Math.floor(
   //   ((((timeDifference % secondsInADay) % secondsInAHour) % (60 * 1000)) /
   //     1000) *
@@ -292,10 +292,28 @@ class Home extends Component {
               }
             }
           >
-            <h3>
-              {days} {home[this.state.lang].daysText} {hours}
-              {home[this.state.lang].hourText}
-            </h3>
+            {hours == 0 && days != 0 && (
+              <h3>
+                {days} {home[this.state.lang].daysText}
+                {hours}
+                {home[this.state.lang].hourText}
+              </h3>
+            )}
+            {days == 0 && hours != 0 && (
+              <h3>
+                {hours}
+                {home[this.state.lang].hourText}
+              </h3>
+            )}
+            {days > 0 && hours > 0 && (
+              <h3>
+                {days} {home[this.state.lang].daysText}
+                {hours}
+                {home[this.state.lang].hourText}
+              </h3>
+            )}
+            {days <= 0 && hours <= 0 && <h3>{home[this.state.lang].today}</h3>}
+
             <h2>{general[this.state.lang].name + " " + general.year}</h2>
             <h3>{general[this.state.lang].date}</h3>
             {/* <h3>{general.time}</h3> */}
