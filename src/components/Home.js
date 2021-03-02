@@ -20,6 +20,8 @@ import "../css/home.scss";
 var silverCompanies = [];
 var goldCompanies = [];
 var days = 0;
+var hours = 0;
+var mins = 0;
 let arrow = require(`../bilder/arrow.png`);
 
 for (let i = companyInformation.companies.length - 1; i > 0; i--) {
@@ -72,15 +74,13 @@ function countDown() {
     timeDifference = countTo - now;
 
   const secondsInADay = 60 * 60 * 1000 * 24;
-  //secondsInAHour = 60 * 60 * 1000;
+  const secondsInAHour = 60 * 60 * 1000;
 
   days = Math.floor((timeDifference / secondsInADay) * 1);
-  // let hours = Math.floor(
-  //   ((timeDifference % secondsInADay) / secondsInAHour) * 1
-  // );
-  // let mins = Math.floor(
-  //   (((timeDifference % secondsInADay) % secondsInAHour) / (60 * 1000)) * 1
-  // );
+  hours = Math.floor(((timeDifference % secondsInADay) / secondsInAHour) * 1);
+  mins = Math.floor(
+    (((timeDifference % secondsInADay) % secondsInAHour) / (60 * 1000)) * 1
+  );
   // let secs = Math.floor(
   //   ((((timeDifference % secondsInADay) % secondsInAHour) % (60 * 1000)) /
   //     1000) *
@@ -116,7 +116,6 @@ class Home extends Component {
       email: "",
       success: "0",
       opacity: 0,
-      daysUntil: 0,
     };
     this.handleScroll = this.handleScroll.bind(this);
     this.sendEmail = this.sendEmail.bind(this);
@@ -294,7 +293,8 @@ class Home extends Component {
             }
           >
             <h3>
-              {days} {home[this.state.lang].daysText}
+              {days} {home[this.state.lang].daysText} {hours}
+              {home[this.state.lang].hourText}
             </h3>
             <h2>{general[this.state.lang].name + " " + general.year}</h2>
             <h3>{general[this.state.lang].date}</h3>

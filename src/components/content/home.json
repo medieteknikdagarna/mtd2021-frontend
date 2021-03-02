@@ -12,7 +12,8 @@
     "companyText2": "Eller fyll i din mejladdress i formuläret nedan:",
     "inputField": "Din email ...",
     "successMessage": "Ditt meddelande har skickats. Vi kontaktar dig snart!",
-    "daysText": " dag kvar till",
+    "daysText": " dag och ",
+    "hourText": " timmar kvar till ",
     "buttonText": "Kontakta mig!"
   },
 
@@ -29,7 +30,9 @@
     "companyText2": "Or fill in your email in the form below:",
     "inputField": "Your email...",
     "successMessage": "Your message has been sent. We will contact you soon!",
-    "daysText": " day until ",
+    "daysText": " day and ",
+    "hourText": " hours until",
+    
     "buttonText": "Contact me!"
   }
 }
