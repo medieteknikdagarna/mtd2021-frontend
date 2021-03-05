@@ -206,9 +206,9 @@ class Static extends Component {
         case "covid":
           this.props.history.push("/covid/");
           break;
-        case "schedule":
-          this.props.history.push("/schedule/");
-          break;
+        // case "schedule":
+        //   this.props.history.push("/schedule/");
+        //   break;
         case "forelasningar":
         case "lectures":
           this.props.history.push("/lectures/");

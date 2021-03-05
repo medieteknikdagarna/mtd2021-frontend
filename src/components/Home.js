@@ -292,7 +292,7 @@ class Home extends Component {
               }
             }
           >
-            {hours == 0 && days != 0 && (
+            {/* {hours == 0 && days != 0 && (
               <h3>
                 {days} {home[this.state.lang].daysText}
                 {hours}
@@ -312,12 +312,12 @@ class Home extends Component {
                 {home[this.state.lang].hourText}
               </h3>
             )}
-            {days <= 0 && hours <= 0 && <h3>{home[this.state.lang].today}</h3>}
-
-            <h2>{general[this.state.lang].name + " " + general.year}</h2>
+            {days <= 0 && hours <= 0 && <h3>{home[this.state.lang].today}</h3>} */}
             <h3>{general[this.state.lang].date}</h3>
+            <h2>{general[this.state.lang].name + " " + general.year}</h2>
+
             {/* <h3>{general.time}</h3> */}
-            {/* <h3>{general.city}</h3> */}
+            <h3>{general.city}</h3>
           </div>
 
           {/* <div id="arrow"> */}
